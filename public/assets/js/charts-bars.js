@@ -4,17 +4,17 @@
 const barConfig = {
   type: 'bar',
   data: {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: ['2018','2019', '2020', '2021', '2022', '2023', '2024'],
     datasets: [
       {
-        label: 'Shoes',
+        label: 'PNS',
         backgroundColor: '#0694a2',
         // borderColor: window.chartColors.red,
         borderWidth: 1,
         data: [-3, 14, 52, 74, 33, 90, 70],
       },
       {
-        label: 'Bags',
+        label: 'Honorer',
         backgroundColor: '#7e3af2',
         // borderColor: window.chartColors.blue,
         borderWidth: 1,
