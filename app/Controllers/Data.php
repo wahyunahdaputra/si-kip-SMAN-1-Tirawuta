@@ -9,13 +9,6 @@ class Data extends BaseController
         return view('data/home');
     }
 
-    public function forms()
-    {
-        echo view('layout/header');
-        echo view('Data/forms');
-        echo view('layout/footer');
-    }
-    
     public function login()
     {
         

@@ -84,8 +84,9 @@
                         </button>
                       </a>
                       </li> -->
+                      <?php if ($pager->hasNext()) : ?>
                       <li class="page">
-                      <a class="page-link" href="">
+                      <a class="page-link" href="<?= $pager->getNext() ?>">
                         <button
                           class="px-3 py-1 rounded-md rounded-r-lg focus:outline-none focus:shadow-outline-purple"
                           aria-label="Next"
@@ -104,6 +105,7 @@
                         </button>
                       </a>
                       </li>
+                      <?php endif ?>
                     </ul>
                   </nav>
                 </span>
