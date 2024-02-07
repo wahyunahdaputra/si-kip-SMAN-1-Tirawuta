@@ -605,6 +605,16 @@ video {
     background-color: #7e3af2;
     background-color: rgba(126,58,242,var(--bg-opacity));
 }
+.bg-pink-600 {
+    --bg-opacity: 1;
+    background-color: #FF1493;
+    background-color: rgba(249, 19, 147,var(--bg-opacity));
+}
+.bg-yellow-400 {
+    --bg-opacity: 1;
+    background-color: #FFFF00;
+    background-color: rgba(255, 255, 0,var(--bg-opacity));
+}
 .hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f4f5f7;
