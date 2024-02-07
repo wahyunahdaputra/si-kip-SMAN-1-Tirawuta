@@ -6,16 +6,16 @@ const pieConfig = {
   data: {
     datasets: [
       {
-        data: [5500, 7500],
+        data: [24, 3, 4, 77, 6],
         /**
          * These colors come from Tailwind CSS palette
          * https://tailwindcss.com/docs/customizing-colors/#default-color-palette
          */
-        backgroundColor: ['#0694a2', '#1c64f2'],
+        backgroundColor: ['#0694a2', '#1c64f2', '#FFFF00', '#FF1493', '#800080'],
         label: 'Dataset 1',
       },
     ],
-    labels: ['Wanita', 'Pria'],
+    labels: ['Magister', 'Doktor', 'Diploma 3', 'Sarjana', 'Profesi'],
   },
   options: {
     responsive: true,

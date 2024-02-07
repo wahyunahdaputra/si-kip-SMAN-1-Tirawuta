@@ -4,7 +4,7 @@
 const lineConfig = {
   type: 'line',
   data: {
-    labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+    labels: ['FPT', 'FKM', 'FH', 'FT', 'Fk', 'FEB', 'FISIP', 'FPK', 'FKIP', 'FIB', 'FPIK', 'FHIL', 'FF', 'FMIPA', 'PASCA'],
     datasets: [
       {
         label: 'Pria',
