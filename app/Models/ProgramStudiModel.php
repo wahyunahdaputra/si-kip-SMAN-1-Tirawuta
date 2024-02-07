@@ -12,4 +12,8 @@ class ProgramStudiModel extends Model
 
         return $query->getResult();
     }
+
+    public function getFilteredData() {
+        $query = $this->db->query("");
+    }
 }

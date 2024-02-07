@@ -18,6 +18,12 @@ class ProgramStudi extends BaseController
     {
        $getdata = $this->mprogram_studi->getdata();
 
+    //    $filter_params = array(
+    //     'fakultas' => $this -> input -> get('fakultas'),
+    //     'program'  => $this -> input -> get('fakultas'),
+    //    );
+    //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
+
        $data = array(
             'dataProgramStudi' => $getdata,
        );
