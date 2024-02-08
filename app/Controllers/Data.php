@@ -18,8 +18,6 @@ class Data extends BaseController
 
     public function formAps1() 
     {
-        echo view('layout/header');
         echo view('data/formAps1');
-        echo view('layout/footer');
     }
 }

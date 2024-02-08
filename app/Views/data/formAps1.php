@@ -1,3 +1,5 @@
+    <?= $this->extend('layout/template'); ?>
+        <?= $this->section('content'); ?>
     <main class="h-full pb-16 overflow-y-auto">
 
       <div class="container px-6 mx-auto grid">
@@ -125,3 +127,4 @@
     </main>
     </div>
     </div>
+    <?= $this->endSection(); ?>
