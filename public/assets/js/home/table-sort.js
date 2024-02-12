@@ -4,7 +4,6 @@
  * @param {number} column The index of the column to sort
  * @param {boolean} asc Determines if the sorting will be in ascending
  */
-
 function sortTableColumn(table, column, asc = true) {
     const dirModifier = asc ? 1 : -1;
     const tBody = table.tBodies[0];
