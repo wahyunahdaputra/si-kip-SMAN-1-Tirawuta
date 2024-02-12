@@ -139,9 +139,8 @@
                     </h3>
                     <div class="w-full overflow-hidden rounded-lg shadow-xs">
                         <div class="w-full overflow-x-auto">
-
-                            <table class="w-full whitespace-no-wrap table-sortable" id="listApsStatus">
-                                <thead>
+                            <table class="relative w-full whitespace-no-wrap table-sortable" id="listApsStatus">
+                                <thead">
                                     <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800 always-visible">
                                         <td></td>
 
@@ -177,19 +176,20 @@
                                         </td>
                                     </tr>
                                     <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
-                                    <th class="px-4 py-3">No.</th>
-                                    <th class="px-4 py-3">Fakultas</th>
-                                    <th class="px-4 py-3">Program</th>
-                                    <th class="px-4 py-3">Program Studi</th>
-                                    <th class="px-4 py-3">Peringkat Akreditasi</th>
-                                    <th class="px-4 py-3">Tanggal SK</th>
-                                    <th class="px-4 py-3">Tanggal Kadaluarsa</th>
-                                    <th class="px-4 py-3">No. SK</th>
-                                    <th class="px-4 py-3">Tanggal hari ini</th>
-                                    <th class="px-4 py-3">Status Kadaluarsa</th>
-                                    <th class="px-4 py-3">Diakreditasi oleh</th>
+                                    <th class="sticky top-0 px-4 py-3">No.</th>
+                                    <th class="sticky top-0 px-4 py-3">Fakultas</th>
+                                    <th class="sticky top-0 px-4 py-3">Program</th>
+                                    <th class="sticky top-0 px-4 py-3">Program Studi</th>
+                                    <th class="sticky top-0 px-4 py-3">Peringkat Akreditasi</th>
+                                    <th class="sticky top-0 px-4 py-3">Tanggal SK</th>
+                                    <th class="sticky top-0 px-4 py-3">Tanggal Kadaluarsa</th>
+                                    <th class="sticky top-0 px-4 py-3">No. SK</th>
+                                    <th class="sticky top-0 px-4 py-3">Tanggal hari ini</th>
+                                    <th class="sticky top-0 px-4 py-3">Status Kadaluarsa</th>
+                                    <th class="sticky top-0 px-4 py-3">Diakreditasi oleh</th>
                                     </tr>
                                 </thead>
+                                
                                 <tbody class="text-sm bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
                                     <?php foreach ($paginasi as $pg) : ?>
                                         <tr class="text-gray-700 dark:text-gray-400">
@@ -207,8 +207,7 @@
                                         </tr>
                                     <?php endforeach ?>
                                 </tbody>
-                            </table>
-
+                                    </table>
                             <script>
                                 function filterData() {
                                     var inputs = document.querySelectorAll('.filter-input');

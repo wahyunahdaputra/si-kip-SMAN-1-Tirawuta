@@ -32,6 +32,7 @@ class Home extends BaseController
        );
 
     //    var_dump($getdata);
+        // echo view('layout/template', $data);
         echo view('data/home', $data);
     }
 }
