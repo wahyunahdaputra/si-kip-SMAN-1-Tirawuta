@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer="defer"></script>
     <script src="/assets/js/init-alpine.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer="defer"></script>
     <script src="/assets/js/charts-lines.js" defer="defer"></script>
     <script src="/assets/js/charts-pie.js" defer="defer"></script>
@@ -17,6 +18,19 @@
 </head>
 
 <body>
+<div class="spinner-wrapper flex h-screen justify-center items-center" role="status">
+    <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 0C77.6142 0 100 22.3858 100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50C0 22.3858 22.3858 0 50 0ZM50 9.09091C25.2966 9.09091 5.90909 28.4784 5.90909 50C5.90909 71.5216 25.2966 90.9091 50 90.9091C74.7034 90.9091 94.0909 71.5216 94.0909 50C94.0909 28.4784 74.7034 9.09091 50 9.09091Z" fill="blue"/>
+    </svg>
+</div>
+
+    <script>
+        $(window).on('load', function(){
+            setTimeout(function() {
+        $('.spinner-wrapper').addClass('hidden');
+    }, 800);
+        });
+    </script>
     <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }">
         <!-- Desktop sidebar -->
         <aside class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0">
@@ -51,12 +65,12 @@
                                 <a class="w-full" href="pages/login.html">Akreditasi Eksternal</a>
                             </li>
                             <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
+                                <a class="w-full" href="akrinternasional">
                                     Akreditasi Internasional Program Studi
                                 </a>
                             </li>
                             <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="auditkeuanganeks">
+                                <a class="w-full" href="data/auditkeuanganeks">
                                     Audit Eksternal Keuangan
                                 </a>
                             </li>
@@ -90,7 +104,7 @@
                                 <a class="w-full" href="pages/login.html">Seleksi Mahasiswa Baru</a>
                             </li>
                             <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
+                                <a class="w-full" href="mhsasing">
                                     Mahasiswa Asing
                                 </a>
                             </li>
@@ -176,7 +190,7 @@
                                 <a class="w-full" href="#">Capaian Pembelajaran</a>
                             </li>
                             <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
+                                <a class="w-full" href="prestasimahasiswa">
                                     Prestasi Akademik & Non-akademik Mahasiswa
                                 </a>
                             </li>
@@ -201,7 +215,7 @@
                                 </a>
                             </li>
                             <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
+                                <a class="w-full" href="sitasiilmiah">
                                     Sitasi Ilmiah
                                 </a>
                             </li>
@@ -245,7 +259,7 @@
                                 </a>
                             </li>
                             <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
+                                <a class="w-full" href="riwayatakreditasiprodi">
                                     Riwayat Akreditasi
                                 </a>
                             </li>
@@ -672,5 +686,6 @@
             </footer>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

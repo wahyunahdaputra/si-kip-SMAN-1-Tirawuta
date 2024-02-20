@@ -8,7 +8,7 @@
                     <!-- Charts -->
                     <div></div>
             <h3 class="my-6 mb-4 text-lg font-semibold text-black-600 dark:text-gray-300 text-center justify-center">
-                        Data Audit Keuangan Eksternal
+                        Data Program Studi
                     </h3>
                     <div class="w-full overflow-hidden rounded-lg shadow-xs">
                         <div class="w-full overflow-x-auto">
@@ -20,33 +20,19 @@
                                         <td class="px-2 py-3">
                                             <input class="flex w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
                                         </td>
-                                        <td class="px-2 py-3">
-                                            <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
-                                        </td>
-                                        <td class="px-2 py-3">
-                                            <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
-                                        </td>
-                                        <td class="px-2 py-3">
-                                            <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
-                                        </td>
+
                                     </tr>
                                     <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                     <th class="sticky top-0 px-4 py-3">No.</th>
-                                    <th class="sticky top-0 px-4 py-3">Lembaga/Audit</th>
-                                    <th class="sticky top-0 px-4 py-3">Tahun</th>
-                                    <th class="sticky top-0 px-4 py-3">Opini</th>
-                                    <th class="sticky top-0 px-4 py-3">Keterangan</th>
+                                    <th class="sticky top-0 px-4 py-3">Program Studi</th>
                                     </tr>
                                 </thead>
 
                                 <tbody class="text-sm bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
-                                    <?php foreach ($auditkeuanganeks as $au) : ?>
+                                    <?php foreach ($paginasi as $pg) : ?>
                                         <tr class="text-gray-700 dark:text-gray-400">
-                                        <td class="px-4 py-3"><?= $au->id; ?></td>
-                                        <td class="px-4 py-3"><?= $au->lembaga_audit; ?></td>
-                                        <td class="px-4 py-3"><?= $au->tahun; ?></td>
-                                        <td class="px-4 py-3"><?= $au->opini; ?></td>
-                                        <td class="px-4 py-3"><?= $au->keterangan; ?></td>
+                                        <td class="px-4 py-3"><?= $pg['id_ps']; ?></td>
+                                        <td class="px-4 py-3"><a href="riwayatakreditasi"><?= $pg['program_studi']; ?></a></td>
                                         </tr>
                                     <?php endforeach ?>
                                 </tbody>
@@ -81,7 +67,10 @@
                             </script>
                             <link rel="stylesheet" href="<?= base_url('assets/css/home/style.css') ?>">
                             <script src="<?= base_url('assets/js/home/table-sort.js') ?>"></script>
-
+                            <div class="flex justify-center px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
+                                <!-- Pagination -->
+                                <?= $pager->links('paginasi', 'ps_pagination'); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
