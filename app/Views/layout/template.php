@@ -56,7 +56,7 @@
                                 </a>
                             </li>
                             <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="auditkeuanganeks">
+                                <a class="w-full" href="data/auditkeuanganeks">
                                     Audit Eksternal Keuangan
                                 </a>
                             </li>
@@ -254,7 +254,7 @@
                 </ul>
                 <script>
                     // Objek yang menyimpan status untuk setiap tombol dropdown
-                    const dropdownStatus = {
+                    var dropdownStatus = {
                         capaianTridharma: false,
                         akreditasiKerjasama: false,
                         dataLuaran: false
@@ -521,7 +521,7 @@
                 </ul>
                 <script>
                     // Objek yang menyimpan status untuk setiap tombol dropdown
-                    const dropdownStatus = {
+                    var dropdownStatus = {
                         capaianTridharma: false,
                         akreditasiKerjasama: false,
                         dataLuaran: false

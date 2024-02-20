@@ -19,19 +19,12 @@ class Home extends BaseController
     {
         $getdata = $this->mhome->getdata();
 
-    //    $filter_params = array(
-    //     'fakultas' => $this -> input -> get('fakultas'),
-    //     'program'  => $this -> input -> get('fakultas'),
-    //    );
-    //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
-
        $data = array(
             'dataProgramStudi' => $getdata,
             'paginasi' => $this->mhome->paginate(30, 'paginasi'), // Mengambil data yang dipaginasi
             'pager' => $this->mhome->pager
        );
 
-    //    var_dump($getdata);
-        echo view('data/home', $data);
+            echo view('data/home', $data);
     }
 }

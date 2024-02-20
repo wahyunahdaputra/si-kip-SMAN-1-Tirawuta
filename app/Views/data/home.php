@@ -152,34 +152,34 @@
                                     <td></td>
 
                                     <td class="px-2 py-3">
-                                        <input class="flex w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
+                                        <input class="flex w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Fakultas" oninput="filterData()" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Program" oninput="filterData()" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Program Studi" oninput="filterData()" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Peringkat Akreditasi" oninput="filterData()" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Tanggal SK" oninput="filterData()" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Tanggal Kadaluarsa" oninput="filterData()" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="No. SK" oninput="filterData()" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" oninput="filterData()" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Status Kadaluarsa" oninput="filterData()" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" name="" onkeyup="filterData()">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Diakreditasi oleh" oninput="filterData()" autocomplete="on">
                                     </td>
                                 </tr>
                                 <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
@@ -219,29 +219,46 @@
                                             $tgl_sk_formatted = "";
                                             $tgl_kadaluarsa_formatted = "";;
                                         }
-                                        
+
                                         $status_kadaluarsa = "";
                                         // Menghitung status kadaluarsa dalam hari (perbandingan dari tanggal sk dan hari ini)
                                         if ($tgl_sk_object !== false && $tgl_kadaluarsa_object !== false) {
                                             $status_kadaluarsa = date_diff($tgl_sekarang, $tgl_kadaluarsa_object, true);
 
-                                            if ($status_kadaluarsa->days >= 31) {
+                                            if ($status_kadaluarsa-> days >= 31) {
                                                 $tahun = floor($status_kadaluarsa->days / 365); // Menghitung jumlah tahun
                                                 $bulan = floor(($status_kadaluarsa->days % 365) / 30); // Menghitung jumlah bulan
                                                 $sisa_hari = $status_kadaluarsa->days % 30; // Menghitung sisa hari
 
                                                 $status_kadaluarsa = ''; // Inisialisasi variabel status_kadaluarsa
 
-                                                if ($tahun != 0) {
-                                                    $status_kadaluarsa .= "$tahun Tahun ";
-                                                }
+                                                if ($tgl_kadaluarsa_object < $tgl_sekarang) {
+                                                    $status_kadaluarsa = "Lewat ";
 
-                                                if ($bulan != 0) {
-                                                    $status_kadaluarsa .= "$bulan Bulan ";
-                                                }
-
-                                                if ($sisa_hari != 0) {
-                                                    $status_kadaluarsa .= "$sisa_hari Hari ";
+                                                    if ($tahun != 0) {
+                                                        $status_kadaluarsa .= "$tahun Tahun ";
+                                                    }
+    
+                                                    if ($bulan != 0) {
+                                                        $status_kadaluarsa .= "$bulan Bulan ";
+                                                    }
+    
+                                                    if ($sisa_hari != 0) {
+                                                        $status_kadaluarsa .= "$sisa_hari Hari ";
+                                                    }
+                                                } else {
+                                                    $status_kadaluarsa = "Tersisa ";
+                                                    if ($tahun != 0) {
+                                                        $status_kadaluarsa .= "$tahun Tahun ";
+                                                    }
+    
+                                                    if ($bulan != 0) {
+                                                        $status_kadaluarsa .= "$bulan Bulan ";
+                                                    }
+    
+                                                    if ($sisa_hari != 0) {
+                                                        $status_kadaluarsa .= "$sisa_hari Hari ";
+                                                    }
                                                 }
 
                                                 // Menghapus spasi ekstra di akhir string
@@ -259,12 +276,12 @@
                                         <td class="px-4 py-3"><?= $pg['pr_akreditasi']; ?></td>
 
                                         <td class="px-4 py-3"><?php echo $tgl_sk_formatted; ?></td>
-                                        <td class="px-4 py-3 tanggal-kadaluarsa"><?php echo $tgl_kadaluarsa_formatted;  ?></td>
+                                        <td class="px-4 py-3"><?php echo $tgl_kadaluarsa_formatted;  ?></td>
 
                                         <td class="px-4 py-3"><?= $pg['no_sk']; ?></td>
 
-                                        <td class="px-4 py-3 tanggal-hari-ini"><?php echo date("d/m/Y") ?></td>
-                                        <td class="px-4 py-3 selisih"><?php echo $status_kadaluarsa; ?></td>
+                                        <td class="px-4 py-3"><?php echo date("d/m/Y") ?></td>
+                                        <td class="px-4 py-3"><?php echo $status_kadaluarsa; ?></td>
 
                                         <td class="px-4 py-3"><?= $pg['akr_oleh']; ?></td>
                                     </tr>
@@ -272,7 +289,17 @@
                             </tbody>
                         </table>
 
-                        <link rel="stylesheet" href="<?= base_url('assets/css/home/style.css') ?>">
+                        <datalist id="Fakultas"></datalist>
+                        <datalist id="Program"></datalist>
+                        <datalist id="Program Studi"></datalist>
+                        <datalist id="Peringkat Akreditasi"></datalist>
+                        <datalist id="Tanggal SK"></datalist>
+                        <datalist id="Tanggal Kadaluarsa"></datalist>
+                        <datalist id="No. SK"></datalist>
+                        <datalist id="Status Kadaluarsa"></datalist>
+                        <datalist id="Diakreditasi oleh"></datalist>
+
+                        <link rel="stylesheet" href="<?= base_url('assets/css/util/table/style.css') ?>">
 
                     </div>
                     <div class="flex justify-center px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
@@ -283,9 +310,7 @@
             </div>
         </main>
 
-        <script src="<?= base_url('assets/js/home/home.js') ?>"></script>
-        <script src="<?= base_url('assets/js/home/table-sort.js') ?>"></script>
+        <script src="<?= base_url('assets/js/home/home.js') ?>"></scrip>
+        <script src="<?= base_url('assets/js/util/table/table-sort.js') ?>"></script>
 
         <?= $this->endSection(); ?>
-
-        
