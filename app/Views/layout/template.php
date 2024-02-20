@@ -268,7 +268,7 @@
                 </ul>
                 <script>
                     // Objek yang menyimpan status untuk setiap tombol dropdown
-                    const dropdownStatus = {
+                    var dropdownStatus = {
                         capaianTridharma: false,
                         akreditasiKerjasama: false,
                         dataLuaran: false
@@ -535,7 +535,7 @@
                 </ul>
                 <script>
                     // Objek yang menyimpan status untuk setiap tombol dropdown
-                    const dropdownStatus = {
+                    var dropdownStatus = {
                         capaianTridharma: false,
                         akreditasiKerjasama: false,
                         dataLuaran: false
