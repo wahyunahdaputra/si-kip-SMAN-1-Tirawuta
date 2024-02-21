@@ -152,34 +152,34 @@
                                     <td></td>
 
                                     <td class="px-2 py-3">
-                                        <input class="flex w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Fakultas" oninput="filterData()" autocomplete="on">
+                                        <input class="flex w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listApsStatus" type="text" list="listApsStatus.Fakultas" oninput="filterData('listApsStatus')" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Program" oninput="filterData()" autocomplete="on">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listApsStatus" type="text" list="listApsStatus.Program" oninput="filterData('listApsStatus')" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Program Studi" oninput="filterData()" autocomplete="on">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listApsStatus" type="text" list="listApsStatus.Program Studi" oninput="filterData('listApsStatus')" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Peringkat Akreditasi" oninput="filterData()" autocomplete="on">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listApsStatus" type="text" list="listApsStatus.Peringkat Akreditasi" oninput="filterData('listApsStatus')" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Tanggal SK" oninput="filterData()" autocomplete="on">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listApsStatus" type="text" list="listApsStatus.Tanggal SK" oninput="filterData('listApsStatus')" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Tanggal Kadaluarsa" oninput="filterData()" autocomplete="on">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listApsStatus" type="text" list="listApsStatus.Tanggal Kadaluarsa" oninput="filterData('listApsStatus')" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="No. SK" oninput="filterData()" autocomplete="on">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listApsStatus" type="text" list="listApsStatus.No. SK" oninput="filterData('listApsStatus')" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" oninput="filterData()" autocomplete="on">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listApsStatus" type="text" oninput="filterData('listApsStatus')" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Status Kadaluarsa" oninput="filterData()" autocomplete="on">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listApsStatus" type="text" list="listApsStatus.Status Kadaluarsa" oninput="filterData('listApsStatus')" autocomplete="on">
                                     </td>
                                     <td class="px-2 py-3">
-                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input" type="text" list="Diakreditasi oleh" oninput="filterData()" autocomplete="on">
+                                        <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listApsStatus" type="text" list="listApsStatus.Diakreditasi oleh" oninput="filterData('listApsStatus')" autocomplete="on">
                                     </td>
                                 </tr>
                                 <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
@@ -289,18 +289,17 @@
                             </tbody>
                         </table>
 
-                        <datalist id="Fakultas"></datalist>
-                        <datalist id="Program"></datalist>
-                        <datalist id="Program Studi"></datalist>
-                        <datalist id="Peringkat Akreditasi"></datalist>
-                        <datalist id="Tanggal SK"></datalist>
-                        <datalist id="Tanggal Kadaluarsa"></datalist>
-                        <datalist id="No. SK"></datalist>
-                        <datalist id="Status Kadaluarsa"></datalist>
-                        <datalist id="Diakreditasi oleh"></datalist>
+                        <datalist id="listApsStatus.Fakultas"></datalist>
+                        <datalist id="listApsStatus.Program"></datalist>
+                        <datalist id="listApsStatus.Program Studi"></datalist>
+                        <datalist id="listApsStatus.Peringkat Akreditasi"></datalist>
+                        <datalist id="listApsStatus.Tanggal SK"></datalist>
+                        <datalist id="listApsStatus.Tanggal Kadaluarsa"></datalist>
+                        <datalist id="listApsStatus.No. SK"></datalist>
+                        <datalist id="listApsStatus.Status Kadaluarsa"></datalist>
+                        <datalist id="listApsStatus.Diakreditasi oleh"></datalist>
 
-                        <link rel="stylesheet" href="<?= base_url('assets/css/util/table/style.css') ?>">
-
+                        
                     </div>
                     <div class="flex justify-center px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
                         <!-- Pagination -->
@@ -309,8 +308,11 @@
                 </div>
             </div>
         </main>
-
-        <script src="<?= base_url('assets/js/home/home.js') ?>"></scrip>
+        
+        <link rel="stylesheet" href="<?= base_url('assets/css/util/table/style.css') ?>">
+        <script src="<?= base_url('assets/js/home/index.js') ?>"></script>
+        <script src="<?= base_url('assets/js/util/table/filter-data.js') ?>"></script>
+        <script src="<?= base_url('assets/js/util/table/datalist-autocomplete.js') ?>"></script>
         <script src="<?= base_url('assets/js/util/table/table-sort.js') ?>"></script>
 
         <?= $this->endSection(); ?>
