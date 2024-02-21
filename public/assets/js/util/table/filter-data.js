@@ -1,8 +1,8 @@
-function filterData() {
-    var inputs = document.querySelectorAll('.filter-input');
+function filterData(tableId) {
+    var inputs = document.querySelectorAll('.filter-input'+"-"+tableId);
     var table, tr, td, i, j, txtValue, filter;
 
-    table = document.getElementById("listAkeStatus");
+    table = document.getElementById(tableId);
     tr = table.getElementsByTagName("tr");
 
     for (i = 0; i < tr.length; i++) {
@@ -23,4 +23,7 @@ function filterData() {
             }
         }
     }
+
+    generateDatalistOption(tableId);
+
 }
