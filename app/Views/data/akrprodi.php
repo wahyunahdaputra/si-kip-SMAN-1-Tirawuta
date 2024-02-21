@@ -1,147 +1,14 @@
-        <?= $this->extend('layout/template'); ?>
-        <?= $this->section('content'); ?>
-        <main class="h-full overflow-y-auto">
-
-            <?php
-            // Atur waktu bawaan untuk zona waktu (WITA)
-            date_default_timezone_set("Asia/Makassar")
-            ?>
-
-            <div class="container px-6 mx-auto grid">
-                <!-- <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+<?= $this->extend('layout/template'); ?>
+            <?= $this->section('content'); ?>
+            <main class="h-full overflow-y-auto">
+                <div class="container px-6 mx-auto grid">
+                    <!-- <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
                             Dashboard
                         </h2> -->
-                <!-- Charts -->
-                <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-                    Data Program Studi
-                </h2>
-                <div class="grid gap-6 mb-8 md:grid-cols-2">
-                    <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-                        <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                            Program
-                        </h4>
-                        <canvas id="pie"></canvas>
-                        <div class="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
-                            <!-- Chart legend -->
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-blue-500 rounded-full"></span>
-                                <span>Doktor</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
-                                <span>Magister</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                                <span>Profesi</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-pink-600 rounded-full"></span>
-                                <span>Sarjana</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-yellow-400 rounded-full"></span>
-                                <span>Diploma 3</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-                        <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                            Program Studi/Fakultas
-                        </h4>
-                        <canvas id="line"></canvas>
-                        <div class="flex flex-wrap justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
-                            <!-- Chart legend -->
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
-                                <span>FPT</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                                <span>FKM</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-blue-500 rounded-full"></span>
-                                <span>FH</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-pink-600 rounded-full"></span>
-                                <span>FT</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-yellow-400 rounded-full"></span>
-                                <span>FK</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                                <span>FEB</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
-                                <span>FISIP</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                                <span>FPK</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
-                                <span>FKIP</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                                <span>FIB</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
-                                <span>FPIK</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                                <span>FHIL</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
-                                <span>FF</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                                <span>FMIPA</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                                <span>PASCA SARJANA</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div
-                                class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-                                <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                                Data Pegawai
-                                </h4>
-                                <canvas id="bars"></canvas>
-                                <div
-                                class="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400"
-                                >
-                                <div class="flex items-center">
-                                    <span
-                                    class="inline-block w-3 h-3 mr-1 bg-teal-500 rounded-full"
-                                    ></span>
-                                    <span>PNS</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <span
-                                    class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"
-                                    ></span>
-                                    <span>Honorer</span>
-                                </div>
-                                </div>
-                            </div> -->
-                </div>
-
-                <!-- With actions -->
-                <h3 class="mb-4 text-lg font-semibold text-black-600 dark:text-gray-300 text-center justify-center">
-                    Daftar Status Akreditasi Program Studi
+                    <!-- Charts -->
+                    <div></div>
+                    <h3 class="my-6 mb-4 text-lg font-semibold text-black-600 dark:text-gray-300 text-center justify-center">
+                    Data Akreditasi Program Studi
                 </h3>
                 <div class="w-full overflow-hidden rounded-lg shadow-xs">
                     <div class="w-full overflow-x-auto">
@@ -306,11 +173,9 @@
                         <!-- Pagination -->
                         <?= $pager->links('paginasi', 'ps_pagination'); ?>
                     </div>
+                    </div>
                 </div>
-            </div>
-        </main>
-
-        <script src="<?= base_url('assets/js/home/home.js') ?>"></script>
-        <script src="<?= base_url('assets/js/util/table/table-sort.js') ?>"></script>
-
-        <?= $this->endSection(); ?>
+            </main>
+            <script src="<?= base_url('assets/js/home/home.js') ?>"></script>
+            <script src="<?= base_url('assets/js/util/table/table-sort.js') ?>"></script>
+            <?= $this->endSection(); ?>

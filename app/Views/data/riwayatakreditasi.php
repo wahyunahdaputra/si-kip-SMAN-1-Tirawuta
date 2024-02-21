@@ -78,7 +78,8 @@
                                 }
                             </script>
                             <link rel="stylesheet" href="<?= base_url('assets/css/home/style.css') ?>">
-                            <script src="<?= base_url('assets/js/home/table-sort.js') ?>"></script>
+                            <script src="<?= base_url('assets/js/home/home.js') ?>"></script>
+                            <script src="<?= base_url('assets/js/util/table/table-sort.js') ?>"></script>
 
                         </div>
                     </div>

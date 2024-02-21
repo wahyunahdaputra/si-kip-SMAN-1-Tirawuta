@@ -95,7 +95,6 @@ button::-moz-focus-inner {
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring,
 button:-moz-focusring {
-    outline: 1px dotted ButtonText;
 }
 fieldset {
     padding: 0.35em 0.75em 0.625em;
@@ -164,11 +163,7 @@ button {
     background-image: none;
     padding: 0;
 }
-button:focus {
-    outline: 1px dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-}
-fieldset,
+set,
 ol,
 ul {
     margin: 0;

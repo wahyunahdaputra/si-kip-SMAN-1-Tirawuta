@@ -66,7 +66,8 @@
                                 }
                             </script>
                             <link rel="stylesheet" href="<?= base_url('assets/css/home/style.css') ?>">
-                            <script src="<?= base_url('assets/js/home/table-sort.js') ?>"></script>
+                            <script src="<?= base_url('assets/js/home/home.js') ?>"></script>
+                            <script src="<?= base_url('assets/js/util/table/table-sort.js') ?>"></script>
                             <div class="flex justify-center px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
                                 <!-- Pagination -->
                                 <?= $pager->links('paginasi', 'ps_pagination'); ?>
