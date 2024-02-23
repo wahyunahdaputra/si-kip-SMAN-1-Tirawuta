@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\AkrInternasionalModel;
+use App\Models\AuditKeuanganEksModel;
 use App\Models\HomeModel;
 use App\Models\MhsAsingModel;
 use App\Models\SitasiIlmiahModel;
@@ -10,13 +11,12 @@ use App\Models\PrestasiAkademikModel;
 use App\Models\PrestasiNonAkademikModel;
 use App\Models\ProgramStudiModel;
 use App\Models\RiwayatAkreditasiProdiModel;
-use App\Models\TpTkKsModel;
 
 class Data extends BaseController
 {
 
     protected $mhome;
-    protected $mtptkks;
+    protected $mauditkeuanganeks;
     protected $makrinternasional;
     protected $mmhsasing;
     protected $msitasiilmiah;
@@ -35,7 +35,7 @@ class Data extends BaseController
         $this->mpresakademik = new PrestasiAkademikModel();
         $this->mpresnonakademik = new PrestasiNonAkademikModel();
         $this->mriwayatakreditasiprodi = new ProgramStudiModel();
-        $this->mtptkks = new TpTkKsModel();
+        $this->mauditkeuanganeks = new AuditKeuanganEksModel();
 
         $this->mriwayatprodi = new RiwayatAkreditasiProdiModel();
     }
@@ -78,7 +78,7 @@ class Data extends BaseController
 
     public function auditkeuanganeks()
     {
-        $getdata = $this->mtptkks->getdata();
+        $getdata = $this->mauditkeuanganeks->getdata();
 
         //    $filter_params = array(
         //     'fakultas' => $this -> input -> get('fakultas'),

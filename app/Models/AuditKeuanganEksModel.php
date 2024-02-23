@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class TpTkKsModel extends Model
+class AuditKeuanganEksModel extends Model
 {
     protected $table = 'audit_keuangan_eks';
     protected $allowedFields = ['lembaga_audit','tahun','opini','keterangan'];

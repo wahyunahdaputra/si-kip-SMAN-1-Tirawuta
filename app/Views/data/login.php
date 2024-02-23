@@ -34,9 +34,14 @@
                             alt="haluoleo university">
                 </div>
                 <div class="w-full flex justify-center items-center p-6 sm:p-12">
-                    <div class="md:w-1/2 items-center">
+                    <div class="md:w-1/2 justify-center items-center">
+                        <div class="logo flex items-center justify-center ">
+                            <img class="mb-4 items-center justify-items-center" src="<?= base_url('assets/img/loginuho.png') ?>" alt="loginuho" style="width: 112px; height: 105px;">
+                            <img class="mb-4 items-center justify-items-center" src="<?= base_url('assets/img/logokemendikbud.png') ?>" alt="logokemendikbud" style="width: 110px; height: 110px;">
+                            <img class="mb-4 items-center justify-items-center ml-2" src="<?= base_url('assets/img/logo-kampus-merdeka.png') ?>" alt="logokm" style="width: 110px; height: 70px;">
+                        </div> 
                         <h1
-                            class="text-center mb-2 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+                            class="text-center mt-4 mb-2 text-2xl font-semibold text-gray-700 dark:text-gray-200">
                             Login
                         </h1>
                         <h3 class="text-center text-lg mb-8">
