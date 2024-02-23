@@ -9,6 +9,7 @@ use App\Models\SitasiIlmiahModel;
 use App\Models\PrestasiAkademikModel;
 use App\Models\PrestasiNonAkademikModel;
 use App\Models\ProgramStudiModel;
+use App\Models\RiwayatAkreditasiProdiModel;
 use App\Models\TpTkKsModel;
 
 class Data extends BaseController
@@ -22,6 +23,7 @@ class Data extends BaseController
     protected $mpresakademik;
     protected $mpresnonakademik;
     protected $mriwayatakreditasiprodi;
+    protected $mriwayatprodi;
     protected $mpagination;
 
     public function __construct(){
@@ -34,6 +36,8 @@ class Data extends BaseController
         $this->mpresnonakademik = new PrestasiNonAkademikModel();
         $this->mriwayatakreditasiprodi = new ProgramStudiModel();
         $this->mtptkks = new TpTkKsModel();
+
+        $this->mriwayatprodi = new RiwayatAkreditasiProdiModel();
     }
 
     public function index()
@@ -194,6 +198,16 @@ class Data extends BaseController
             echo view('data/riwayatakreditasiprodi', $data);
             // return view('pamongkelolakerjasama/auditkeuanganeks');
         }
+
+        public function riwayatAkreditasi($nama) 
+        {
+            $data = array(
+                'identifier' => $nama,
+                'data' => $this -> mriwayatprodi -> getDataProdi($nama)
+            );
+            echo view('data/riwayatakreditasi', $data);
+        }
+        
         public function akrprodi()
         {
         $getdata = $this->mhome->getdata();

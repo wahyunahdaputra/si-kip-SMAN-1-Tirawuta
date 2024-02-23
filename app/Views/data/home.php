@@ -308,16 +308,11 @@
                 </div>
             </div>
         </main>
-<<<<<<< HEAD
-
-        <script src="<?= base_url('assets/js/home/home.js') ?>"></script>
-=======
         
         <link rel="stylesheet" href="<?= base_url('assets/css/util/table/style.css') ?>">
         <script src="<?= base_url('assets/js/home/index.js') ?>"></script>
         <script src="<?= base_url('assets/js/util/table/filter-data.js') ?>"></script>
         <script src="<?= base_url('assets/js/util/table/datalist-autocomplete.js') ?>"></script>
->>>>>>> 5b617110752a594c3ffd46761c776b4fe0ac5dba
         <script src="<?= base_url('assets/js/util/table/table-sort.js') ?>"></script>
 
         <?= $this->endSection(); ?>
