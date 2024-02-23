@@ -67,8 +67,4 @@
         </div>
     </div>
 </main>
-<<<<<<< HEAD
 <?= $this->endSection(); ?>
-=======
-<?= $this->endSection(); ?>
->>>>>>> 5b617110752a594c3ffd46761c776b4fe0ac5dba
