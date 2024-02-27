@@ -56,7 +56,7 @@ function getDatalistArray(tableId) {
         
         for (var row = 2; row < table.rows.length; row++ ) {
 
-            var tr = table.querySelector(`tr.text-gray-700:nth-child(${row-1})`)
+            var tr = table.querySelector(`tr.auto-complete-data:nth-child(${row-1})`)
             var cellValue = table.rows[row].cells[column].textContent.trim();
 
             if (!dataMap[columnName][cellValue] && tr.style.display !== 'none') {

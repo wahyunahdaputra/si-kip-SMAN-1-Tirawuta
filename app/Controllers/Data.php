@@ -11,6 +11,7 @@ use App\Models\PrestasiAkademikModel;
 use App\Models\PrestasiNonAkademikModel;
 use App\Models\ProgramStudiModel;
 use App\Models\RiwayatAkreditasiProdiModel;
+use App\Models\SeleksiMahasiswaBaruModel;
 
 class Data extends BaseController
 {
@@ -25,6 +26,7 @@ class Data extends BaseController
     protected $mriwayatakreditasiprodi;
     protected $mriwayatprodi;
     protected $mpagination;
+    protected $mseleksimahasiswabaru;
 
     public function __construct(){
 
@@ -36,8 +38,8 @@ class Data extends BaseController
         $this->mpresnonakademik = new PrestasiNonAkademikModel();
         $this->mriwayatakreditasiprodi = new ProgramStudiModel();
         $this->mauditkeuanganeks = new AuditKeuanganEksModel();
-
         $this->mriwayatprodi = new RiwayatAkreditasiProdiModel();
+        $this->mseleksimahasiswabaru = new SeleksiMahasiswaBaruModel();
     }
 
     public function index()
@@ -228,6 +230,13 @@ class Data extends BaseController
         //    var_dump($getdata);
             echo view('data/akrprodi', $data);
             // return view('pamongkelolakerjasama/auditkeuanganeks');
+        }
+
+        public function seleksiMahasiswaBaru() {
+            $data = array (
+                'chartData' => $this-> mseleksimahasiswabaru -> getAllDataChart(),
+            );
+            echo view('data/seleksimahasiswabaru', $data);
         }
         
 }
