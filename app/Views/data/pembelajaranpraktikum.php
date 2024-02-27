@@ -8,7 +8,7 @@
         <!-- Charts -->
         <div></div>
         <h3 class="my-6 mb-4 text-lg font-semibold text-black-600 dark:text-gray-300 text-center justify-center">
-            Data Mahasiswa Asing
+            Data Pembelajaran Praktikum
         </h3>
         <div class="my-6 mb-4">
             <button
@@ -63,50 +63,39 @@
                 <div class="mt-4 mb-6">
                     <!-- Modal title -->
                     <p class="mb-4 text-lg font-semibold text-gray-700 dark:text-gray-300">
-                        Form Input Mahasiswa Asing
+                        Form Input Pembelajaran Praktikum
                     </p>
                     <!-- Modal description -->
                     <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
                         <label class="block text-sm">
-                            <span class="text-gray-700 dark:text-gray-400">Batch</span>
+                            <span class="text-gray-700 dark:text-gray-400">Program Studi</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                placeholder="Batch"/>
+                                placeholder="Program Studi..."/>
                         </label>
                         <label class="block text-sm mt-4">
-                            <span class="text-gray-700 dark:text-gray-400">Tahun Ajaran</span>
+                            <span class="text-gray-700 dark:text-gray-400">Teori</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                placeholder="Tahun Ajaran..." type="number"/>
+                                placeholder="Teori"/>
                         </label>
                         <label class="block text-sm mt-4">
-                            <span class="text-gray-700 dark:text-gray-400">Nama Lengkap</span>
+                            <span class="text-gray-700 dark:text-gray-400">Praktikum</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                placeholder="Nama Lengkap..."/>
-                        </label>
-                        <label class="block mt-4 text-sm">
-                            <span class="text-gray-700 dark:text-gray-400">
-                            Gender
-                            </span>
-                            <select
-                            class="block w-full mt-2 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                            >
-                            <option>Laki-laki</option>
-                            <option>Perempuan</option>
-                            </select>
+                                placeholder="Praktikum"/>
                         </label>
                         <label class="block text-sm mt-4">
-                            <span class="text-gray-700 dark:text-gray-400">Asal Universitas</span>
+                            <span class="text-gray-700 dark:text-gray-400">Praktik</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                placeholder="Asal Universitas..."/>
+                                placeholder="Praktik"/>
                         </label>
                         <label class="block text-sm">
-                            <span class="text-gray-700 dark:text-gray-400">Negara</span>
+                            <span class="text-gray-700 dark:text-gray-400">Praktik Lapangan</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                placeholder="Asal Negara..."/>
+                                placeholder="Praktik Lapangan"/>
                         </label>
                         <div class="flex mt-6 text-sm justify-end">
                             <button
@@ -140,31 +129,26 @@
                             <td class="px-2 py-3">
                                 <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listMhsAsing" list="listMhsAsing.Asal Universitas" type="text" name="" oninput="filterData('listMhsAsing')" autocomplete="on">
                             </td>
-                            <td class="px-2 py-3">
-                                <input class="block w-full mt-1 text-xs dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input filter-input-listMhsAsing" list="listMhsAsing.Negara" type="text" name="" oninput="filterData('listMhsAsing')" autocomplete="on">
-                            </td>
                         </tr>
                         <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                             <th class="sticky top-0 px-4 py-3">No.</th>
-                            <th class="sticky top-0 px-4 py-3">Batch</th>
-                            <th class="sticky top-0 px-4 py-3">Tahun Ajaran</th>
-                            <th class="sticky top-0 px-4 py-3">Nama Lengkap</th>
-                            <th class="sticky top-0 px-4 py-3">Gender</th>
-                            <th class="sticky top-0 px-4 py-3">Asal Universitas</th>
-                            <th class="sticky top-0 px-4 py-3">Negara</th>
+                            <th class="sticky top-0 px-4 py-3">Program Studi</th>
+                            <th class="sticky top-0 px-4 py-3">Teori</th>
+                            <th class="sticky top-0 px-4 py-3">Praktikum</th>
+                            <th class="sticky top-0 px-4 py-3">Praktik</th>
+                            <th class="sticky top-0 px-4 py-3">Praktik Lapangan</th>
                         </tr>
                     </thead>
 
                     <tbody class="text-sm bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
-                        <?php foreach ($mhsasing as $ma) : ?>
+                        <?php foreach ($pembelajaranpraktikum as $pp) : ?>
                             <tr class="text-gray-700 dark:text-gray-400">
-                                <td class="px-4 py-3"><?= $ma->id; ?></td>
-                                <td class="px-4 py-3"><?= $ma->batch; ?></td>
-                                <td class="px-4 py-3"><?= $ma->tahun_ajaran; ?></td>
-                                <td class="px-4 py-3"><?= $ma->nama_lengkap; ?></td>
-                                <td class="px-4 py-3"><?= $ma->gender; ?></td>
-                                <td class="px-4 py-3"><?= $ma->asal_universitas; ?></td>
-                                <td class="px-4 py-3"><?= $ma->negara; ?></td>
+                                <td class="px-4 py-3"><?= $pp->id; ?></td>
+                                <td class="px-4 py-3"><?= $pp->prodi; ?></td>
+                                <td class="px-4 py-3"><?= $pp->teoi; ?></td>
+                                <td class="px-4 py-3"><?= $pp->praktikum; ?></td>
+                                <td class="px-4 py-3"><?= $pp->praktik; ?></td>
+                                <td class="px-4 py-3"><?= $pp->praktik_lapangan; ?></td>
                             </tr>
                         <?php endforeach ?>
                     </tbody>

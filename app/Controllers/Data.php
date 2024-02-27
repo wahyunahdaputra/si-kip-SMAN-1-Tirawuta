@@ -10,6 +10,8 @@ use App\Models\SitasiIlmiahModel;
 use App\Models\PrestasiAkademikModel;
 use App\Models\PrestasiNonAkademikModel;
 use App\Models\ProgramStudiModel;
+use App\Models\AkrEksternalModel;
+use App\Models\PembelajaranPraktikumModel;
 use App\Models\RiwayatAkreditasiProdiModel;
 
 class Data extends BaseController
@@ -24,6 +26,8 @@ class Data extends BaseController
     protected $mpresnonakademik;
     protected $mriwayatakreditasiprodi;
     protected $mriwayatprodi;
+    protected $mpembpraktikum;
+    protected $makreksternal;
     protected $mpagination;
 
     public function __construct(){
@@ -36,7 +40,8 @@ class Data extends BaseController
         $this->mpresnonakademik = new PrestasiNonAkademikModel();
         $this->mriwayatakreditasiprodi = new ProgramStudiModel();
         $this->mauditkeuanganeks = new AuditKeuanganEksModel();
-
+        $this->makreksternal = new AkrEksternalModel();
+        $this->mpembpraktikum = new PembelajaranPraktikumModel();
         $this->mriwayatprodi = new RiwayatAkreditasiProdiModel();
     }
 
@@ -57,7 +62,7 @@ class Data extends BaseController
 
        $data = array(
             'dataProgramStudi' => $getdata,
-            'paginasi' => $this->mhome->paginate(30, 'paginasi'), // Mengambil data yang dipaginasi
+            'paginasi' => $this->mhome->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
             'pager' => $this->mhome->pager
        );
 
@@ -144,7 +149,7 @@ class Data extends BaseController
     
            $data = array(
                 'sitasiilmiah' => $getdata,
-                'paginasi' => $this->msitasiilmiah->paginate(30, 'paginasi'), // Mengambil data yang dipaginasi
+                'paginasi' => $this->msitasiilmiah->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
                 'pager' => $this->msitasiilmiah->pager
 
            );
@@ -167,9 +172,9 @@ class Data extends BaseController
            $data = array(
                 'presakademik' => $getdata,
                 'presnonakademik' => $getdata,
-                'paginasi' => $this->mpresakademik->paginate(30, 'paginasi'), // Mengambil data yang dipaginasi
+                'paginasi' => $this->mpresakademik->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
                 'pager' => $this->mpresakademik->pager,
-                'paginasii' => $this->mpresnonakademik->paginate(30, 'paginasii'), // Mengambil data yang dipaginasi
+                'paginasii' => $this->mpresnonakademik->paginate(10, 'paginasii'), // Mengambil data yang dipaginasi
                 'pagers' => $this->mpresnonakademik->pagers
            );
     
@@ -189,7 +194,7 @@ class Data extends BaseController
     
            $data = array(
                 'programstudi' => $getdata,
-                'paginasi' => $this->mriwayatakreditasiprodi->paginate(30, 'paginasi'), // Mengambil data yang dipaginasi
+                'paginasi' => $this->mriwayatakreditasiprodi->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
                 'pager' => $this->mriwayatakreditasiprodi->pager
 
            );
@@ -220,7 +225,7 @@ class Data extends BaseController
     
            $data = array(
                 'dataProgramStudi' => $getdata,
-                'paginasi' => $this->mhome->paginate(30, 'paginasi'), // Mengambil data yang dipaginasi
+                'paginasi' => $this->mhome->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
                 'pager' => $this->mhome->pager
 
            );
@@ -229,5 +234,82 @@ class Data extends BaseController
             echo view('data/akrprodi', $data);
             // return view('pamongkelolakerjasama/auditkeuanganeks');
         }
-        
+        public function akreksternal()
+        {
+        $getdata = $this->makreksternal->getdata();
+
+        //    $filter_params = array(
+        //     'fakultas' => $this -> input -> get('fakultas'),
+        //     'program'  => $this -> input -> get('fakultas'),
+        //    );
+        //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
+    
+           $data = array(
+                'akreksternal' => $getdata,
+                'paginasi' => $this->makreksternal->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
+                'pager' => $this->makreksternal->pager
+
+           );
+    
+        //    var_dump($getdata);
+            echo view('data/akreksternal', $data);
+            // return view('pamongkelolakerjasama/auditkeuanganeks');
+        }
+        public function pembelajaranpraktikum()
+        {
+        $getdata = $this->mpembpraktikum->getdata();
+
+        //    $filter_params = array(
+        //     'fakultas' => $this -> input -> get('fakultas'),
+        //     'program'  => $this -> input -> get('fakultas'),
+        //    );
+        //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
+    
+           $data = array(
+                'pembelajaranpraktikum' => $getdata,
+                'paginasi' => $this->mpembpraktikum->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
+                'pager' => $this->mpembpraktikum->pager
+
+           );
+    
+        //    var_dump($getdata);
+            echo view('data/pembelajaranpraktikum', $data);
+            // return view('pamongkelolakerjasama/auditkeuanganeks');
+        }
+        public function modals()
+        {
+            echo view('data/modals');
+        }
+        public function forms()
+        {
+            echo view('data/forms');
+        }
+        public function formakrinternasional()
+        {
+            echo view('data/formakrinternasional');
+        }
+        public function formauditkeuanganeks()
+        {
+            echo view('data/formauditkeuanganeks');
+        }
+        public function formakrprodi()
+        {
+            echo view('data/formakrprodi');
+        }
+        public function formmhsasing()
+        {
+            echo view('data/formmhsasing');
+        }
+        public function formprestasiakademik()
+        {
+            echo view('data/formprestasiakademik');
+        }
+        public function formprestasinonakademik()
+        {
+            echo view('data/formprestasinonakademik');
+        }
+        public function formsitasiilmiah()
+        {
+            echo view('data/formsitasiilmiah');
+        }
 }
