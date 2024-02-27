@@ -279,6 +279,17 @@ class Data extends BaseController
             echo view('data/pembelajaranpraktikum', $data);
             // return view('pamongkelolakerjasama/auditkeuanganeks');
         }
+        public function seleksiMahasiswaBaru()
+        {
+    
+           $data = array(
+                'ChartData' => $this->mseleksimahasiswabaru->getAllDataChart()
+           );
+    
+        //    var_dump($getdata);
+            echo view('data/seleksimahasiswabaru', $data);
+            // return view('pamongkelolakerjasama/auditkeuanganeks');
+        }
         public function modals()
         {
             echo view('data/modals');
