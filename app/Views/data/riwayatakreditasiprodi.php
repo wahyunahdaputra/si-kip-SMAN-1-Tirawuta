@@ -30,9 +30,9 @@
 
                     <tbody class="text-sm bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
                         <?php foreach ($paginasi as $pg) : ?>
-                            <tr class="text-gray-700 dark:text-gray-400">
+                            <tr class="text-gray-700 dark:text-gray-400 auto-complete-data">
                                 <td class="px-4 py-3"><?= $pg['id_ps']; ?></td>
-                                <td class="px-4 py-3" onclick="getTagTdValue(this)" onmouseover="onMouseOver(this)"><?= $pg['program_studi']; ?></a></td>
+                                <td class="px-4 py-3"><a class="hover:underline" href="/riwayatakreditasi/<?= $pg['program_studi'] ?>" ><?= $pg['program_studi']; ?></a></td>
                             </tr>
                         <?php endforeach ?>
                     </tbody>

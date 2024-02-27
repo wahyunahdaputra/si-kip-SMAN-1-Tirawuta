@@ -13,6 +13,7 @@ use App\Models\ProgramStudiModel;
 use App\Models\AkrEksternalModel;
 use App\Models\PembelajaranPraktikumModel;
 use App\Models\RiwayatAkreditasiProdiModel;
+use App\Models\SeleksiMahasiswaBaruModel;
 
 class Data extends BaseController
 {
@@ -29,6 +30,7 @@ class Data extends BaseController
     protected $mpembpraktikum;
     protected $makreksternal;
     protected $mpagination;
+    protected $mseleksimahasiswabaru;
 
     public function __construct(){
 
@@ -43,6 +45,7 @@ class Data extends BaseController
         $this->makreksternal = new AkrEksternalModel();
         $this->mpembpraktikum = new PembelajaranPraktikumModel();
         $this->mriwayatprodi = new RiwayatAkreditasiProdiModel();
+        $this->mseleksimahasiswabaru = new SeleksiMahasiswaBaruModel();
     }
 
     public function index()
