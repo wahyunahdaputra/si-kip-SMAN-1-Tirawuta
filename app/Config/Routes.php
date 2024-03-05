@@ -30,3 +30,4 @@ $routes->group('',['filter' => 'loginfilter'], function ($routes) {
 
 $routes->get("/riwayatakreditasi/(:any)", "Data::riwayatAkreditasi/$1");
 $routes->get('logout', 'Data::logout');
+$routes->get("/riwayatakreditasi/(:any)", "Data::riwayatAkreditasi/$1");
