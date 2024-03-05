@@ -12,6 +12,7 @@ use App\Models\PrestasiNonAkademikModel;
 use App\Models\ProgramStudiModel;
 use App\Models\AkrEksternalModel;
 use App\Models\PembelajaranPraktikumModel;
+use App\Models\ProdukJasaModel;
 use App\Models\RiwayatAkreditasiProdiModel;
 use App\Models\SeleksiMahasiswaBaruModel;
 
@@ -29,6 +30,7 @@ class Data extends BaseController
     protected $mriwayatprodi;
     protected $mpembpraktikum;
     protected $makreksternal;
+    protected $mprodukjasa;
     protected $mpagination;
     protected $mseleksimahasiswabaru;
 
@@ -44,15 +46,10 @@ class Data extends BaseController
         $this->mauditkeuanganeks = new AuditKeuanganEksModel();
         $this->makreksternal = new AkrEksternalModel();
         $this->mpembpraktikum = new PembelajaranPraktikumModel();
+        $this->mprodukjasa = new ProdukJasaModel();
         $this->mriwayatprodi = new RiwayatAkreditasiProdiModel();
         $this->mseleksimahasiswabaru = new SeleksiMahasiswaBaruModel();
     }
-
-    public function index()
-    {
-        echo view('data/home');
-    }
-
     public function home() 
     {
         $getdata = $this->mhome->getdata();
@@ -72,11 +69,6 @@ class Data extends BaseController
     //    var_dump($getdata);
         // echo view('layout/template', $data);
         echo view('data/home', $data);
-    }
-
-    public function login()
-    {
-        echo view('data/login');
     }
 
     public function formAps1() 
@@ -290,40 +282,25 @@ class Data extends BaseController
             echo view('data/seleksimahasiswabaru', $data);
             // return view('pamongkelolakerjasama/auditkeuanganeks');
         }
-        public function modals()
+        public function produkjasa()
         {
-            echo view('data/modals');
+            $getdata = $this->mprodukjasa->getdata();
+
+            //    $filter_params = array(
+            //     'fakultas' => $this -> input -> get('fakultas'),
+            //     'program'  => $this -> input -> get('fakultas'),
+            //    );
+            //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
+        
+               $data = array(
+                    'produkjasa' => $getdata,
+                    'paginasi' => $this->mprodukjasa->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
+                    'pager' => $this->mprodukjasa->pager
+    
+               );
+        
+            //    var_dump($getdata);
+                echo view('data/produkjasa', $data);
         }
-        public function forms()
-        {
-            echo view('data/forms');
-        }
-        public function formakrinternasional()
-        {
-            echo view('data/formakrinternasional');
-        }
-        public function formauditkeuanganeks()
-        {
-            echo view('data/formauditkeuanganeks');
-        }
-        public function formakrprodi()
-        {
-            echo view('data/formakrprodi');
-        }
-        public function formmhsasing()
-        {
-            echo view('data/formmhsasing');
-        }
-        public function formprestasiakademik()
-        {
-            echo view('data/formprestasiakademik');
-        }
-        public function formprestasinonakademik()
-        {
-            echo view('data/formprestasinonakademik');
-        }
-        public function formsitasiilmiah()
-        {
-            echo view('data/formsitasiilmiah');
-        }
+
 }

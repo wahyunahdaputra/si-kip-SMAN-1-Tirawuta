@@ -2,31 +2,41 @@
 
 namespace Config;
 
-use CodeIgniter\Config\BaseService;
+use CodeIgniter\Config\Services as BaseService;
+use CodeIgniter\Router\RouteCollectionInterface;
+use CodeIgniter\Router\RouteCollection;
+use CodeIgniter\Autoloader\Autoloader;
+use CodeIgniter\Autoloader\FileLocator;
+use Config\Modules;
 
-/**
- * Services Configuration file.
- *
- * Services are simply other classes/libraries that the system uses
- * to do its job. This is used by CodeIgniter to allow the core of the
- * framework to be swapped out easily without affecting the usage within
- * the rest of your application.
- *
- * This file holds any application-specific services, or service overrides
- * that you might need. An example has been included with the general
- * method format you should use for your service methods. For more examples,
- * see the core Services file at system/Config/Services.php.
- */
 class Services extends BaseService
 {
-    /*
-     * public static function example($getShared = true)
-     * {
-     *     if ($getShared) {
-     *         return static::getSharedInstance('example');
-     *     }
-     *
-     *     return new \CodeIgniter\Example();
-     * }
-     */
+    protected $app;
+
+    public function __construct()
+    {
+        // Tidak perlu inisialisasi routes di sini
+        // $this->routes = Services::routes(APPPATH . 'app/Config/Routes.php');
+    }
+
+    public static function routes(bool $getShared = true, string $filename = ''): RouteCollectionInterface
+    {
+        // Membuat instance Autoloader
+        $autoloader = new Autoloader();
+
+        // Membuat instance FileLocator dengan instance Autoloader sebagai argumen
+        $locator = new FileLocator($autoloader);
+
+        // Membuat RouteCollection dengan FileLocator, konfigurasi modul, and instance of Config\Routing
+        $moduleConfig = new Modules();
+        $routing = new Routing();
+        
+        // Memuat rute dari file jika diberikan
+        if (!empty($filename)) {
+            require $filename;
+        }
+        
+        // Mengembalikan RouteCollection yang sudah diinisialisasi
+        return new RouteCollection($locator, $moduleConfig, $routing);
+    }
 }

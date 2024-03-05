@@ -8,20 +8,18 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"/>
-        <link rel="stylesheet" href="../assets/css/tailwind.output.css"/>
+        <link rel="stylesheet" href="/assets/css/tailwind.output.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script
             src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
             defer="defer"></script>
-        <script src="../assets/js/init-alpine.js"></script>
+        <script src="/assets/js/init-alpine.js"></script>
     </head>
 
     <body>
         <div class="flex items-center h-screen bg-gray-50 dark:bg-gray-900">
             <div class="w-full flex flex-col md:flex-row">
                 <div class="flex md:h-auto md:w-1/2 items-center justify-start">
-                    <!-- <div class="logo">
-                        
-                    </div> -->
                     <img
                             aria-hidden="true"
                             class="object-cover w-3/4 h-screen dark:hidden"
@@ -47,27 +45,27 @@
                         <h3 class="text-center text-lg mb-8">
                             Sistem Akreditasi Universitas Halu Oleo
                         </h3>
-                        <label class="block text-sm my-4">
-                            <span class="text-gray-700 dark:text-gray-400">Username</span>
-                            <input
-                                class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                placeholder="Masukkan username..."/>
-                        </label>
-                        <label class="block mt-4 text-sm">
-                            <span class="text-gray-700 dark:text-gray-400">Password</span>
-                            <input
-                                class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                                placeholder="********"
-                                type="password"/>
-                        </label>
-
-                        <!-- You should use a button here, as the anchor is only used for the example
-                        -->
-                        <a
-                            class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
-                            href="/data/home">
-                            Log in
-                        </a>
+                        <form action="<?= base_url('login') ?>" method="POST">
+                            <?php if (session()->getFlashdata('success')) { ?>
+                                <div class="text-center bg-green-100 border border-green-400 text-green-700 px-4 py-2 rounded relative" role="alert">
+                                    <span class="block sm:inline font-semibold"><?php echo session()->getFlashdata('success'); ?></span>
+                                </div>
+                            <?php } ?>
+                            <?php if (session()->getFlashdata('error')) { ?>
+                                <div class="text-center bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded relative" role="alert">
+                                    <span class="block sm:inline font-semibold"><?php echo session()->getFlashdata('error'); ?></span>
+                                </div>
+                            <?php } ?>
+                            <label for="inputUsername" class="block text-sm my-4">
+                                <span class="text-gray-700 dark:text-gray-400 font-semibold">Username</span>
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" name="username" id="inputUsername" value="<?= old('username') ?>" placeholder="Masukkan username..." />
+                            </label>
+                            <label for="inputPassword" class="block mt-4 text-sm">
+                                <span class="text-gray-700 dark:text-gray-400 font-semibold">Password</span>
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" name="password" id="inputPassword" placeholder="********" type="password" />
+                            </label>
+                            <button type="submit" class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" name="login">Login</button>
+                        </form>
                     </div>
                 </div>
             </div>
