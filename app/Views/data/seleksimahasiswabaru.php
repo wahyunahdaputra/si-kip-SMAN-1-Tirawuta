@@ -2,7 +2,7 @@
 <?= $this->section('content'); ?>
 
 <?php
-$jsonChartData = json_encode($chartData);
+$jsonChartData = json_encode($ChartData);
 echo "
 <script>
     var chartDataArray = $jsonChartData;

@@ -290,6 +290,34 @@ class Data extends BaseController
             echo view('data/seleksimahasiswabaru', $data);
             // return view('pamongkelolakerjasama/auditkeuanganeks');
         }
+        public function kerjasamaPerguruanTinggi() 
+        {
+            echo view('data/kerjasamaperguruantinggi');
+        }
+        public function kecukupanDosen()
+        {
+            echo view('data/kecukupandosen');
+        }
+        public function bebanKerjaDosen()
+        {
+            echo view('data/bebankerjadosen');
+        }
+        public function produktivitasPenelitian()
+        {
+            echo view('data/produktivitasPenelitian');
+        }
+        public function rekognisiDosen()
+        {
+            echo view('data/rekognisiDosen');
+        }
+        public function perolehanDana()
+        {
+            echo view('data/perolehandana');
+        }
+        public function penggunaanDana()
+        {
+            echo view('data/penggunaandana');
+        }
         public function modals()
         {
             echo view('data/modals');
