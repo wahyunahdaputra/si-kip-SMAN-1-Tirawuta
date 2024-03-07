@@ -2,15 +2,15 @@
 
 namespace App\Controllers;
 
-use App\Models\LoginModel;
+use App\Models\AuthModel;
 
-class Login extends BaseController
+class Auth extends BaseController
 {
-    protected $mloginmodel;
+    protected $mauthmodel;
 
     public function __construct()
     {
-        $this->mloginmodel = new LoginModel();
+        $this->mauthmodel = new AuthModel();
     }
 
     public function index()
@@ -22,17 +22,14 @@ class Login extends BaseController
         if ($username == '' || !is_string($password)) {
             $err = "Silakan Masukkan Username dan Password!";
         } else {
-            $dataAuth_login = $this->mloginmodel->where("username", $username)->first();
+            $dataAuth_login = $this->mauthmodel->where("username", $username)->first();
             if ($dataAuth_login) {
-                // Check if the password field is present and is a string
                 if (isset($dataAuth_login['password']) && is_string($dataAuth_login['password'])) {
-                    // Mengenkripsi password dari formulir menggunakan MD5
                     $password_md5 = md5($password);
                     if ($dataAuth_login['password'] == $password_md5) {
                         $dataSesi = [
                             'id' => $dataAuth_login['id'],
                             'username' => $dataAuth_login['username'],
-                            // Password tidak perlu disimpan dalam session
                         ];
                         session()->set($dataSesi);
                         return redirect()->to('data/home');
@@ -47,7 +44,7 @@ class Login extends BaseController
             }
         }
 
-        return redirect()->to("login")->withInput()->with('error', $err);
+        return redirect()->to("auth")->withInput()->with('error', $err);
     }
 
     return view('data/login');
@@ -56,7 +53,7 @@ class Login extends BaseController
         {
         if(session()->has('id')) {
             session()->remove('id');
-            return redirect()->to('login')->with('success', "Anda Berhasil Logout.");
+            return redirect()->to('auth')->with('success', "Anda Berhasil Logout.");
         }
 
 }

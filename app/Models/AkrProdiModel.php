@@ -4,9 +4,10 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProgramStudiModel extends Model
+class AkrProdiModel extends Model
 {
     protected $table = 'program_studi';
+    protected $primaryKey = 'id_ps';
     protected $allowedFields = ['program', 'program_studi', 'pr_akreditasi', 'no_sk', 'tgl_kadaluarsa'];
 
     public function getdata()

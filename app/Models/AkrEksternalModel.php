@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class AkrEksternalModel extends Model
 {
     protected $table = 'akreditasi_eksternal';
+    protected $primaryKey = 'id';
     protected $allowedFields = ['lembaga','jenis_sertifikat','lingkup','tingkat','masa_berlaku','keterangan'];
 
     public function getdata()
@@ -16,7 +17,8 @@ class AkrEksternalModel extends Model
         return $query->getResult();
     }
 
-    public function getFilteredData() {
-        $query = $this->db->query("");
+    public function simpan($data)
+    {
+        $this->insert($data);
     }
 }

@@ -9,6 +9,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->setAutoRoute(true);
 
+// Grup Filter Login
 $routes->group('',['filter' => 'loginfilter'], function ($routes) {
     $routes->get('data/home', 'Data::home');
     $routes->get('data/akreksternal', 'Data::akreksternal');
@@ -25,9 +26,14 @@ $routes->group('',['filter' => 'loginfilter'], function ($routes) {
     $routes->get('data/produkjasa', 'Data::produkjasa');
  });
  $routes->group('',['filter' => 'AlreadyLoginFilter'], function ($routes) {
-     $routes->get('data/login', 'Login::index');
+     $routes->get('data/login', 'Auth::index');
  });
 
 $routes->get("/riwayatakreditasi/(:any)", "Data::riwayatAkreditasi/$1");
-$routes->get('logout', 'Data::logout');
+$routes->get('logout', 'Auth::logout');
 $routes->get("/riwayatakreditasi/(:any)", "Data::riwayatAkreditasi/$1");
+
+$routes->post('auditkeuanganeks', 'Data::auditkeuanganeks');
+$routes->post('akreksternal', 'Data::akreksternal');
+$routes->post('akrinternasional', 'Data::akrinternasional');
+$routes->post('akrprodi', 'Data::akrprodi');

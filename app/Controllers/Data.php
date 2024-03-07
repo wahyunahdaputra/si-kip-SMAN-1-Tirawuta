@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\AkrInternasionalModel;
 use App\Models\AuditKeuanganEksModel;
+use App\Models\AkrProdiModel;
 use App\Models\HomeModel;
 use App\Models\MhsAsingModel;
 use App\Models\SitasiIlmiahModel;
@@ -22,6 +23,7 @@ class Data extends BaseController
     protected $mhome;
     protected $mauditkeuanganeks;
     protected $makrinternasional;
+    protected $makrprodi;
     protected $mmhsasing;
     protected $msitasiilmiah;
     protected $mpresakademik;
@@ -38,6 +40,7 @@ class Data extends BaseController
 
         $this->mhome = new HomeModel();
         $this->makrinternasional = new AkrInternasionalModel();
+        $this->makrprodi = new AkrProdiModel();
         $this->mmhsasing = new MhsAsingModel();
         $this->msitasiilmiah = new SitasiIlmiahModel();
         $this->mpresakademik = new PrestasiAkademikModel();
@@ -78,31 +81,48 @@ class Data extends BaseController
 
     public function auditkeuanganeks()
     {
-        $getdata = $this->mauditkeuanganeks->getdata();
+        if ($this->request->getMethod() === 'post') {
 
-        //    $filter_params = array(
-        //     'fakultas' => $this -> input -> get('fakultas'),
-        //     'program'  => $this -> input -> get('fakultas'),
-        //    );
-        //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
+            $formData = [
+                'lembaga_audit' => $this->request->getPost('lembaga_audit'),
+                'tahun' => $this->request->getPost('tahun'),
+                'opini' => $this->request->getPost('opini'),
+                'keterangan' => $this->request->getPost('keterangan')
+            ];
+    
+            $this->mauditkeuanganeks->simpan($formData);
+    
+            return redirect()->to(base_url('data/auditkeuanganeks'))->with('status', 'Data berhasil ditambahkan!.');
+        }
+
+        $getdata = $this->mauditkeuanganeks->getdata();
 
            $data = array(
                 'auditkeuanganeks' => $getdata,
            );
 
-        //    var_dump($getdata);
         echo view('data/auditkeuanganeks', $data);
     }
 
     public function akrinternasional()
     {
-        $getdata = $this->makrinternasional->getdata();
+        if ($this->request->getMethod() === 'post') {
+            // Mengambil data dari form
+            $formData = [
+                'lembaga_akrint' => $this->request->getPost('lembaga_akrint'),
+                'program_studi' => $this->request->getPost('program_studi'),
+                'status' => $this->request->getPost('status'),
+                'masa_berlaku' => $this->request->getPost('masa_berlaku'),
+                'keterangan' => $this->request->getPost('keterangan')
+            ];
 
-        //    $filter_params = array(
-        //     'fakultas' => $this -> input -> get('fakultas'),
-        //     'program'  => $this -> input -> get('fakultas'),
-        //    );
-        //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
+        $this->makrinternasional->simpan($formData);
+
+        // Redirect atau beri respons sesuai kebutuhan Anda
+        return redirect()->to(base_url('data/akrinternasional'))->with('status', 'Data berhasil disimpan.');
+    }
+
+        $getdata = $this->makrinternasional->getdata();
     
            $data = array(
                 'akrinternasional' => $getdata,
@@ -112,6 +132,7 @@ class Data extends BaseController
             echo view('data/akrinternasional', $data);
             // return view('pamongkelolakerjasama/auditkeuanganeks');
         }
+        
 
         public function mhsasing()
         {
@@ -210,35 +231,52 @@ class Data extends BaseController
         
         public function akrprodi()
         {
-        $getdata = $this->mhome->getdata();
+            if ($this->request->getMethod() === 'post') {
+                // Jika metode adalah POST (saat formulir disubmit), simpan data
+                $formData = [
+                    'program' => $this->request->getPost('program'),
+                    'program_studi' => $this->request->getPost('program_studi'),
+                    'pr_akreditasi' => $this->request->getPost('pr_akreditasi'),
+                    'no_sk' => $this->request->getPost('no_sk'),
+                    'tgl_kadaluarsa' => $this->request->getPost('tgl_kadaluarsa'),
+                ];
 
-        //    $filter_params = array(
-        //     'fakultas' => $this -> input -> get('fakultas'),
-        //     'program'  => $this -> input -> get('fakultas'),
-        //    );
-        //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
-    
-           $data = array(
-                'dataProgramStudi' => $getdata,
-                'paginasi' => $this->mhome->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
-                'pager' => $this->mhome->pager
+                $this->makrprodi->simpan($formData);
 
-           );
-    
-        //    var_dump($getdata);
+                return redirect()->to(base_url('data/akrprodi'))->with('status', 'Data berhasil disimpan.');
+            }
+
+            // Jika bukan metode POST, hanya ambil data untuk menampilkan halaman
+            $getdata = $this->makrprodi->getdata();
+
+            $data = array(
+                'akrprodi' => $getdata,
+                'paginasi' => $this->makrprodi->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
+                'pager' => $this->makrprodi->pager
+            );
+
             echo view('data/akrprodi', $data);
-            // return view('pamongkelolakerjasama/auditkeuanganeks');
         }
+
         public function akreksternal()
         {
-        $getdata = $this->makreksternal->getdata();
+            if ($this->request->getMethod() === 'post') {
+                $formData = [
+                    'lembaga' => $this->request->getPost('lembaga'),
+                    'jenis_sertifikat' => $this->request->getPost('jenis_sertifikat'),
+                    'lingkup' => $this->request->getPost('lingkup'),
+                    'tingkat' => $this->request->getPost('tingkat'),
+                    'masa_berlaku' => $this->request->getPost('masa_berlaku'),
+                    'keterangan' => $this->request->getPost('keterangan')
+                ];
+        
+                $this->makreksternal->simpan($formData);
+        
+                return redirect()->to(base_url('data/akreksternal'))->with('status', 'Data berhasil disimpan.');
+            }
 
-        //    $filter_params = array(
-        //     'fakultas' => $this -> input -> get('fakultas'),
-        //     'program'  => $this -> input -> get('fakultas'),
-        //    );
-        //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
-    
+           $getdata = $this->makreksternal->getdata();
+
            $data = array(
                 'akreksternal' => $getdata,
                 'paginasi' => $this->makreksternal->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
@@ -246,9 +284,8 @@ class Data extends BaseController
 
            );
     
-        //    var_dump($getdata);
             echo view('data/akreksternal', $data);
-            // return view('pamongkelolakerjasama/auditkeuanganeks');
+
         }
         public function pembelajaranpraktikum()
         {
