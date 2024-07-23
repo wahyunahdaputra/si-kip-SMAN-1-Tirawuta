@@ -66,35 +66,41 @@
                         Form Input Pembelajaran Praktikum
                     </p>
                     <!-- Modal description -->
+                    <form action="<?= base_url('pembelajaranpraktikum') ?>" method="POST">
                     <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Program Studi</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="prodi"
                                 placeholder="Program Studi..."/>
                         </label>
                         <label class="block text-sm mt-4">
                             <span class="text-gray-700 dark:text-gray-400">Teori</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="teori"
                                 placeholder="Teori"/>
                         </label>
                         <label class="block text-sm mt-4">
                             <span class="text-gray-700 dark:text-gray-400">Praktikum</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="praktikum"
                                 placeholder="Praktikum"/>
                         </label>
                         <label class="block text-sm mt-4">
                             <span class="text-gray-700 dark:text-gray-400">Praktik</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="praktik"
                                 placeholder="Praktik"/>
                         </label>
-                        <label class="block text-sm">
+                        <label class="block text-sm mt-4">
                             <span class="text-gray-700 dark:text-gray-400">Praktik Lapangan</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="praktik_lapangan"
                                 placeholder="Praktik Lapangan"/>
                         </label>
                         <div class="flex mt-6 text-sm justify-end">
@@ -104,6 +110,18 @@
                             </button>
                         </div>
                     </div>
+                    </form>
+                    <script>
+                    $(function(){
+                            <?php if(session()->has("status")) { ?>
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Berhasil',
+                                    text: '<?= session("status") ?>'
+                                })
+                            <?php } ?>
+                        });
+                    </script>
                 </div>
             </div>
         </div>
@@ -145,7 +163,7 @@
                             <tr class="text-gray-700 dark:text-gray-400">
                                 <td class="px-4 py-3"><?= $pp->id; ?></td>
                                 <td class="px-4 py-3"><?= $pp->prodi; ?></td>
-                                <td class="px-4 py-3"><?= $pp->teoi; ?></td>
+                                <td class="px-4 py-3"><?= $pp->teori; ?></td>
                                 <td class="px-4 py-3"><?= $pp->praktikum; ?></td>
                                 <td class="px-4 py-3"><?= $pp->praktik; ?></td>
                                 <td class="px-4 py-3"><?= $pp->praktik_lapangan; ?></td>
@@ -162,6 +180,9 @@
                 <datalist id="listMhsAsing.Negara"></datalist>
 
                 <link rel="stylesheet" href="<?= base_url('assets/css/util/table/style.css') ?>">
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
+                <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
                 <script src="<?= base_url('assets/js/mhsasing/index.js') ?>"></script>
                 <script src="<?= base_url('assets/js/util/table/filter-data.js') ?>"></script>
                 <script src="<?= base_url('assets/js/util/table/datalist-autocomplete.js') ?>"></script>

@@ -16,7 +16,7 @@ class PembelajaranPraktikumModel extends Model
         return $query->getResult();
     }
 
-    public function getFilteredData() {
-        $query = $this->db->query("");
+    public function simpan($data) {
+        $this->insert($data);
     }
 }

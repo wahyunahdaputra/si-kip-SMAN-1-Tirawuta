@@ -610,6 +610,11 @@ video {
     background-color: #FFFF00;
     background-color: rgba(255, 255, 0,var(--bg-opacity));
 }
+.bg-green-400 {
+    --bg-opacity: 1;
+    background-color: #32CD32;
+    background-color: rgb(74, 222, 128,var(--bg-opacity));
+}
 .hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f4f5f7;

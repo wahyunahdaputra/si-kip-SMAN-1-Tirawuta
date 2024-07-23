@@ -26,15 +26,10 @@
         <div class="flex items-center h-screen bg-gray-50 dark:bg-gray-900">
             <div class="w-full flex flex-col md:flex-row">
                 <div class="flex md:h-auto md:w-1/2 items-center justify-start">
-                    <img
-                            aria-hidden="true"
-                            class="object-cover w-3/4 h-screen dark:hidden"
-                            src=" <?= base_url('assets/img/login-color.jpg') ?>"
-                            alt="haluoleo university">
                         <img
                             aria-hidden="true"
-                            class="hidden object-cover w-full h-screen dark:block"
-                            src=" <?= base_url('assets/img/login-dark.png') ?> "
+                            class="object-cover w-full h-screen dark:block"
+                            src=" <?= base_url('assets/img/login-color.jpg') ?> "
                             alt="haluoleo university">
                 </div>
                 <div class="w-full flex justify-center items-center p-6 sm:p-12" style="background-image: url('assets/img/bglogin.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
@@ -45,12 +40,12 @@
                             <img class="mb-4 items-center justify-items-center ml-2" src="<?= base_url('assets/img/logo-kampus-merdeka.png') ?>" alt="logokm" style="width: 110px; height: 70px;">
                         </div> 
                         <h1
-                            class="text-center mb-2 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-                            Login
+                            class="text-center mb-4 text-2xl font-semibold">
+                            Login Account
                         </h1>
-                        <h3 class="text-center text-lg mb-8">
-                            Sistem Akreditasi Universitas Halu Oleo
-                        </h3>
+                        <span class="block text-center items-center text-lg mb-8">
+                            Sistem Akreditasi Program Studi <br> Universitas Halu Oleo
+                        </span>
                         <hr>    
                         <form action="<?= base_url('auth') ?>" method="POST">
                             <?php if (session()->getFlashdata('success')) { ?>
@@ -64,12 +59,12 @@
                                 </div>
                             <?php } ?>
                             <label for="inputUsername" class="block text-sm my-4">
-                                <span class="text-gray-700 dark:text-gray-400 font-semibold">Username</span>
-                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 rounded-lg focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" name="username" id="inputUsername" value="<?= old('username') ?>" placeholder="Masukkan username..." />
+                                <span class="text-gray-700 font-semibold">Username</span>
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 focus:border-purple-400 rounded-lg focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input" name="username" id="inputUsername" value="<?= old('username') ?>" placeholder="Username..." />
                             </label>
                             <label for="inputPassword" class="block mt-4 text-sm">
-                                <span class="text-gray-700 dark:text-gray-400 font-semibold">Password</span>
-                                <input class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 rounded-lg focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" name="password" id="inputPassword" placeholder="********" type="password" />
+                                <span class="text-gray-700 font-semibold">Password</span>
+                                <input class="block w-full mt-1 text-sm dark:border-gray-600 focus:border-purple-400 rounded-lg focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input" name="password" id="inputPassword" placeholder="********" type="password" />
                             </label>
                             <button type="submit" class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" name="login">Login</button>
                         </form>

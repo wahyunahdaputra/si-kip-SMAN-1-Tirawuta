@@ -66,23 +66,27 @@
                         Form Input Mahasiswa Asing
                     </p>
                     <!-- Modal description -->
+                    <form action="<?= base_url('mhsasing') ?>" method="POST">
                     <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Batch</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="batch"
                                 placeholder="Batch"/>
                         </label>
                         <label class="block text-sm mt-4">
                             <span class="text-gray-700 dark:text-gray-400">Tahun Ajaran</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="tahun_ajaran"
                                 placeholder="Tahun Ajaran..." type="number"/>
                         </label>
                         <label class="block text-sm mt-4">
                             <span class="text-gray-700 dark:text-gray-400">Nama Lengkap</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="nama_lengkap"
                                 placeholder="Nama Lengkap..."/>
                         </label>
                         <label class="block mt-4 text-sm">
@@ -90,7 +94,7 @@
                             Gender
                             </span>
                             <select
-                            class="block w-full mt-2 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                            class="block w-full mt-2 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" name="gender"
                             >
                             <option>Laki-laki</option>
                             <option>Perempuan</option>
@@ -100,21 +104,35 @@
                             <span class="text-gray-700 dark:text-gray-400">Asal Universitas</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="asal_universitas"
                                 placeholder="Asal Universitas..."/>
                         </label>
                         <label class="block text-sm">
                             <span class="text-gray-700 dark:text-gray-400">Negara</span>
                             <input
                                 class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="negara"
                                 placeholder="Asal Negara..."/>
                         </label>
                         <div class="flex mt-6 text-sm justify-end">
                             <button
-                                class="px-4 py-2 justify-end text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                class="px-4 py-2 justify-end text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" name="simpan">
                                 Simpan
                             </button>
                         </div>
                     </div>
+                    </form>
+                    <script>
+                    $(function(){
+                            <?php if(session()->has("status")) { ?>
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Berhasil',
+                                    text: '<?= session("status") ?>'
+                                })
+                            <?php } ?>
+                        });
+                    </script>
                 </div>
             </div>
         </div>
@@ -178,6 +196,9 @@
                 <datalist id="listMhsAsing.Negara"></datalist>
 
                 <link rel="stylesheet" href="<?= base_url('assets/css/util/table/style.css') ?>">
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
+                <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
                 <script src="<?= base_url('assets/js/mhsasing/index.js') ?>"></script>
                 <script src="<?= base_url('assets/js/util/table/filter-data.js') ?>"></script>
                 <script src="<?= base_url('assets/js/util/table/datalist-autocomplete.js') ?>"></script>

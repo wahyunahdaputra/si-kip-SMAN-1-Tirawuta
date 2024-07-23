@@ -21,4 +21,16 @@ class AkrEksternalModel extends Model
     {
         $this->insert($data);
     }
+
+    public function updateData($id, $data)
+    {
+        $this->where('id', $id);
+        $this->set($data);
+        $this->update();
+    }
+
+    public function hapus($id)
+    {
+        $this->where('id', $id)->delete();
+    }
 }

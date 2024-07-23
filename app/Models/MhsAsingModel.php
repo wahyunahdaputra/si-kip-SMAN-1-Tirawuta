@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class MhsAsingModel extends Model
 {
     protected $table = 'mhs_asing';
+    protected $primaryKey = 'id';
     protected $allowedFields = ['batch','tahun_ajaran','nama_lengkap','gender','asal_universitas','negara'];
 
     public function getdata()
@@ -16,7 +17,7 @@ class MhsAsingModel extends Model
         return $query->getResult();
     }
 
-    public function getFilteredData() {
-        $query = $this->db->query("");
+    public function simpan($data) {
+        $this->insert($data);
     }
 }

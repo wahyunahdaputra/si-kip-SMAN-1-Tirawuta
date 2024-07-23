@@ -14,6 +14,12 @@ use App\Models\ProgramStudiModel;
 use App\Models\AkrEksternalModel;
 use App\Models\PembelajaranPraktikumModel;
 use App\Models\ProdukJasaModel;
+use App\Models\KerjaSamaPerguruanTinggiModel;
+use App\Models\KecukupanDosenModel;
+use App\Models\BebanKerjaDosenModel;
+use App\Models\ProduktivitasPenelitianModel;
+use App\Models\ProduktivitasPenelitianPkmModel;
+use App\Models\RekognisiDosenModel;
 use App\Models\RiwayatAkreditasiProdiModel;
 use App\Models\SeleksiMahasiswaBaruModel;
 
@@ -33,6 +39,12 @@ class Data extends BaseController
     protected $mpembpraktikum;
     protected $makreksternal;
     protected $mprodukjasa;
+    protected $mkerjasamaperguruantinggi;
+    protected $mkecukupandosen;
+    protected $mbebankerjadosen;
+    protected $mproduktivitaspenelitian;
+    protected $mproduktivitaspenelitianpkm;
+    protected $mrekognisidosen;
     protected $mpagination;
     protected $mseleksimahasiswabaru;
 
@@ -50,18 +62,18 @@ class Data extends BaseController
         $this->makreksternal = new AkrEksternalModel();
         $this->mpembpraktikum = new PembelajaranPraktikumModel();
         $this->mprodukjasa = new ProdukJasaModel();
+        $this->mkerjasamaperguruantinggi = new KerjaSamaPerguruanTinggiModel();
+        $this->mkecukupandosen = new KecukupanDosenModel();
+        $this->mbebankerjadosen = new BebanKerjaDosenModel();
+        $this->mproduktivitaspenelitian = new ProduktivitasPenelitianModel();
+        $this->mproduktivitaspenelitianpkm = new ProduktivitasPenelitianPkmModel();
+        $this->mrekognisidosen = new RekognisiDosenModel();
         $this->mriwayatprodi = new RiwayatAkreditasiProdiModel();
         $this->mseleksimahasiswabaru = new SeleksiMahasiswaBaruModel();
     }
     public function home() 
     {
-        $getdata = $this->mhome->getdata();
-
-    //    $filter_params = array(
-    //     'fakultas' => $this -> input -> get('fakultas'),
-    //     'program'  => $this -> input -> get('fakultas'),
-    //    );
-    //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
+       $getdata = $this->mhome->getdata();
 
        $data = array(
             'dataProgramStudi' => $getdata,
@@ -69,8 +81,6 @@ class Data extends BaseController
             'pager' => $this->mhome->pager
        );
 
-    //    var_dump($getdata);
-        // echo view('layout/template', $data);
         echo view('data/home', $data);
     }
 
@@ -81,8 +91,8 @@ class Data extends BaseController
 
     public function auditkeuanganeks()
     {
-        if ($this->request->getMethod() === 'post') {
-
+        if ($this->request->is('post')) {
+            
             $formData = [
                 'lembaga_audit' => $this->request->getPost('lembaga_audit'),
                 'tahun' => $this->request->getPost('tahun'),
@@ -96,17 +106,37 @@ class Data extends BaseController
         }
 
         $getdata = $this->mauditkeuanganeks->getdata();
-
            $data = array(
                 'auditkeuanganeks' => $getdata,
+                'validation' => \Config\Services::validation()
            );
 
         echo view('data/auditkeuanganeks', $data);
+        
     }
+    public function auditkeuanganeks_update($id)
+            {
+                if ($this->request->is('post')) {
+                    $formData = [
+                        'lembaga_audit' => $this->request->getPost('lembaga_audit'),
+                        'tahun' => $this->request->getPost('tahun'),
+                        'opini' => $this->request->getPost('opini'),
+                        'keterangan' => $this->request->getPost('keterangan')
+                    ];
+                }
+                $this->mauditkeuanganeks->updateData($id, $formData);
+
+                return redirect()->to('data/auditkeuanganeks')->with('status', 'Data berhasil diupdate');
+            }
+
+        public function auditkeuanganeks_delete($id) {
+            $this -> mauditkeuanganeks -> hapus($id);
+            return redirect() -> to('data/auditkeuanganeks');
+        }
 
     public function akrinternasional()
     {
-        if ($this->request->getMethod() === 'post') {
+        if ($this->request->is('post')) {
             // Mengambil data dari form
             $formData = [
                 'lembaga_akrint' => $this->request->getPost('lembaga_akrint'),
@@ -132,25 +162,52 @@ class Data extends BaseController
             echo view('data/akrinternasional', $data);
             // return view('pamongkelolakerjasama/auditkeuanganeks');
         }
+
+        public function akrinternasional_update($id)
+            {
+                if ($this->request->is('post')) {
+                    $formData = [
+                        'lembaga_akrint' => $this->request->getPost('lembaga_akrint'),
+                        'program_studi' => $this->request->getPost('program_studi'),
+                        'status' => $this->request->getPost('status'),
+                        'masa_berlaku' => $this->request->getPost('masa_berlaku'),
+                        'keterangan' => $this->request->getPost('keterangan')
+                    ];
+                }
+                $this->makrinternasional->updateData($id, $formData);
+
+                return redirect()->to('data/akrinternasional')->with('status', 'Data berhasil diupdate');
+            }
+
+        public function akrinternasional_delete($id) {
+            $this -> makrinternasional -> hapus($id);
+            return redirect() -> to('data/akrinternasional');
+        }
         
 
         public function mhsasing()
         {
+            if ($this->request->is('post')) {
+                $formData = [
+                    'batch' => $this->request->getPost('batch'),
+                    'tahun_ajaran' => $this->request->getPost('tahun_ajaran'),
+                    'nama_lengkap' => $this->request->getPost('nama_lengkap'),
+                    'gender' => $this->request->getPost('gender'),
+                    'asal_universitas' => $this->request->getPost('asal_universitas'),
+                    'negara' => $this->request->getPost('negara')
+                ];
+        
+                $this->mmhsasing->simpan($formData);
+        
+                return redirect()->to(base_url('data/mhsasing'))->with('status', 'Data berhasil disimpan.');
+            }
+
         $getdata = $this->mmhsasing->getdata();
 
-        //    $filter_params = array(
-        //     'fakultas' => $this -> input -> get('fakultas'),
-        //     'program'  => $this -> input -> get('fakultas'),
-        //    );
-        //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
-    
            $data = array(
                 'mhsasing' => $getdata,
            );
-    
-        //    var_dump($getdata);
             echo view('data/mhsasing', $data);
-            // return view('pamongkelolakerjasama/auditkeuanganeks');
         }
 
         public function sitasiilmiah()
@@ -231,14 +288,13 @@ class Data extends BaseController
         
         public function akrprodi()
         {
-            if ($this->request->getMethod() === 'post') {
-                // Jika metode adalah POST (saat formulir disubmit), simpan data
+            if ($this->request->is('post')) {
                 $formData = [
                     'program' => $this->request->getPost('program'),
                     'program_studi' => $this->request->getPost('program_studi'),
                     'pr_akreditasi' => $this->request->getPost('pr_akreditasi'),
                     'no_sk' => $this->request->getPost('no_sk'),
-                    'tgl_kadaluarsa' => $this->request->getPost('tgl_kadaluarsa'),
+                    'tgl_kadaluarsa' => $this->request->getPost('tgl_kadaluarsa')
                 ];
 
                 $this->makrprodi->simpan($formData);
@@ -246,21 +302,42 @@ class Data extends BaseController
                 return redirect()->to(base_url('data/akrprodi'))->with('status', 'Data berhasil disimpan.');
             }
 
-            // Jika bukan metode POST, hanya ambil data untuk menampilkan halaman
+    
             $getdata = $this->makrprodi->getdata();
 
             $data = array(
                 'akrprodi' => $getdata,
-                'paginasi' => $this->makrprodi->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
+                'paginasi' => $this->makrprodi->paginate(10, 'paginasi'), 
                 'pager' => $this->makrprodi->pager
             );
 
             echo view('data/akrprodi', $data);
         }
 
+        public function akrprodi_update($id)
+            {
+                if ($this->request->is('post')) {
+                    $formData = [
+                        'program' => $this->request->getPost('program'),
+                        'program_studi' => $this->request->getPost('program_studi'),
+                        'pr_akreditasi' => $this->request->getPost('pr_akreditasi'),
+                        'no_sk' => $this->request->getPost('no_sk'),
+                        'tgl_kadaluarsa' => $this->request->getPost('tgl_kadaluarsa'),
+                    ];
+                }
+                $this->makrprodi->updateData($id, $formData);
+
+                return redirect()->to('data/akrprodi')->with('status', 'Data berhasil diupdate');
+            }
+
+        public function akrprodi_delete($id) {
+            $this -> makrprodi -> hapus($id);
+            return redirect() -> to('data/akrprodi');
+        }
+
         public function akreksternal()
         {
-            if ($this->request->getMethod() === 'post') {
+            if ($this->request->is('post')) {
                 $formData = [
                     'lembaga' => $this->request->getPost('lembaga'),
                     'jenis_sertifikat' => $this->request->getPost('jenis_sertifikat'),
@@ -287,16 +364,46 @@ class Data extends BaseController
             echo view('data/akreksternal', $data);
 
         }
+
+        public function akreksternal_update($id)
+            {
+                if ($this->request->is('post')) {
+                    $formData = [
+                        'lembaga' => $this->request->getPost('lembaga'),
+                        'jenis_sertifikat' => $this->request->getPost('jenis_sertifikat'),
+                        'lingkup' => $this->request->getPost('lingkup'),
+                        'tingkat' => $this->request->getPost('tingkat'),
+                        'masa_berlaku' => $this->request->getPost('masa_berlaku'),
+                        'keterangan' => $this->request->getPost('keterangan')
+                    ];
+                }
+                $this->makreksternal->updateData($id, $formData);
+
+                return redirect()->to('data/akreksternal')->with('status', 'Data berhasil diupdate');
+            }
+
+        public function akreksternal_delete($id) {
+            $this -> makreksternal -> hapus($id);
+            return redirect() -> to('data/akreksternal');
+        }
+        
         public function pembelajaranpraktikum()
         {
+            if ($this->request->is('post')) {
+                $formData = [
+                    'prodi' => $this->request->getPost('prodi'),
+                    'teori' => $this->request->getPost('teori'),
+                    'praktikum' => $this->request->getPost('praktikum'),
+                    'praktik' => $this->request->getPost('praktik'),
+                    'praktik_lapangan' => $this->request->getPost('praktik_lapangan'),
+                ];
+        
+                $this->mpembpraktikum->simpan($formData);
+        
+                return redirect()->to(base_url('data/pembelajaranpraktikum'))->with('status', 'Data berhasil disimpan.');
+            }  
         $getdata = $this->mpembpraktikum->getdata();
 
-        //    $filter_params = array(
-        //     'fakultas' => $this -> input -> get('fakultas'),
-        //     'program'  => $this -> input -> get('fakultas'),
-        //    );
-        //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
-    
            $data = array(
                 'pembelajaranpraktikum' => $getdata,
                 'paginasi' => $this->mpembpraktikum->paginate(10, 'paginasi'), // Mengambil data yang dipaginasi
@@ -308,7 +415,7 @@ class Data extends BaseController
             echo view('data/pembelajaranpraktikum', $data);
             // return view('pamongkelolakerjasama/auditkeuanganeks');
         }
-        public function seleksiMahasiswaBaru()
+        public function seleksimahasiswabaru()
         {
     
            $data = array(
@@ -339,25 +446,144 @@ class Data extends BaseController
             //    var_dump($getdata);
                 echo view('data/produkjasa', $data);
         }
-        public function kerjasamaPerguruanTinggi() 
+
+        public function kerjasamaperguruantinggi() 
         {
-            echo view('data/kerjasamaperguruantinggi');
+            if ($this->request->is('post')) {
+                $formData = [
+                    'lembaga_mitra' => $this->request->getPost('lembaga_mitra'),
+                    'internasional' => $this->request->getPost('internasional'),
+                    'nasional' => $this->request->getPost('nasional'),
+                    'lokal' => $this->request->getPost('lokal'),
+                    'bentuk_kegiatan' => $this->request->getPost('bentuk_kegiatan'),
+                    'bukti_kerjasama' => $this->request->getPost('bukti_kerjasama'),
+                    'nama_kajur' => $this->request->getPost('nama_kajur')
+                ];
+    
+            $this->mkerjasamaperguruantinggi->simpan($formData);
+    
+            return redirect()->to(base_url('data/kerjasamaperguruantinggi'))->with('status', 'Data berhasil disimpan.');
         }
+
+            $getdata = $this->mkerjasamaperguruantinggi->getdata();
+
+            $totalNasional = $this->mkerjasamaperguruantinggi->where('nasional', 'nasional')->countAllResults();
+            $totalInternasional = $this->mkerjasamaperguruantinggi->where('internasional', 'internasional')->countAllResults();
+            $totalLokal = $this->mkerjasamaperguruantinggi->where('lokal', 'lokal')->countAllResults();
+        
+               $data = array(
+                    'kerjasamaperguruantinggi' => $getdata,
+                    'paginasi' => $this->mkerjasamaperguruantinggi->paginate(10, 'paginasi'),
+                    'pager' => $this->mkerjasamaperguruantinggi->pager,
+                    'totalNasional' => $totalNasional,
+                    'totalInternasional' => $totalInternasional,
+                    'totalLokal' => $totalLokal
+    
+               );
+        
+            echo view('data/kerjasamaperguruantinggi', $data);
+        }
+
+        public function kerjasamaperguruantinggi_update($id)
+            {
+                if ($this->request->is('post')) {
+                    $formData = [
+                        'lembaga_mitra' => $this->request->getPost('lembaga_mitra'),
+                        'internasional' => $this->request->getPost('internasional'),
+                        'nasional' => $this->request->getPost('nasional'),
+                        'lokal' => $this->request->getPost('lokal'),
+                        'bentuk_kegiatan' => $this->request->getPost('bentuk_kegiatan'),
+                        'bukti_kerjasama' => $this->request->getPost('bukti_kerjasama'),
+                        'nama_kajur' => $this->request->getPost('nama_kajur')
+                    ];
+                }
+                $this->mkerjasamaperguruantinggi->updateData($id, $formData);
+
+                return redirect()->to('data/kerjasamaperguruantinggi')->with('status', 'Data berhasil diupdate');
+            }
+
+            public function kerjasamaperguruantinggi_delete($id) {
+                $this -> mkerjasamaperguruantinggi -> hapus($id);
+                return redirect() -> to('data/kerjasamaperguruantinggi');
+            }
+
         public function kecukupanDosen()
         {
-            echo view('data/kecukupandosen');
+            $getdata = $this->mkecukupandosen->getdata();
+
+            //    $filter_params = array(
+            //     'fakultas' => $this -> input -> get('fakultas'),
+            //     'program'  => $this -> input -> get('fakultas'),
+            //    );
+            //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
+        
+               $data = array(
+                    'kecukupandosen' => $getdata
+               );
+
+            echo view('data/kecukupandosen', $data);
         }
-        public function bebanKerjaDosen()
+
+        public function bebankerjadosen()
         {
-            echo view('data/bebankerjadosen');
+            if ($this->request->is('post')) {
+                $formData = [
+                    'unit_pengelola' => $this->request->getPost('unit_pengelola'),
+                    'jumlah_dosen' => $this->request->getPost('jumlah_dosen'),
+                    'jumlah_mahasiswa' => $this->request->getPost('jumlah_mahasiswa'),
+                    'jumlah_mahasiswata' => $this->request->getPost('jumlah_mahasiswata'),
+                ];
+
+                $this->mbebankerjadosen->simpan($formData);
+
+                return redirect()->to(base_url('data/bebankerjadosen'))->with('status', 'Data berhasil disimpan.');
+            }
+
+    
+            $getdata = $this->mbebankerjadosen->getdata();
+
+            $data = array(
+                'bebankerjadosen' => $getdata,
+                'paginasi' => $this->mbebankerjadosen->paginate(10, 'paginasi'), 
+                'pager' => $this->mbebankerjadosen->pager
+            );
+
+            echo view('data/bebankerjadosen', $data);
         }
-        public function produktivitasPenelitian()
+
+        public function produktivitaspenelitian()
         {
-            echo view('data/produktivitasPenelitian');
+            $getdata = $this->mproduktivitaspenelitian->getdata();
+            $getdata = $this->mproduktivitaspenelitianpkm->getdata();
+
+            //    $filter_params = array(
+            //     'fakultas' => $this -> input -> get('fakultas'),
+            //     'program'  => $this -> input -> get('fakultas'),
+            //    );
+            //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
+        
+               $data = array(
+                    'produktivitaspenelitian' => $getdata,
+                    'produktivitaspenelitianpkm' => $getdata
+               );
+
+            echo view('data/produktivitaspenelitian', $data);
         }
-        public function rekognisiDosen()
+        public function rekognisidosen()
         {
-            echo view('data/rekognisiDosen');
+            $getdata = $this->mrekognisidosen->getdata();
+
+            //    $filter_params = array(
+            //     'fakultas' => $this -> input -> get('fakultas'),
+            //     'program'  => $this -> input -> get('fakultas'),
+            //    );
+            //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
+        
+               $data = array(
+                    'rekognisidosen' => $getdata
+               );
+
+            echo view('data/rekognisidosen', $data);
         }
         public function perolehanDana()
         {

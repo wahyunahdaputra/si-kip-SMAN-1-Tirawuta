@@ -21,4 +21,16 @@ class AkrProdiModel extends Model
     {
         $this->insert($data);
     }
+
+    public function updateData($id, $data)
+    {
+        $this->where('id_ps', $id);
+        $this->set($data);
+        $this->update();
+    }
+
+    public function hapus($id)
+    {
+        $this->where('id_ps', $id)->delete();
+    }
 }

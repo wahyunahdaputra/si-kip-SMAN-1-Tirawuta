@@ -4,19 +4,19 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AkrInternasionalModel extends Model
+class KerjasamaPerguruanTinggiModel extends Model
 {
-    protected $table = 'akreditasi_internasional';
+    protected $table = 'kerjasama_pt';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['lembaga_akrint','program_studi','status','masa_berlaku','keterangan'];
+    protected $allowedFields = ['lembaga_mitra','internasional','nasional','lokal','bentuk_kegiatan','bukti_kerjasama'];
 
     public function getdata()
     {
-        $query = $this->db->query("SELECT * FROM akreditasi_internasional");
+        $query = $this->db->query("SELECT * FROM kerjasama_pt");
 
         return $query->getResult();
     }
-
+    
     public function simpan($data) 
     {
         $this->insert($data);
