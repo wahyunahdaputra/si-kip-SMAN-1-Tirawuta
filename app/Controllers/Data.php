@@ -551,6 +551,26 @@ class Data extends BaseController
             echo view('data/bebankerjadosen', $data);
         }
 
+        public function bebankerjadosen_update($id)
+            {
+                if ($this->request->is('post')) {
+                    $formData = [
+                        'unit_pengelola' => $this->request->getPost('unit_pengelola'),
+                        'jumlah_dosen' => $this->request->getPost('jumlah_dosen'),
+                        'jumlah_mahasiswa' => $this->request->getPost('jumlah_mahasiswa'),
+                        'jumlah_mahasiswata' => $this->request->getPost('jumlah_mahasiswata'),
+                    ];
+                }
+                $this->mbebankerjadosen->updateData($id, $formData);
+
+                return redirect()->to('data/bebankerjadosen')->with('status', 'Data berhasil diupdate');
+            }
+
+        public function bebankerjadosen_delete($id) {
+            $this -> mbebankerjadosen -> hapus($id);
+            return redirect() -> to('data/bebankerjadosen');
+        }
+
         public function produktivitaspenelitian()
         {
             $getdata = $this->mproduktivitaspenelitian->getdata();
