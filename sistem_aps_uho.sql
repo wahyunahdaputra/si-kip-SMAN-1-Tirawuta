@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Feb 2024 pada 01.50
+-- Waktu pembuatan: 23 Jul 2024 pada 06.36
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -24,6 +24,60 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `akreditasi_eksternal`
+--
+
+CREATE TABLE `akreditasi_eksternal` (
+  `id` int(11) NOT NULL,
+  `lembaga` varchar(245) NOT NULL,
+  `jenis_sertifikat` varchar(245) NOT NULL,
+  `lingkup` varchar(245) NOT NULL,
+  `tingkat` varchar(245) NOT NULL,
+  `masa_berlaku` varchar(200) NOT NULL,
+  `keterangan` varchar(400) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `akreditasi_eksternal`
+--
+
+INSERT INTO `akreditasi_eksternal` (`id`, `lembaga`, `jenis_sertifikat`, `lingkup`, `tingkat`, `masa_berlaku`, `keterangan`) VALUES
+(1, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No: QMS.06.22.144)', 'PT/ Fakultas', 'Internasional', '1 Juni 2025', 'Manajemen Fakultas Pertanian'),
+(2, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No: QMS.06.22.144)', 'Unit', 'Internasional', '1 Juni 2025', 'Desain dan pengembangan kurikulum serta layanan sekunder Jurusan/PS Agribisnis'),
+(3, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No: QMS.06.22.144)', 'Unit', 'Internasional', '1 Juni 2025', 'Desain dan pengembangan kurikulum serta layanan sekunder Jurusan/PS Agroteknologi'),
+(4, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No: QMS.06.22.144)', 'Unit', 'Internasional', '1 Juni 2025', 'Desain dan pengembangan kurikulum serta layanan sekunder Jurusan/PS Ilmu Tanah'),
+(5, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No: QMS.06.22.144)', 'Unit', 'Internasional', '1 Juni 2025', 'Desain dan pengembangan kurikulum serta layanan sekunder Jurusan/PS Proteksi Tanaman'),
+(6, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No: QMS.06.22.144)', 'Unit', 'Internasional', '1 Juni 2025', 'Desain dan pengembangan kurikulum serta layanan sekunder Jurusan/PS Penyuluhan Pertanian'),
+(7, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No: QMS.06.22.144)', 'Unit', 'Internasional', '1 Juni 2025', 'Fakultas Pertanian: Desain dan pengembangan kurikulum serta layanan sekunder Jurusan/PS Ilmu dan Teknologi'),
+(8, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Jurusan/PS Agribisnis'),
+(9, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Laboratorium Jurusan/PS Agribisnis'),
+(10, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Jurusan/PS Agroteknologi'),
+(11, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Laboratorium Jurusan/PS Agroteknologi'),
+(12, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Jurusan/PS Ilmu Tanah'),
+(13, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Laboratorium Jurusan/PS Jurusan/PS Ilmu Tanah'),
+(14, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Jurusan/PS Proteksi Tanaman.'),
+(15, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Laboratorium Jurusan/PS Proteksi Tanaman'),
+(16, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Jurusan/PS Penyuluhan Pertanian'),
+(17, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Laboratorium Jurusan/PS Penyuluhan Pertanian'),
+(18, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Jurusan/PS Ilmu dan Teknologi Pangan'),
+(19, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik dan akademik pada Laboratorium Jurusan/PS Ilmu dan Teknologi Pangan'),
+(20, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 21001:2018 (No: SMOP.06.22.103)', 'Unit', 'Internasional', '1 Juni 2025', 'Seluruh proses non akademik pada Unit Jaminan Mutu dan Sistem Informasi'),
+(21, 'Komite Akreditasi Nasional (KAN) - PT. Global Certification Indonesua (GCI Internasional)', 'ISO 9001:2015 (No: Q2210895)', 'PT/ Fakultas', 'Internasional', '30 Januari 2026', 'Kualitas Sistem Manajemen FMIPA, pada scope Pelayanan Administrasi Akademik'),
+(22, 'Komite Akreditasi Nasional (KAN) - Sucofindo Internasional', 'ISO 21000:2018 (No: EOMS 00004)', 'Unit', 'Internasional', '30 Januari 2026', 'PS. Ilmu Kelautan FPIK, pada scope: 1). Pendidikan dan Pengajaran, 2). Penelitian & Pengabdian'),
+(23, 'Komite Akreditasi Nasional (KAN) - Sucifindo International', 'ISO 9001:2015 (No. QSC 01542)', 'Unit', 'Internasional', '30 Maret 2023', 'Layanan pendidikan dan pengajaran program S1 pada Prodi MSP, BDP Manajemen fakultas Teknik'),
+(24, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No. QMS 02.23.153)', 'PT/ Fakultas', 'Internasional', '1 Februari 2026', 'Manajemen fakultas Teknik'),
+(25, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No. QMS 02.23.153)', 'PT/ Fakultas', 'Internasional', '1 Februari 2026', 'Desain dan pengembangan kurikulum serta layanan sekunder pada Jurusan/PS Teknik Sipil'),
+(26, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No. QMS 02.23.153)', 'PT/ Fakultas', 'Internasional', '1 Februari 2026', 'Desain dan pengembangan kurikulum serta layanan sekunder pada Jurusan/PS Arsitektur'),
+(27, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No. QMS 02.23.153)', 'PT/ Fakultas', 'Internasional', '1 Februari 2026', 'Desain dan pengembangan kurikulum serta layanan sekunder pada Jurusan/PS Teknik Mesin'),
+(28, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No. QMS 02.23.153)', 'PT/ Fakultas', 'Internasional', '1 Februari 2026', 'Desain dan pengembangan kurikulum serta layanan sekunder pada Jurusan/PS Teknik Elektro'),
+(29, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No. QMS 02.23.153)', 'PT/ Fakultas', 'Internasional', '1 Februari 2026', 'Desain dan pengembangan kurikulum serta layanan sekunder pada Jurusan/PS Teknik Informatika'),
+(30, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No. QMS 02.23.153)', 'PT/ Fakultas', 'Internasional', '1 Februari 2026', 'Desain dan pengembangan kurikulum serta layanan sekunder pada Jurusan/PS Teknik Rekayasa Infrastruktur Lingkungan (RIL)'),
+(31, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No. QMS 02.23.153)', 'PT/ Fakultas', 'Internasional', '1 Februari 2026', 'Desain dan pengembangan kurikulum serta layanan sekunder pada Jurusan/PS Teknik Kelautan'),
+(32, 'Komite Akreditasi Nasional (KAN) - Sakti Indonesia Sertifikasi', 'ISO 9001:2015 (No. QMS 09.22.148)', 'Unit', 'Internasional', '29-Sep-25', 'Manajemen SPI, pada scope: 1). Audit services (operational and audit objectives certain), 2). Review services (financial reports work plans and budgets. 3) monitoring services (follow up on audit results). 4). Other supervision services');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `akreditasi_internasional`
 --
 
@@ -35,6 +89,13 @@ CREATE TABLE `akreditasi_internasional` (
   `masa_berlaku` varchar(245) NOT NULL,
   `keterangan` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `akreditasi_internasional`
+--
+
+INSERT INTO `akreditasi_internasional` (`id`, `lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES
+(4, 'wddddw', 'Sastra Mesin', 'aktif', '223222', 'fgf');
 
 -- --------------------------------------------------------
 
@@ -59,6 +120,248 @@ INSERT INTO `audit_keuangan_eks` (`id`, `lembaga_audit`, `tahun`, `opini`, `kete
 (2, 'KAP S. Mannan, Ardiansyah & Rekan', '2021', 'WTP (Wajar Tanpa Pengecualian)', 'Laporan Audit Independen Nomor : 00035/3.0382/AU.1/11/1585/IV/2021. Tanggal: 12 April 2021'),
 (3, 'KAP S. Mannan, Ardiansyah & Rekan', '2022', 'WTP (Wajar Tanpa Pengecualian)', 'Laporan Audit Independen Nomor : 00035/3.0382/AU.1/11/1585-3/III/2022. Tanggal 1 Maret 2022'),
 (4, 'KAP Annas Cahyadi', '2023', 'WTP (Wajar Tanpa Pengecualian)', 'Laporan Audit Independen Nomor : 00017/2.1034/AU.5/11/1162/III/2023. Tanggal 7 Maret 2023');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `auth_login`
+--
+
+CREATE TABLE `auth_login` (
+  `id` int(11) NOT NULL,
+  `username` varchar(245) NOT NULL,
+  `password` varchar(245) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `auth_login`
+--
+
+INSERT INTO `auth_login` (`id`, `username`, `password`) VALUES
+(2, 'kplppmp2024', '827ccb0eea8a706c4c34a16891f84e7b');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `bebankerja_dosen`
+--
+
+CREATE TABLE `bebankerja_dosen` (
+  `id` int(11) NOT NULL,
+  `unit_pengelola` varchar(245) NOT NULL,
+  `jumlah_dosen` int(11) NOT NULL,
+  `jumlah_mahasiswa` float NOT NULL,
+  `jumlah_mahasiswata` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `bebankerja_dosen`
+--
+
+INSERT INTO `bebankerja_dosen` (`id`, `unit_pengelola`, `jumlah_dosen`, `jumlah_mahasiswa`, `jumlah_mahasiswata`) VALUES
+(1, 'Fakultas Keguruan dan Ilmu Pendidikan', 270, 7.189, 1.552),
+(2, 'Fakultas Pertanian', 129, 2.256, 228),
+(3, 'Fakultas Ekonomi dan Bisnis', 91, 4.047, 1.084),
+(4, 'Fakultas Ilmu Sosial dan Ilmu Politik', 138, 5.582, 984),
+(5, 'Fakultas Matematika dan ilmu Pengetahuan Alam', 163, 4, 537),
+(6, 'Fakultas Perikanan dan Ilmu Kelautan', 78, 1, 34),
+(7, 'Fakultas Teknik', 139, 3, 459),
+(8, 'Fakultas Hukum', 57, 2, 546),
+(9, 'Fakultas Kedokteran ', 48, 554, 44),
+(10, 'Fakultas Peternakan', 41, 831, 8),
+(11, 'Fakultas Farmasi', 40, 1, 158),
+(12, 'Fakultas Imu Budaya', 119, 2, 663),
+(13, 'Fakultas Kehutanan dan Ilmu Lingkungan', 45, 907, 6),
+(14, 'Fakultas Kesehatan Masyarakat', 54, 2, 401),
+(15, 'Pascasarjana', 89, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `kecukupan_dosen`
+--
+
+CREATE TABLE `kecukupan_dosen` (
+  `id` int(11) NOT NULL,
+  `unit_pengelola` varchar(245) NOT NULL,
+  `doktor` int(11) NOT NULL,
+  `magister` int(11) NOT NULL,
+  `profesi` int(11) NOT NULL,
+  `jumlah` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `kecukupan_dosen`
+--
+
+INSERT INTO `kecukupan_dosen` (`id`, `unit_pengelola`, `doktor`, `magister`, `profesi`, `jumlah`) VALUES
+(1, 'Fakultas Keguruan dan Ilmu Pendidikan', 91, 179, 0, 270),
+(2, 'Fakultas Pertanian', 58, 71, 0, 129),
+(3, 'Fakultas Ekonomi dan Bisnis', 48, 43, 0, 91),
+(4, 'Fakultas Ilmu Sosial dan Ilmu Politik', 38, 100, 0, 138),
+(5, 'Fakultas Matematika dan ilmu Pengetahuan Alam', 68, 95, 0, 163),
+(6, 'Fakultas Perikanan dan Ilmu Kelautan', 35, 43, 0, 78),
+(7, 'Fakultas Teknik', 34, 105, 0, 139),
+(8, 'Fakultas Hukum', 22, 35, 0, 57),
+(9, 'Fakultas Kedokteran', 6, 42, 0, 48),
+(10, 'Fakultas Peternakan', 14, 27, 0, 41),
+(11, 'Fakultas Farmasi', 7, 33, 0, 40),
+(12, 'Fakultas Imu Budaya', 20, 99, 0, 119),
+(13, 'Fakultas Kehutanan dan Ilmu Lingkungan', 21, 24, 0, 45),
+(14, 'Fakultas Kesehatan Masyarakat', 13, 41, 0, 54),
+(15, 'Pascasarjana', 89, 0, 0, 89);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `kerjasama_peneltian`
+--
+
+CREATE TABLE `kerjasama_peneltian` (
+  `id` int(11) NOT NULL,
+  `lembaga_mitra` varchar(245) NOT NULL,
+  `bentuk_kegiatan` varchar(245) NOT NULL,
+  `bukti_kerjasama` varchar(245) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `kerjasama_peneltian`
+--
+
+INSERT INTO `kerjasama_peneltian` (`id`, `lembaga_mitra`, `bentuk_kegiatan`, `bukti_kerjasama`) VALUES
+(1, 'Research Institute for Humanity and Nature (RIHN-JAPAN)', 'Join-research', 'https://bit.ly/dokmn-kerjasama'),
+(2, 'Fuji Laboratory, Faculty of environmental earth science,Hokaido University and the Department of Marine Science, Halu Oleo Univeristy', 'Join-research', 'https://bit.ly/dokmn-kerjasama'),
+(3, 'Center for International forestry Research (CIFOR)', 'Join-research', 'https://bit.ly/dokmn-kerjasama'),
+(4, 'Fluid Dynamics Laboratory - Kanazawa University JAPAN', 'Join-research', 'https://bit.ly/dokmn-kerjasama'),
+(5, 'Research Center for Development of Far-Infrared Region, Fukui University', 'Join-research, Visiting Professor', 'https://bit.ly/dokmn-kerjasama'),
+(6, 'Center for International Forestry Research (CIFOR)', 'Join-research', 'https://bit.ly/dokmn-kerjasama'),
+(7, 'Southeast Asian Regional Centre For Graduate Study And Research In Agriculture (Searca)', 'Join-research', 'https://bit.ly/dokmn-kerjasama'),
+(8, 'Climate Foundation, Wood Hole, MA', 'Join-research', 'https://bit.ly/dokmn-kerjasama');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `kerjasama_pm`
+--
+
+CREATE TABLE `kerjasama_pm` (
+  `id` int(11) NOT NULL,
+  `lembaga` varchar(245) NOT NULL,
+  `bentuk_kegiatan` varchar(245) NOT NULL,
+  `bukti_kerjasama` varchar(245) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `kerjasama_pm`
+--
+
+INSERT INTO `kerjasama_pm` (`id`, `lembaga`, `bentuk_kegiatan`, `bukti_kerjasama`) VALUES
+(1, 'Global Network Awarness, New York', 'Kerjasama pada pelatihan kewirausahaan yang diikuti oleh mahasiswa Pend. Bhs. Inggris FKIP UHO dengan mentor/narasumber dari pihak GEA New York USA, dilaksanakan sejak tahun 2022 hingga sekarang secara online, 1 kali dalam 1 semester', 'https://bit.ly/dokmn-kerjasama');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `kerjasama_pt`
+--
+
+CREATE TABLE `kerjasama_pt` (
+  `id` int(11) NOT NULL,
+  `lembaga_mitra` varchar(245) NOT NULL,
+  `internasional` varchar(245) NOT NULL,
+  `nasional` varchar(245) NOT NULL,
+  `lokal` varchar(245) NOT NULL,
+  `bentuk_kegiatan` varchar(245) NOT NULL,
+  `bukti_kerjasama` varchar(245) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `kerjasama_pt`
+--
+
+INSERT INTO `kerjasama_pt` (`id`, `lembaga_mitra`, `internasional`, `nasional`, `lokal`, `bentuk_kegiatan`, `bukti_kerjasama`) VALUES
+(1, 'The Flemish interuniversity Council (VLIR) ? KU Leuven Belgia', '1', '', '', 'Traning of Trainer', 'https://bit.ly/dokmn-kerjasama'),
+(2, 'Institut Francais d\' Indonesia (IFI)', '1', '', '', 'Student/Staff Exchange', 'https://bit.ly/dokmn-kerjasama'),
+(3, 'Universit? Lyon 2 Perancis', '', '1', '', 'Student/Staff Exchange', 'https://bit.ly/dokmn-kerjasama'),
+(4, 'Fukui University', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(5, 'Yorozu corporation', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(6, 'Y-TEC CORPORATION', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(7, 'Daihatsu Motor Kyushu, Co.,Ltd', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(8, 'Yashiro kogyo', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(9, 'Yamaguchi Industry.co., ltd', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(10, 'FORCE ONE Co., Ltd', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(11, 'Showa kinzhoku', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(12, 'ICG', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(13, 'LOGICOM', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(14, 'TRUST INTERGRATOR', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(15, 'IWAKURA SEISHAKUSHO', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(16, 'NAGATO', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(17, 'SUGIHARA', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(18, 'TAKAYA KASEI', '', '', '0', 'Internship Mahasiswa', 'https://bit.ly/dokmn-kerjasama'),
+(19, 'INTI INTERNATIONAL EDUCATION SDN BHD Malaysia', '', '', '0', 'Student Mobility', 'https://bit.ly/dokmn-kerjasama'),
+(20, 'Faculty of Agriculture University of Miyazaki, Japan', '', '', '0', 'student exchange', 'https://bit.ly/dokmn-kerjasama'),
+(21, 'SEAFDEC/IFRDMD-Indonesia', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(22, 'Australian National University', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(23, 'Tropical Biosphere Research Center, University of the Ryukyus', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(24, 'Universite de La Rochelle, France', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(25, 'Universitas Dian Nuswantoro', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(26, 'Universitas Khairun', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(27, 'Universitas Malikussaleh', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(28, 'Universitas Negeri Jakarta', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(29, 'Universitas Negeri Medan', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(30, 'Universitas Negeri Padang', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(31, 'Universitas Padjadjaran', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(32, 'Universitas Sriwijaya', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(33, 'Universitas Sultan Ageng TIrtayasa', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(34, 'Universitas Sumatera Utara', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(35, 'Universitas Brawijaya', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(36, 'Universitas Dian Nuswantoro', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(37, 'Universitas Diponegoro', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(38, 'Universitas Gadjah Mada', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(39, 'Universitas Indonesia', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(40, 'Universitas Jember', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(41, 'Universitas Negeri Jakarta', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(42, 'Universitas Negeri Malang', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(43, 'Universitas Padjadjaran', '', '', '0', 'MBKM', 'https://bit.ly/dokmn-kerjasama'),
+(44, 'Universitas Hasanuddin', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(45, 'Bank Indonesia', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(46, 'PT JAPFA COMFEED INDONESIA Tbk', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(47, 'Kominfo RI', '', '', '0', 'Program Digital Talent Scholarship - FT', 'https://bit.ly/dokmn-kerjasama'),
+(48, 'Universitas Terbuka', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(49, 'BPJS Kesehatan', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(50, 'PT Bank Syariah Indonesia', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(51, 'Tbk', '', '', '0', '', ''),
+(52, 'PT Care Indonesia Solusi', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(53, 'PT Hashmicro Solusi', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(54, 'Indonesia', '', '', '0', '', ''),
+(55, 'PT Industri Kereta Api', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(56, '(Persero)', '', '', '0', '', ''),
+(57, 'PT Lentera Bumi Nusantara', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(58, 'PT Media Kreasi Abadi', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(59, 'PT Midi Utama Indonesia', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(60, 'Tbk', '', '', '0', '', ''),
+(61, 'PT Petik Emas Consulting', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(62, 'PT Qatros Teknologi', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(63, 'Nusantara', '', '', '0', '', ''),
+(64, 'PT Shippindo Teknologi', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(65, 'Logistik', '', '', '0', '', ''),
+(66, 'PT Stechoq Robotika', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(67, 'Indonesia', '', '', '0', '', ''),
+(68, 'PT Unicam Digital Pictvres', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(69, 'PT United Tractors Tbk', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(70, 'Yayasan Bakrie Center', '', '', '0', 'Magang', 'https://bit.ly/dokmn-kerjasama'),
+(71, '', '', '', '0', '', ''),
+(72, '', '', '', '0', '', 'Bukti Kerjasama'),
+(73, '', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(74, '', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(75, '', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(76, '', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(77, '', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(78, '', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(79, '', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(80, '', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(81, '', '', '', '0', '', ''),
+(82, '', '', '', '0', '', 'https://bit.ly/dokmn-kerjasama'),
+(84, 'UHO', '1', '1', '1', 'sacas', 'https://drive.google.com/drive/folders/1OXS-y-Ao2aRALwjDDTuKjyZEfbjyk3VA');
 
 -- --------------------------------------------------------
 
@@ -108,6 +411,21 @@ INSERT INTO `mhs_asing` (`id`, `batch`, `tahun_ajaran`, `nama_lengkap`, `gender`
 (25, '9th', '2023', 'Harold B. Balinhawang', 'Laki-Laki', 'Saint Louis University (SLU)', 'Philippines'),
 (26, '9th', '2023', 'Reilly Raje C. Angeles', 'Perempuan', 'Far Eastern University (FEU)', 'Philippines'),
 (27, '9th', '2023', 'Stephen Xian S. Habla', 'Laki-Laki', 'Far Eastern University (FEU)', 'Philippines');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pembelajaran_praktikum`
+--
+
+CREATE TABLE `pembelajaran_praktikum` (
+  `id` int(11) NOT NULL,
+  `prodi` varchar(245) NOT NULL,
+  `teori` varchar(245) NOT NULL,
+  `praktikum` varchar(245) NOT NULL,
+  `praktik` varchar(245) NOT NULL,
+  `praktik_lapangan` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -595,140 +913,243 @@ INSERT INTO `prestasi_nonakademik` (`id`, `nama`, `jenis_kelamin`, `nim`, `fakul
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `produktivitas_penelitian`
+--
+
+CREATE TABLE `produktivitas_penelitian` (
+  `id` int(11) NOT NULL,
+  `sumber_biaya` varchar(245) NOT NULL,
+  `ts1` int(11) NOT NULL,
+  `ts2` int(11) NOT NULL,
+  `ts3` int(11) NOT NULL,
+  `jumlah` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `produktivitas_penelitian`
+--
+
+INSERT INTO `produktivitas_penelitian` (`id`, `sumber_biaya`, `ts1`, `ts2`, `ts3`, `jumlah`) VALUES
+(1, 'Perguruan tinggi atau mandiri', 83, 94, 108, 'NL = 285'),
+(2, 'Lembaga dalam negeri (diluar PT)', 150, 187, 183, 'NN =520'),
+(3, 'Lembaga luar negeri', 5, 15, 17, 'NI =37');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `produktivitas_penelitianpkm`
+--
+
+CREATE TABLE `produktivitas_penelitianpkm` (
+  `id` int(11) NOT NULL,
+  `sumber_biaya` varchar(245) NOT NULL,
+  `ts1` int(11) NOT NULL,
+  `ts2` int(11) NOT NULL,
+  `ts3` int(11) NOT NULL,
+  `jumlah` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `produktivitas_penelitianpkm`
+--
+
+INSERT INTO `produktivitas_penelitianpkm` (`id`, `sumber_biaya`, `ts1`, `ts2`, `ts3`, `jumlah`) VALUES
+(1, 'Perguruan tinggi atau mandiri', 337, 246, 505, 'NL = 1.088'),
+(2, 'Lembaga dalam negeri (diluar PT)', 15, 13, 11, 'NN = 39'),
+(3, 'Lembaga luar negeri', 0, 0, 0, 'NI = 0');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `produk_jasa`
+--
+
+CREATE TABLE `produk_jasa` (
+  `id` int(11) NOT NULL,
+  `nama_pj` varchar(245) NOT NULL,
+  `desk_pj` varchar(245) NOT NULL,
+  `tingkat_kestek` varchar(245) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `program_studi`
 --
 
 CREATE TABLE `program_studi` (
   `id_ps` int(11) NOT NULL,
-  `fakultas` varchar(245) NOT NULL,
   `program` varchar(245) NOT NULL,
   `program_studi` varchar(245) NOT NULL,
   `pr_akreditasi` varchar(245) NOT NULL,
-  `tgl_sk` varchar(245) NOT NULL,
-  `tgl_kadaluarsa` varchar(245) NOT NULL,
-  `no_sk` varchar(200) NOT NULL,
-  `tgl_hariini` date NOT NULL,
-  `status_kadaluarsa` varchar(100) NOT NULL,
-  `akr_oleh` varchar(200) NOT NULL
+  `no_sk` varchar(245) NOT NULL,
+  `tgl_kadaluarsa` varchar(245) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data untuk tabel `program_studi`
 --
 
-INSERT INTO `program_studi` (`id_ps`, `fakultas`, `program`, `program_studi`, `pr_akreditasi`, `tgl_sk`, `tgl_kadaluarsa`, `no_sk`, `tgl_hariini`, `status_kadaluarsa`, `akr_oleh`) VALUES
-(1, 'FT', 'Diploma Tiga', 'Teknik Arsitektur', 'Terakreditasi B', '8/1/2023', '8/1/2024', '3493/SK/BAN-PT/Ak.S/D3/VIII/2023', '0000-00-00', '177', 'BAN PT'),
-(2, 'FMIPA', 'Diploma Tiga', 'Statistika', 'Terakreditasi B', '04/19/2020', '9/4/2025', '6803/SK/BAN-PT/Ak-PPJ/Dipl-III/X/2020', '0000-00-00', '576', 'LAMSAMA'),
-(3, 'FT', 'Diploma Tiga', 'Teknik Mesin', 'Terakreditasi BAIK SEKALI', '20/12/2022', '12/20/2027', '0264/SK/LAM TEKNIK/VD3/XII/2022', '0000-00-00', '1413', 'LAM TEKNIK'),
-(4, 'FT', 'Diploma Tiga', 'Teknik Elektronika', 'Terakreditasi BAIK SEKALI', '12/21/2022', '12/21/2027', '0144/SK/LAM Teknik/vD3/XII/2022', '0000-00-00', '1414', 'LAM TEKNIK'),
-(5, 'FT', 'Diploma Tiga', 'Teknik Sipil', 'Terakreditasi BAIK SEKALI', '207/04/2018', '20/04/2028', '0090/SK/LAM Teknik/VD3/IV/2023', '0000-00-00', '1535', 'LAM TEKNIK'),
-(6, 'PASCASARJANA', 'Doktor', 'Ilmu Pertanian', 'Terakreditasi A', '12/21/2021', '12/21/2026', '12890/SK/BAN-PT/Ak-PPJ/D/XII/2021', '0000-00-00', '1049', 'BAN PT'),
-(7, 'PASCASARJANA', 'Doktor', 'Ilmu Manajemen', 'Terakreditasi A', '10/13/2020', '10/13/2025', '6405/SK/BAN-PT/Akred/D/X/2020', '0000-00-00', '615', 'LAMEMBA'),
-(8, 'PASCASARJANA', 'Doktor', 'Ilmu Ekonomi', 'Terakreditasi BAIK SEKALI', '4/4/2028', '4/4/2028', '	1195/SK/BAN-PT/Ak.Ppj/D/IV/2023', '0000-00-00', '1519', 'LAMEMBA'),
-(9, 'PASCASARJANA', 'Magister', 'Kajian Budaya', 'Terakreditasi B', '4/9/2019', '4/9/2024', '733/SK/BAN-PT/Akred/M/IV/2019', '0000-00-00', '63', 'BAN PT'),
-(10, 'PASCASARJANA', 'Magister', 'Perencanaan dan Pengembangan Wilayah', 'Terakreditasi B', '3/29/2020', '3/29/2025', '2624/SK/BAN-PT/Ak-PPJ/M/IV/2020', '0000-00-00', '417', 'BAN PT'),
-(11, 'PASCASARJANA', 'Magister', 'Administrasi Pembangunan', 'Terakreditasi B', '5/3/2020', '5/3/2025', '4195/SK/BAN-PT/Ak-PPJ/M/VII/2020', '0000-00-00', '452', 'BAN PT'),
-(12, 'FP', 'Magister', 'Agribisnis', 'Terakreditasi UNGGUL', '9/1/2023', '7/21/2025', '3841/SK/BAN-PT/Ak.KP/M/IX/2023', '0000-00-00', '531', 'BAN PT'),
-(13, 'FP', 'Magister', 'Agronomi', 'Terakreditasi UNGGUL', '10/1/2023', '8/11/2025', '3933/SK/BAN-PT/Ak.KP/M/X/2023', '0000-00-00', '552', 'BAN PT'),
-(14, 'PASCASARJANA', 'Magister', 'Ilmu Perikanan', 'Terakreditasi A', '10/6/2020', '10/6/2025', '6210/SK/BAN-PT/Akred/M/X/2020', '0000-00-00', '608', 'BAN PT'),
-(15, 'FPt', 'Magister', 'Peternakan', 'Terakreditasi A', '10/13/2020', '10/13/2025', '6397/SK/BAN-PT/Akred/M/X/2020', '0000-00-00', '615', 'BAN PT'),
-(16, 'FH', 'Magister', 'Hukum', 'Terakreditasi B', '11/11/2020', '11/11/2025', '7266/SK/BAN-PT/Akred/M/XI/2020', '0000-00-00', '644', 'BAN PT'),
-(17, 'PASCASARJANA', 'Magister', 'Magister Keguruan Bahasa', 'Terakreditasi B', '11/24/2020', '11/24/2025', '	7759/SK/BAN-PT/Akred/M/XI/2020', '0000-00-00', '657', 'BAN PT'),
-(18, 'FKIP', 'Magister', 'Pendidikan Bahasa dan Sastra Indonesia', 'Terakreditasi B', '4/7/2020', '4/7/2025', '	2350/SK/BAN-PT/Ak-PPJ/M/IV/2020', '0000-00-00', '426', 'LAMDIK'),
-(19, 'PASCASARJANA', 'Magister', 'Pendidikan IPA', 'Terakreditasi B', '5/31/2020', '5/31/2025', '4185/SK/BAN-PT/Ak-PPJ/M/VII/2020', '0000-00-00', '480', 'LAMDIK'),
-(20, 'FMIPA', 'Magister', 'Geografi', 'Terakreditasi B', '6/23/2020', '6/23/2025', '3549/SK/BAN-PT/Akred/M/VI/2020', '0000-00-00', '503', 'LAMSAMA'),
-(21, 'FMIPA', 'Magister', 'Fisika', 'Terakreditasi B', '9/30/2020', '9/30/2025', '6125/SK/BAN-PT/Akred/M/IX/2020', '0000-00-00', '602', 'LAMSAMA'),
-(22, 'PASCASARJANA', 'Magister', 'Ilmu Manajemen', 'Terakreditasi UNGGUL', '10/20/2020', '10/20/2025', '2587/SK/BAN-PT/AK-ISK/M/IV/2022', '0000-00-00', '622', 'LAMEMBA'),
-(23, 'FMIPA', 'Magister', 'Kimia', 'Terakreditasi B', '12/1/2020', '12/1/2025', '	7873/SK/BAN-PT/Akred/M/XII/2020', '0000-00-00', '664', 'LAMSAMA'),
-(24, 'PASCASARJANA', 'Magister', 'Pendidikan Seni', 'Terakreditasi B', '2/3/2026', '2/3/2026', '	10032/SK/BAN-PT/Akred/M/VIII/2021', '0000-00-00', '728', 'LAMDIK'),
-(25, 'FKIP', 'Magister', 'Pendidikan Ilmu Pengetahuan Sosial', 'Terakreditasi UNGGUL', '7/7/2021', '7/7/2026', '9360/SK/BAN-PT/Akred/M/VII/2021	', '0000-00-00', '882', 'LAMDIK'),
-(26, 'FEB', 'Magister', 'Manajemen', 'Terakreditasi B', '1/11/2022', '1/11/2027', '14024/SK/BAN-PT/Ak-PPJ/M/XII/2021', '0000-00-00', '1070', 'LAMEMBA'),
-(27, 'FKESMAS', 'Magister', 'Kesehatan Masyarakat', 'Terakreditasi BAIK SEKALI', '1/13/2022', '1/13/2027', '0020/LAM-PTKes/Akr/Mag/I/2022	', '0000-00-00', '1072', 'LAMPTKES'),
-(28, 'FKIP', 'Magister', 'Pendidikan Matematika', 'Terakreditasi BAIK SEKALI', '9/6/2022', '9/6/2027', '5902/SK/BAN-PT/Ak.Ppj/M/IX/2022', '0000-00-00', '1308', 'LAMDIK'),
-(29, 'PASCASARJANA', 'Magister', 'Manajemen Rekayasa', 'Terakreditasi BAIK SEKALI', '12/20/2022', '12/20/2027', '0227/SK/LAM Teknik/AM/XII/2022', '0000-00-00', '1413', 'LAM TEKNIK'),
-(30, 'PASCASARJANA', 'Magister', 'Ilmu Ekonomi', 'Terakreditasi BAIK SEKALI', '4/18/2023', '4/18/2028', '1499/SK/BAN-PT/Ak.Ppj/M/IV/2023', '0000-00-00', '1533', 'LAMEMBA'),
-(31, 'FEB', 'Magister', 'Jurusan Akuntansi', 'Tidak Terakreditasi', '', '', '', '0000-00-00', '-45328', 'LAMEMBA'),
-(32, 'FK', 'Profesi', 'Pendidikan Profesi Ners', 'Terakreditasi BAIK', '10/1/2023', '10/26/2028', '0764/LAM-PTKes/Akr/Pro/X/2023', '0000-00-00', '1724', 'LAMPTKES'),
-(33, 'FF', 'Profesi', 'Pendidikan Profesi Apoteker', 'Terakreditasi B', '12/28/2019', '12/28/2024', '0737/LAM-PTKes/Akr/Pro/XII/2019	', '0000-00-00', '326', 'LAMPTKES'),
-(34, 'FKIP', 'Profesi', 'Pendidikan Profesi Guru', 'Terakreditasi B', '3/24/2021', '3/24/2026', '1651/SK/BAN-PT/Akred/PP/III/2021', '0000-00-00', '777', 'LAMDIK'),
-(35, 'FK', 'Profesi', 'Profesi Dokter', 'Terakreditasi BAIK SEKALI', '8/11/2022', '8/11/2027', '0639/LAM-PTKes/Akr/Pro/VIII/2023', '0000-00-00', '1282', 'LAMPTKES'),
-(36, 'FP', 'Sarjana', 'Proteksi Tanaman', 'Terakreditasi B', '2/19/2019', '2/19/2024', '	140/SK/BAN-PT/Akred/S/II/2019', '0000-00-00', '13', 'BAN PT'),
-(37, 'FP', 'Sarjana', 'Ilmu Tanah', 'Terakreditasi B', '3/5/2019', '3/5/2024', '	266/SK/BAN-PT/Akred/S/III/2019', '0000-00-00', '28', 'BAN PT'),
-(38, 'FISIP', 'Sarjana', 'Ilmu Komunikasi', 'Terakreditasi A', '3/26/2019', '3/26/2024', '	497/SK/BAN-PT/Akred/S/III/2019', '0000-00-00', '49', 'BAN PT'),
-(39, 'FISIP', 'Sarjana', 'Sosiologi', 'Terakreditasi A', '4/9/2019', '4/9/2024', '693/SK/BAN-PT/Akred/S/IV/2019	', '0000-00-00', '63', 'BAN PT'),
-(40, 'FP', 'Sarjana', 'Penyuluhan Pertanian', 'Terakreditasi B', '4/9/2019', '4/9/2024', '	772/SK/BAN-PT/Akred/S/IV/2019', '0000-00-00', '63', 'BAN PT'),
-(41, 'FISIP', 'Sarjana', 'Ilmu Politik', 'Terakreditasi B', '5/21/2019', '5/21/2024', '1626/SK/BAN-PT/Akred/S/V/2019', '0000-00-00', '105', 'BAN PT'),
-(42, 'FPIK', 'Sarjana', 'Budidaya Perairan', 'Terakreditasi A', '5/31/2023', '5/31/2024', '2409/SK/BAN-PT/Ak.PEPS/S/VI/2023', '0000-00-00', '115', 'BAN PT'),
-(43, 'FKIP', 'Sarjana', 'Psikologi', 'Terakreditasi BAIK', '7/30/2019', '7/30/2024', '7479/SK/BAN-PT/Ak.KP/S/X/2022', '0000-00-00', '175', 'BAN PT'),
-(44, 'FMIPA', 'Sarjana', 'Oseanografi', 'Terakreditasi B', '8/27/2019', '8/27/2024', '3231/SK/BAN-PT/Akred/S/VIII/2019	', '0000-00-00', '203', 'BAN PT'),
-(45, 'FPIK', 'Sarjana', 'Perikanan Tangkap', 'Terakreditasi B', '9/3/2019', '9/3/2024', '3329/SK/BAN-PT/Akred/S/IX/2019	', '0000-00-00', '210', 'BAN PT'),
-(46, 'FIB', 'Sarjana', 'Sastra Indonesia', 'Terakreditasi B', '4/11/2020', '4/11/2025', '4428/SK/BAN-PT/Ak-PPJ/S/VIII/2020', '0000-00-00', '430', 'BAN PT'),
-(47, 'FISIP', 'Sarjana', 'Ilmu Pemerintahan', 'Terakreditasi BAIK', '7/21/2020', '7/21/2025', '6188/SK/BAN-PT/Ak.KP/S/IX/2022', '0000-00-00', '531', 'BAN PT'),
-(48, 'FPIK', 'Sarjana', 'Teknologi Hasil Perikanan', 'Terakreditasi BAIK SEKALI', '10/1/2023', '8/16/2025', '3927/SK/BAN-PT/Ak.KP/S/X/2023', '0000-00-00', '557', 'BAN PT'),
-(49, 'FIB', 'Sarjana', 'Ilmu Sejarah', 'Terakreditasi BAIK SEKALI', '9/8/2023', '9/8/2025', ' 3852/SK/BAN-PT/Ak.KP/S/IX/2023', '0000-00-00', '580', 'BAN PT'),
-(50, 'FHIL', 'Sarjana', 'Ilmu Lingkungan', 'Terakreditasi BAIK SEKALI', '9/9/2020', '9/9/2025', '2883/SK/BAN-PT/AK-ISK/S/V/2022', '0000-00-00', '581', 'BAN PT'),
-(51, 'FIB', 'Sarjana', 'Tradisi Lisan', 'Terakreditasi A', '9/23/2020', '9/23/2025', '5939/SK/BAN-PT/Akred/S/IX/2020	', '0000-00-00', '595', 'BAN PT'),
-(52, 'FISIP', 'Sarjana', 'Ilmu Kesejahteraan Sosial', 'Terakreditasi A', '10/13/2020', '10/13/2025', '	6403/SK/BAN-PT/Akred/S/X/2020', '0000-00-00', '615', 'BAN PT'),
-(53, 'FIB', 'Sarjana', 'Sastra Inggris', 'Terakreditasi B', '11/3/2020', '11/3/2025', '	6977/SK/BAN-PT/Akred/S/XI/2020', '0000-00-00', '636', 'BAN PT'),
-(54, 'FPIK', 'Sarjana', 'Ilmu Kelautan', 'Terakreditasi UNGGUL', '10/1/2023', '11/3/2025', '3930/SK/BAN-PT/Ak.KP/S/X/2023', '0000-00-00', '636', 'BAN PT'),
-(55, 'FIB', 'Sarjana', 'Arkeologi', 'Terakreditasi A', '11/10/2020', '11/10/2025', '7156/SK/BAN-PT/Akred/S/XI/2020', '0000-00-00', '643', 'BAN PT'),
-(56, 'FIB', 'Sarjana', 'Antropologi', 'Terakreditasi UNGGUL', '9/1/2023', '11/10/2025', '3853/SK/BAN-PT/Ak.KP/S/IX/2023', '0000-00-00', '643', 'BAN PT'),
-(57, 'FH', 'Sarjana', 'Ilmu Hukum', 'Terakreditasi A', '11/17/2020', '11/17/2025', '7344/SK/BAN-PT/Akred/S/XI/2020', '0000-00-00', '650', 'BAN PT'),
-(58, 'FIB', 'Sarjana', 'Sastra Prancis', 'Terakreditasi B', '5/18/2021', '11/19/2025', '3079/SK/BAN-PT/Akred/S/V/2021', '0000-00-00', '652', 'BAN PT'),
-(59, 'FPIK', 'Sarjana', 'Agrobisnis Perikanan', 'Terakreditasi BAIK SEKALI', '12/15/2020', '12/15/2025', '8273/SK/BAN-PT/Akred/S/XII/2020', '0000-00-00', '678', 'BAN PT'),
-(60, 'FP', 'Sarjana', 'Agribisnis', 'Terakreditasi UNGGUL', '5/21/2026', '5/21/2026', '2184/SK/BAN-PT/AK-ISK/S/IV/2022', '0000-00-00', '835', 'BAN PT'),
-(61, 'FP', 'Sarjana', 'Agroteknologi', 'Terakreditasi UNGGUL', '5/21/2022', '5/21/2026', '2239/SK/BAN-PT/AK-ISK/S/IV/2022', '0000-00-00', '835', 'BAN PT'),
-(62, 'FISIP', 'Sarjana', 'Perpustakaan dan Ilmu Informasi', 'Terakreditasi BAIK', '7/13/2021', '7/13/2026', '9438/SK/BAN-PT/Akred/S/VII/2021	', '0000-00-00', '888', 'BAN PT'),
-(63, 'FISIP', 'Sarjana', 'Jurnalistik', 'Terakreditasi BAIK SEKALI', '8/31/2021', '8/31/2026', '10450/SK/BAN-PT/Akred/S/VIII/2021	', '0000-00-00', '937', 'BAN PT'),
-(64, 'FPIK', 'Sarjana', 'Manajemen Sumber Daya Perairan', 'Terakreditasi UNGGUL', '10/1/2023', '12/28/2026', '3924/SK/BAN-PT/Ak.KP/S/X/2023', '0000-00-00', '1056', 'BAN PT'),
-(65, 'FT', 'Sarjana', 'Arsitektur', 'Terakreditasi B', '8/16/2022', '8/16/2027', '189/SK/BAN-PT/Ak.Ppj/S/I/2023', '0000-00-00', '1287', 'BAN PT'),
-(66, 'FISIP', 'Sarjana', 'Ilmu Administrasi Negara', 'Terakreditasi BAIK SEKALI', '2/27/2023', '2/27/2028', '654/SK/BAN-PT/Ak/S/II/2023', '0000-00-00', '1482', 'BAN PT'),
-(67, 'FP', 'Sarjana', 'Teknologi Pangan', 'Terakreditasi BAIK SEKALI', '7/4/2023', '7/4/2028', '2593/SK/BAN-PT/Ak/S/VII/2023', '0000-00-00', '1610', 'BAN PT'),
-(68, 'FHIL', 'Sarjana', 'Kehutanan', 'Tidak Terakreditasi', '', '', '', '0000-00-00', '-45328', 'BAN PT'),
-(69, 'FPt', 'Sarjana', 'Peternakan', 'Tidak Terakreditasi', '', '', '', '0000-00-00', '-45328', 'BAN PT'),
-(70, 'FMIPA', 'Sarjana', 'Ilmu Komputer', 'Terakreditasi BAIK', '7/30/2019', '7/30/2024', '7280/SK/BAN-PT/Ak.KP/S/X/2022', '0000-00-00', '175', 'LAM INFOKOM'),
-(71, 'FKESMAS', 'Sarjana', 'Kesehatan Masyarakat', 'Terakreditasi B', '3/22/2019', '3/22/2024', '0150/LAM-PTKes/Akr/Sar/III/2019', '0000-00-00', '45', 'LAMPTKES'),
-(72, 'FKIP', 'Sarjana', 'Pendidikan Akuntansi', 'Terakreditasi BAIK', '4/9/2019', '4/9/2024', '7440/SK/BAN-PT/Ak.KP/S/X/2022', '0000-00-00', '63', 'LAMDIK'),
-(73, 'FMIPA', 'Sarjana', 'Bioteknologi', 'Terakreditasi B', '7/16/2019', '7/16/2024', '2435/SK/BAN-PT/Akred/S/VII/2019	', '0000-00-00', '161', 'Lebih dari 1 LAM'),
-(74, 'FMIPA', 'Sarjana', 'Statistika', 'Terakreditasi B', '7/30/2019', '7/30/2024', '2744/SK/BAN-PT/Akred/S/VII/2019', '0000-00-00', '175', 'LAMSAMA'),
-(75, 'FKIP', 'Sarjana', 'Pendidikan Fisika', 'Terakreditasi BAIK SEKALI', '-', '8/6/2024', '	2607/SK/BAN-PT/AK-ISK/S/IV/2022', '0000-00-00', '182', 'LAMDIK'),
-(76, 'FKIP', 'Sarjana', 'Pendidikan Bahasa dan Sastra Indonesia', 'Terakreditasi B', '8/7/2019', '8/7/2024', '2952/SK/BAN-PT/Akred/S/VIII/2019', '0000-00-00', '183', 'LAMDIK'),
-(77, 'FKIP', 'Sarjana', 'Pendidikan Bahasa Inggris', 'Terakreditasi B', '10/22/2019', '10/22/2024', '3989/SK/BAN-PT/Akred/S/X/2019', '0000-00-00', '259', 'LAMDIK'),
-(78, 'FMIPA', 'Sarjana', 'Geografi', 'Terakreditasi B', '4/7/2020', '4/7/2025', '2351/SK/BAN-PT/Ak-PPJ/S/IV/2020	', '0000-00-00', '426', 'LAMSAMA'),
-(79, 'FMIPA', 'Sarjana', 'Matematika', 'Terakreditasi A', '5/5/2020', '5/5/2025', '	2855/SK/BAN-PT/Ak-PPJ/S/V/2020', '0000-00-00', '454', 'LAMSAMA'),
-(80, 'FMIPA', 'Sarjana', 'Teknik Pertambangan', 'Terakreditasi BAIK', '5/10/2020', '5/10/2025', '9886/SK/BAN-PT/Ak.KP/S/XI/2022', '0000-00-00', '459', 'LAM TEKNIK'),
-(81, 'FKIP', 'Sarjana', 'Pendidikan Geografi', 'Terakreditasi BAIK SEKALI', '5/31/2020', '5/31/2025', '2900/SK/BAN-PT/AK-ISK/S/V/2022', '0000-00-00', '480', 'LAMDIK'),
-(82, 'FMIPA', 'Sarjana', 'Teknik Geofisika', 'Terakreditasi B', '7/25/2020', '7/25/2025', '4301/SK/BAN-PT/Ak-PPJ/S/VII/2020', '0000-00-00', '535', 'LAM TEKNIK'),
-(83, 'FKIP', 'Sarjana', 'Pendidikan Pancasila dan Kewarganegaraan', 'Terakreditasi B', '8/16/2020', '8/16/2025', '4724/SK/BAN-PT/Ak-PPJ/S/VIII/2020', '0000-00-00', '557', 'LAMDIK'),
-(84, 'FT', 'Sarjana', 'Teknik Rekayasa Infrastruktur dan Lingkungan', 'Terakreditasi B', '8/25/2020', '8/25/2025', '4892/SK/BAN-PT/Akred/S/VIII/2020', '0000-00-00', '566', 'LAM TEKNIK'),
-(85, 'FT', 'Sarjana', 'Teknik Kelautan', 'Terakreditasi B', '9/1/2020', '9/1/2025', '5112/SK/BAN-PT/Akred/S/IX/2020', '0000-00-00', '573', 'LAM TEKNIK'),
-(86, 'FKIP', 'Sarjana', 'Pendidikan Biologi', 'Terakreditasi UNGGUL', '9/9/2022', '9/9/2025', '2589/SK/BAN-PT/AK-ISK/S/IV/2022', '0000-00-00', '581', 'LAMDIK'),
-(87, 'FKIP', 'Sarjana', 'Bimbingan dan Konseling', 'Terakreditasi B', '9/30/2020', '9/30/2025', '6128/SK/BAN-PT/Akred/S/IX/2020', '0000-00-00', '602', 'LAMDIK'),
-(88, 'FEB', 'Sarjana', 'Manajemen', 'Terakreditasi UNGGUL', '11/1/2020', '11/1/2025', '11896/SK/BAN-PT/AK-ISK/S/X/2021	', '0000-00-00', '634', 'LAMEMBA'),
-(89, 'FKIP', 'Sarjana', 'Pendidikan Matematika', 'Terakreditasi UNGGUL', '11/8/2022', '11/8/2025', '2878/SK/BAN-PT/AK-ISK/S/V/2022', '0000-00-00', '641', 'LAMDIK'),
-(90, 'FKIP', 'Sarjana', 'Pendidikan Kimia', 'Terakreditasi BAIK SEKALI', '2/16/2022', '2/16/2026', '2601/SK/BAN-PT/AK-ISK/S/IV/2022', '0000-00-00', '741', 'LAMDIK'),
-(91, 'FKIP', 'Sarjana', 'Pendidikan Ekonomi', 'Terakreditasi BAIK SEKALI', '3/2/2021', '3/2/2026', '1132/SK/BAN-PT/Akred/S/III/2021', '0000-00-00', '755', 'LAMDIK'),
-(92, 'FKIP', 'Sarjana', 'Ilmu Keolahragaan', 'Terakreditasi BAIK', '3/16/2021', '3/16/2026', '1483/SK/BAN-PT/Akred/S/III/2021	', '0000-00-00', '769', 'LAMDIK'),
-(93, 'FKIP', 'Sarjana', 'Pendidikan Sejarah', 'Terakreditasi B', '3/18/2021', '3/18/2026', '	1585/SK/BAN-PT/Ak-PPJ/S/III/2021', '0000-00-00', '771', 'LAMDIK'),
-(94, 'FKIP', 'Sarjana', 'Pendidikan Jasmani; Kesehatan dan Rekreasi', 'Terakreditasi BAIK', '3/23/2021', '3/23/2026', '	1602/SK/BAN-PT/Akred/S/III/2021', '0000-00-00', '776', 'LAMDIK'),
-(95, 'FMIPA', 'Sarjana', 'Teknik Geologi', 'Terakreditasi BAIK', '7/21/2021', '7/21/2026', '9638/SK/BAN-PT/Akred/S/VII/2021	', '0000-00-00', '896', 'LAM TEKNIK'),
-(96, 'FISIP', 'Sarjana', 'Administrasi Bisnis', 'Terakreditasi B', '12/28/2022', '12/28/2026', '	564/SK/BAN-PT/Ak-PPJ/S/I/2022', '0000-00-00', '1056', 'LAMEMBA'),
-(97, 'FF', 'Sarjana', 'Farmasi', 'Terakreditasi BAIK SEKALI', '12/29/2022', '12/29/2026', ' 0961/LAM-PTKes/Akr/Sar/XI/2022', '0000-00-00', '1057', 'LAMPTKES'),
-(98, 'FK', 'Sarjana', 'Kedokteran', 'Terakreditasi BAIK SEKALI', '8/11/2022', '8/11/2027', '0638/LAM-PTKes/Akr/Sar/VIII/2022', '0000-00-00', '1282', 'LAMPTKES'),
-(99, 'FT', 'Sarjana', 'Teknik Mesin', 'Terakreditasi BAIK SEKALI', '8/21/2022', '8/20/2027', '0018/SK/LAM Teknik/AS/VIII/2022', '0000-00-00', '1291', 'LAM TEKNIK'),
-(100, 'FT', 'Sarjana', 'Teknik Elektro', 'Terakreditasi UNGGUL', '4/21/2023', '8/20/2027', '0003/SK/LAM Teknik/AS/IV/2023', '0000-00-00', '1291', 'LAM TEKNIK'),
-(101, 'FMIPA', 'Sarjana', 'Fisika', 'Terakreditasi UNGGUL', '12/13/2022', '12/13/2027', '017/SK/LAMSAMA/Akred/S/XII/2022', '0000-00-00', '1406', 'LAMSAMA'),
-(102, 'FT', 'Sarjana', 'Teknik Informatika', 'Terakreditasi BAIK SEKALI', '12/15/2022', '12/15/2027', '090/SK/LAM-INFOKOM/Ak/S/XII/2022', '0000-00-00', '1408', 'LAM INFOKOM'),
-(103, 'FKESMAS', 'Sarjana', 'Gizi', 'Terakreditasi BAIK', '12/16/2022', '12/16/2027', '1078/LAM-PTKes/Sar/XII/2022', '0000-00-00', '1409', 'LAMPTKES'),
-(104, 'FT', 'Sarjana', 'Teknik Sipil', 'Terakreditasi UNGGUL', '12/21/2022', '12/20/2027', '0254/SK/LAM Teknik/AS/XII/2022', '0000-00-00', '1413', 'LAM TEKNIK'),
-(105, 'FEB', 'Sarjana', 'Akuntansi', 'Terakreditasi BAIK SEKALI', '12/22/2022', '12/22/2027', ' 088/DE/A.5/AR.10/XII/2022', '0000-00-00', '1415', 'LAMEMBA'),
-(106, 'FMIPA', 'Sarjana', 'Biologi', 'Terakreditasi BAIK SEKALI', '2/16/2023', '2/16/2028', '001/SK/LAMSAMA/Akred/S/II/2023', '0000-00-00', '1471', 'LAMSAMA'),
-(107, 'FEB', 'Sarjana', 'Ekonomi Pembangunan', 'Terakreditasi UNGGUL', '2/26/2023', '2/26/2028', '216/DE/A.5/AR.10/II/2023', '0000-00-00', '1481', 'LAMEMBA'),
-(108, 'FMIPA', 'Sarjana', 'Kimia', 'Terakreditasi UNGGUL', '4/17/2023', '4/17/2028', '023/SK/LAMSAMA/Akred/S/IV/2023', '0000-00-00', '1532', 'LAMSAMA'),
-(109, 'FKIP', 'Sarjana', 'Pendidikan Guru Sekolah Dasar', 'Terakreditasi BAIK SEKALI', '7/17/2023', '7/17/2028', '754/SK/LAMDIK/Ak/S/VII/2023', '0000-00-00', '1623', 'LAMDIK'),
-(110, 'FKIP', 'Sarjana', 'Pendidikan Guru Pendidikan Anak Usia Dini', 'Terakreditasi BAIK SEKALI', '7/18/2023', '7/18/2028', '754/SK/LAMDIK/Ak/S/VVII/2023', '0000-00-00', '1624', 'LAMDIK'),
-(111, 'FK', 'Sarjana', 'Keperawatan', 'Terakreditasi BAIK', '10/1/2023', '10/26/2028', '0763/LAM-PTKes/Akr/Sar/X/2023', '0000-00-00', '1724', 'LAMPTKES'),
-(112, 'FKIP', 'Sarjana', 'Pendidikan Vokasional Teknik', 'Tidak Terakreditasi', '', '', '', '0000-00-00', '-45328', 'LAMDIK');
+INSERT INTO `program_studi` (`id_ps`, `program`, `program_studi`, `pr_akreditasi`, `no_sk`, `tgl_kadaluarsa`) VALUES
+(2, 'Doktor', 'Ilmu Pertanian', 'Terakreditasi A', '12890/SK/BAN-PT/Ak-PPJ/D/XII/2021, Tanggal 4 April 2028', '12/21/2026'),
+(3, 'Doktor', 'Ilmu Ekonomi', 'Terakreditasi BAIK SEKALI', '1195/SK/BAN-PT/Ak.Ppj/D/IV/2023, Tanggal 4 April 2028', '4/4/2028'),
+(4, 'Magister', 'Kajian Budaya', 'Terakreditasi B', '733/SK/BAN-PT/Akred/M/IV/2019, Tanggal  9 April 2024', '4/9/2024'),
+(5, 'Magister', 'Perencanaan dan Pengembangan Wilayah', 'Terakreditasi B', '2624/SK/BAN-PT/Ak-PPJ/M/IV/2020, Tanggal 29 Maret 2025', '3/29/2025'),
+(6, 'Magister', 'Pendidikan Bahasa dan Sastra Indonesia', 'Terakreditasi B', '2350/SK/BAN-PT/Ak-PPJ/M/IV/2020, Tanggal 7 April 2025', '4/7/2025'),
+(7, 'Magister', 'Administrasi Pembangunan', 'Terakreditasi B', '4195/SK/BAN-PT/Ak-PPJ/M/VII/2020, Tanggal 3 Mei 2025', '5/3/2025'),
+(8, 'Magister', 'Pendidikan IPA', 'Terakreditasi B', '4185/SK/BAN-PT/Ak-PPJ/M/VII/2020, Tanggal 31 Mei 2025', '5/31/2025'),
+(9, 'Magister', 'Geografi', 'Terakreditasi B', '3549/SK/BAN-PT/Akred/M/VI/2020, Tanggal 23 Juni 2025', '6/23/2025'),
+(10, 'Magister', 'Agribisnis', 'Terakreditasi UNGGUL', '3841/SK/BAN-PT/Ak.KP/M/IX/2023, Tanggal 21 Juli 2025', '7/21/2025'),
+(11, 'Magister', 'Agronomi', 'Terakreditasi UNGGUL', '3933/SK/BAN-PT/Ak.KP/M/X/2023, Tanggal 11 Agustus 2025', '8/11/2025'),
+(12, 'Magister', 'Fisika', 'Terakreditasi B', '6125/SK/BAN-PT/Akred/M/IX/2020, Tanggal 30 September 20025', '9/30/2025'),
+(13, 'Magister', 'Ilmu Perikanan', 'Terakreditasi A', '6210/SK/BAN-PT/Akred/M/X/2020, Tanggal 6 Oktober 2025', '10/6/2025'),
+(14, 'Magister', 'Peternakan', 'Terakreditasi A', '6397/SK/BAN-PT/Akred/M/X/2020, tanggal 13 Oktober 2025', '10/13/2025'),
+(15, 'Magister', 'Ilmu Manajemen', 'Terakreditasi UNGGUL', '2587/SK/BAN-PT/AK-ISK/M/IV/2022, Tanggal 20 Oktober 2025', '10/20/2025'),
+(16, 'Magister', 'Hukum', 'Terakreditasi B', '7266/SK/BAN-PT/Akred/M/XI/2020, Tanggal 11 November 2025', '11/11/2025'),
+(17, 'Magister', 'Magister Keguruan Bahasa', 'Terakreditasi B', '7759/SK/BAN-PT/Akred/M/XI/2020, Tanggal 24 Noovember 2025', '11/24/2025'),
+(18, 'Magister', 'Kimia', 'Terakreditasi B', '7873/SK/BAN-PT/Akred/M/XII/2020, tanggal 1 Desember 2025', '12/1/2025'),
+(19, 'Magister', 'Pendidikan Seni', 'Terakreditasi B', '10032/SK/BAN-PT/Akred/M/VIII/2021, tanggal 3 Februari 2026', '2/3/2026'),
+(20, 'Magister', 'Pendidikan Ilmu Pengetahuan Sosial', 'Terakreditasi UNGGUL', '9360/SK/BAN-PT/Akred/M/VII/2021, Tanggal 7 Juli 2026 ', '7/7/2026'),
+(21, 'Magister', 'Manajemen', 'Terakreditasi B', '14024/SK/BAN-PT/Ak-PPJ/M/XII/2021, tanggal 11 Januari 20027', '1/11/2027'),
+(22, 'Magister', 'Kesehatan Masyarakat', 'Terakreditasi BAIK SEKALI', '0020/LAM-PTKes/Akr/Mag/I/2022, Tanggal 13 Januari 2027', '1/13/2027'),
+(23, 'Magister', 'Pendidikan Matematika', 'Terakreditasi BAIK SEKALI', '5902/SK/BAN-PT/Ak.Ppj/M/IX/2022, Tanggal 6 September 2027', '9/6/2027'),
+(24, 'Magister', 'Manajemen Rekayasa', 'Terakreditasi BAIK SEKALI', '0227/SK/LAM Teknik/AM/XII/2022, Tanggal 20 Desember 2027', '12/20/2027'),
+(25, 'Magister', 'Ilmu Ekonomi', 'Terakreditasi BAIK SEKALI', '1499/SK/BAN-PT/Ak.Ppj/M/IV/2023', '4/18/2028'),
+(26, 'Magister', 'Jurusan Akuntansi', 'Tidak Terakreditasi', '', ''),
+(27, 'Sarjana', 'Manajemen', 'Terakreditasi UNGGUL', '11896/SK/BAN-PT/AK-ISK/S/X/2021, Tanggal 1 November 2025 ', '11/1/2025'),
+(28, 'Sarjana', 'Akuntansi', 'Terakreditasi BAIK SEKALI', ' 088/DE/A.5/AR.10/XII/2022, Tanggal 22 Desember 2027', '12/22/2027'),
+(29, 'Sarjana', 'Ekonomi Pembangunan', 'Terakreditasi UNGGUL', '216/DE/A.5/AR.10/II/2023, Tanggal 26 Februari 2028', '2/26/2028'),
+(30, 'Sarjana', 'Farmasi', 'Terakreditasi BAIK SEKALI', ' 0961/LAM-PTKes/Akr/Sar/XI/2022, Tanggal 29 Desember 2026', '12/29/2026'),
+(31, 'Sarjana', 'Ilmu Hukum', 'Terakreditasi A', '7344/SK/BAN-PT/Akred/S/XI/2020, Tanggal 17 November 2025', '11/17/2025'),
+(32, 'Sarjana', 'Ilmu Lingkungan', 'Terakreditasi BAIK SEKALI', '2883/SK/BAN-PT/AK-ISK/S/V/2022, Tanggal 9 September 2025', '9/9/2025'),
+(33, 'Sarjana', 'Kehutanan', 'Terakreditasi BAIK', '', ''),
+(34, 'Sarjana', 'Sastra Indonesia', 'Terakreditasi B', '4428/SK/BAN-PT/Ak-PPJ/S/VIII/2020, tanggal 11 April 2025', '4/11/2025'),
+(35, 'Sarjana', 'Ilmu Sejarah', 'Terakreditasi BAIK SEKALI', ' 3852/SK/BAN-PT/Ak.KP/S/IX/2023, Tanggal 8 September 2025', '9/8/2025'),
+(36, 'Sarjana', 'Tradisi Lisan', 'Terakreditasi A', '5939/SK/BAN-PT/Akred/S/IX/2020, Tanggal 23 September 2025 ', '9/23/2025'),
+(37, 'Sarjana', 'Sastra Inggris', 'Terakreditasi B', '6977/SK/BAN-PT/Akred/S/XI/2020, Tanggal 3 November 2025', '11/3/2025'),
+(38, 'Sarjana', 'Arkeologi', 'Terakreditasi A', '7156/SK/BAN-PT/Akred/S/XI/2020, tanggal 10 November 2025', '11/10/2025'),
+(39, 'Sarjana', 'Antropologi', 'Terakreditasi UNGGUL', '3853/SK/BAN-PT/Ak.KP/S/IX/2023, tanggal 10 November 2025', '11/10/2025'),
+(40, 'Sarjana', 'Sastra Prancis', 'Terakreditasi B', '3079/SK/BAN-PT/Akred/S/V/2021, Tanggal 19 November 2025', '11/19/2025'),
+(41, 'Sarjana', 'Ilmu Komunikasi', 'Terakreditasi A', '497/SK/BAN-PT/Akred/S/III/2019, Tanggal 26 Maret 2024', '3/26/2024'),
+(42, 'Sarjana', 'Sosiologi', 'Terakreditasi A', '693/SK/BAN-PT/Akred/S/IV/2019, Tanggal 9 Maret 2024 ', '4/9/2024'),
+(43, 'Sarjana', 'Ilmu Politik', 'Terakreditasi B', '1626/SK/BAN-PT/Akred/S/V/2019, Tanggal 21 Mei 2024', '5/21/2024'),
+(44, 'Sarjana', 'Ilmu Pemerintahan', 'Terakreditasi BAIK', '6188/SK/BAN-PT/Ak.KP/S/IX/2022, tanggal 21 Juli 2025', '7/21/2025'),
+(45, 'Sarjana', 'Ilmu Kesejahteraan Sosial', 'Terakreditasi A', '6403/SK/BAN-PT/Akred/S/X/2020, Tanggal 13 Oktober 2025', '10/13/2025'),
+(46, 'Sarjana', 'Perpustakaan dan Ilmu Informasi', 'Terakreditasi BAIK', '9438/SK/BAN-PT/Akred/S/VII/2021, Tanggal 13 Juli 2026 ', '7/13/2026'),
+(47, 'Sarjana', 'Jurnalistik', 'Terakreditasi BAIK SEKALI', '10450/SK/BAN-PT/Akred/S/VIII/2021, Tanggal 31 Agustus 2026 ', '8/31/2026'),
+(48, 'Sarjana', 'Administrasi Bisnis', 'Terakreditasi B', '564/SK/BAN-PT/Ak-PPJ/S/I/2022, Tanggal 28 Desember 2026', '12/28/2026'),
+(49, 'Sarjana', 'Ilmu Administrasi Negara', 'Terakreditasi BAIK SEKALI', '654/SK/BAN-PT/Ak/S/II/2023, Tanggal 27 Februari 2028', '2/27/2028'),
+(50, 'Sarjana', 'Kedokteran', 'Terakreditasi BAIK SEKALI', '0638/LAM-PTKes/Akr/Sar/VIII/2022, Tanggal 11 Agustus 2027', '8/11/2027'),
+(51, 'Sarjana', 'Keperawatan', 'Terakreditasi BAIK', '0763/LAM-PTKes/Akr/Sar/X/2023, Tanggal26 Oktober 2028', '10/26/2028'),
+(52, 'Sarjana', 'Kesehatan Masyarakat', 'Terakreditasi B', '0150/LAM-PTKes/Akr/Sar/III/2019, Tanggal 22 Maret 2024', '3/22/2024'),
+(53, 'Sarjana', 'Gizi', 'Terakreditasi BAIK', '1078/LAM-PTKes/Sar/XII/2022, tanggal  16 Desember 2027', '12/16/2027'),
+(54, 'Sarjana', 'Pendidikan Akuntansi', 'Terakreditasi BAIK', '7440/SK/BAN-PT/Ak.KP/S/X/2022, Tanggal 9 April 2024', '4/9/2024'),
+(55, 'Sarjana', 'Psikologi', 'Terakreditasi BAIK', '7479/SK/BAN-PT/Ak.KP/S/X/2022, Tanggal 30 Juli 2024', '7/30/2024'),
+(56, 'Sarjana', 'Pendidikan Fisika', 'Terakreditasi BAIK SEKALI', '2607/SK/BAN-PT/AK-ISK/S/IV/2022, Tanggal 6 Agustus 2024', '8/6/2024'),
+(57, 'Sarjana', 'Pendidikan Bahasa dan Sastra Indonesia', 'Terakreditasi B', '2952/SK/BAN-PT/Akred/S/VIII/2019, Tanggal 8 Juli 2024', '8/7/2024'),
+(58, 'Sarjana', 'Pendidikan Bahasa Inggris', 'Terakreditasi B', '3989/SK/BAN-PT/Akred/S/X/2019, Tanggal 22 Oktober 2024', '10/22/2024'),
+(59, 'Sarjana', 'Pendidikan Geografi', 'Terakreditasi BAIK SEKALI', '2900/SK/BAN-PT/AK-ISK/S/V/2022, Tabeel 31 Mei 2025', '5/31/2025'),
+(60, 'Sarjana', 'Pendidikan Pancasila dan Kewarganegaraan', 'Terakreditasi B', '4724/SK/BAN-PT/Ak-PPJ/S/VIII/2020, Tanggal 16 Agustus 2025', '8/16/2025'),
+(61, 'Sarjana', 'Pendidikan Biologi', 'Terakreditasi UNGGUL', '2589/SK/BAN-PT/AK-ISK/S/IV/2022, Tanggal 9 September 2025', '9/9/2025'),
+(62, 'Sarjana', 'Bimbingan dan Konseling', 'Terakreditasi B', '6128/SK/BAN-PT/Akred/S/IX/2020, tanggal 30 September 2025', '9/30/2025'),
+(63, 'Sarjana', 'Pendidikan Matematika', 'Terakreditasi UNGGUL', '2878/SK/BAN-PT/AK-ISK/S/V/2022, tanggal 8 November 2025', '11/8/2025'),
+(64, 'Sarjana', 'Pendidikan Kimia', 'Terakreditasi BAIK SEKALI', '2601/SK/BAN-PT/AK-ISK/S/IV/2022, Tanggal 16 Februari 2026', '2/16/2026'),
+(65, 'Sarjana', 'Pendidikan Ekonomi', 'Terakreditasi BAIK SEKALI', '1132/SK/BAN-PT/Akred/S/III/2021, tanggal 2 Maret 2026', '3/2/2026'),
+(66, 'Sarjana', 'Ilmu Keolahragaan', 'Terakreditasi BAIK', '1483/SK/BAN-PT/Akred/S/III/2021, tanggal 16 Maret 2026 ', '3/16/2026'),
+(67, 'Sarjana', 'Pendidikan Sejarah', 'Terakreditasi B', '1585/SK/BAN-PT/Ak-PPJ/S/III/2021, Tanggal 18 Maret 2026', '3/18/2026'),
+(68, 'Sarjana', 'Pendidikan Jasmani, Kesehatan dan Rekreasi', 'Terakreditasi BAIK', '1602/SK/BAN-PT/Akred/S/III/2021, tanggal 23 Maret 2026', '3/23/2026'),
+(69, 'Sarjana', 'Pendidikan Guru Sekolah Dasar', 'Terakreditasi BAIK SEKALI', '754/SK/LAMDIK/Ak/S/VII/2023, tanggal 17 Juli 2028', '7/17/2028'),
+(70, 'Sarjana', 'Pendidikan Guru Pendidikan Anak Usia Dini', 'Terakreditasi BAIK SEKALI', '754/SK/LAMDIK/Ak/S/VVII/2023, Tanggal 18  Juli 2028', '7/18/2028'),
+(71, 'Sarjana', 'Pendidikan Vokasional Teknik', 'Tidak Terakreditasi', '', ''),
+(72, 'Sarjana', 'Bioteknologi', 'Terakreditasi B', '2435/SK/BAN-PT/Akred/S/VII/2019, tanggal 16 Juli 2024 ', '7/16/2024'),
+(73, 'Sarjana', 'Statistika', 'Terakreditasi B', '2744/SK/BAN-PT/Akred/S/VII/2019, tanggal 30 Juli 2024', '7/30/2024'),
+(74, 'Sarjana', 'Ilmu Komputer', 'Terakreditasi BAIK', '7280/SK/BAN-PT/Ak.KP/S/X/2022, tangal 30 Juli 2024', '7/30/2024'),
+(75, 'Sarjana', 'Oseanografi', 'Terakreditasi B', '3231/SK/BAN-PT/Akred/S/VIII/2019, Tanggal 27 Agustus 2024 ', '8/27/2024'),
+(76, 'Sarjana', 'Geografi', 'Terakreditasi B', '2351/SK/BAN-PT/Ak-PPJ/S/IV/2020, Tanggal 7 April 2025 ', '4/7/2025'),
+(77, 'Sarjana', 'Matematika', 'Terakreditasi A', '2855/SK/BAN-PT/Ak-PPJ/S/V/202, tanggal 5 Mei 20250', '5/5/2025'),
+(78, 'Sarjana', 'Teknik Pertambangan', 'Terakreditasi BAIK', '9886/SK/BAN-PT/Ak.KP/S/XI/2022, tanggal 10 Mei 2025', '5/10/2025'),
+(79, 'Sarjana', 'Teknik Geofisika', 'Terakreditasi B', '4301/SK/BAN-PT/Ak-PPJ/S/VII/2020, Tanggal 25 Juli 2025', '7/25/2025'),
+(80, 'Sarjana', 'Teknik Geologi', 'Terakreditasi BAIK', '9638/SK/BAN-PT/Akred/S/VII/2021, Tanggal 21 Juli 2026 ', '7/21/2026'),
+(81, 'Sarjana', 'Fisika', 'Terakreditasi UNGGUL', '017/SK/LAMSAMA/Akred/S/XII/2022, Tanggal 13 Desember 2027', '12/13/2027'),
+(82, 'Sarjana', 'Biologi', 'Terakreditasi BAIK SEKALI', '001/SK/LAMSAMA/Akred/S/II/2023, tanggal 16 Februari 2028', '2/16/2028'),
+(83, 'Sarjana', 'Kimia', 'Terakreditasi UNGGUL', '023/SK/LAMSAMA/Akred/S/IV/2023, Tanggal 17 April 2028', '4/17/2028'),
+(84, 'Sarjana', 'Proteksi Tanaman', 'Terakreditasi B', '140/SK/BAN-PT/Akred/S/II/2019, tangga 19 Februari 2024', '2/19/2024'),
+(85, 'Sarjana', 'Ilmu Tanah', 'Terakreditasi B', '266/SK/BAN-PT/Akred/S/III/2019, Tanggal 5 Maret 2024', '3/5/2024'),
+(86, 'Sarjana', 'Penyuluhan Pertanian', 'Terakreditasi B', '772/SK/BAN-PT/Akred/S/IV/2019, Tanggal 9 Maret 2024', '4/9/2024'),
+(87, 'Sarjana', 'Agribisnis', 'Terakreditasi UNGGUL', '2184/SK/BAN-PT/AK-ISK/S/IV/2022, Tanggal 21 Mei 2026', '5/21/2026'),
+(88, 'Sarjana', 'Agroteknologi', 'Terakreditasi UNGGUL', '2239/SK/BAN-PT/AK-ISK/S/IV/2022, Tanggal 21 Mei 2026', '5/21/2026'),
+(89, 'Sarjana', 'Teknologi Pangan', 'Terakreditasi BAIK SEKALI', '2593/SK/BAN-PT/Ak/S/VII/2023, Tanggal 4 Juli 2028', '7/4/2028'),
+(90, 'Sarjana', 'Budidaya Perairan', 'Terakreditasi A', '2409/SK/BAN-PT/Ak.PEPS/S/VI/2023, tanggal 31 Mei 2024', '5/31/2024'),
+(91, 'Sarjana', 'Perikanan Tangkap', 'Terakreditasi B', '3329/SK/BAN-PT/Akred/S/IX/2019, Tanggal 3 September 2024 ', '9/3/2024'),
+(92, 'Sarjana', 'Teknologi Hasil Perikanan', 'Terakreditasi BAIK SEKALI', '3927/SK/BAN-PT/Ak.KP/S/X/2023, tanggal 16 Agustus 2025', '8/16/2025'),
+(93, 'Sarjana', 'Ilmu Kelautan', 'Terakreditasi UNGGUL', '3930/SK/BAN-PT/Ak.KP/S/X/2023, Tanggal 3 November 2025', '11/3/2025'),
+(94, 'Sarjana', 'Agrobisnis Perikanan', 'Terakreditasi BAIK SEKALI', '8273/SK/BAN-PT/Akred/S/XII/2020, Tanggal 15 Desember 2025', '12/15/2025'),
+(95, 'Sarjana', 'Manajemen Sumber Daya Perairan', 'Terakreditasi UNGGUL', '3924/SK/BAN-PT/Ak.KP/S/X/2023, Tanggal 28 Desember 2026', '12/28/2026'),
+(96, 'Sarjana', 'Peternakan', 'Terakreditasi B', '', ''),
+(97, 'Sarjana', 'Teknik Rekayasa Infrastruktur dan Lingkungan', 'Terakreditasi B', '4892/SK/BAN-PT/Akred/S/VIII/2020, Tanggal 25 Agustus 2025', '8/25/2025'),
+(98, 'Sarjana', 'Teknik Kelautan', 'Terakreditasi B', '5112/SK/BAN-PT/Akred/S/IX/2020, Tanggal 1 September 2025', '9/1/2025'),
+(99, 'Sarjana', 'Arsitektur', 'Terakreditasi B', '189/SK/BAN-PT/Ak.Ppj/S/I/2023, Tanggal 16 Agustus 2027', '8/16/2027'),
+(100, 'Sarjana', 'Teknik Mesin', 'Terakreditasi BAIK SEKALI', '0018/SK/LAM Teknik/AS/VIII/2022, Tangggal 20 Agustus 2027', '8/20/2027'),
+(101, 'Sarjana', 'Teknik Elektro', 'Terakreditasi UNGGUL', '0003/SK/LAM Teknik/AS/IV/2023, Tanggal 20 Agustus 2027', '8/20/2027'),
+(102, 'Sarjana', 'Teknik Informatika', 'Terakreditasi BAIK SEKALI', '090/SK/LAM-INFOKOM/Ak/S/XII/2022, Tanggal 15 Desember 2027', '12/15/2027'),
+(103, 'Sarjana', 'Teknik Sipil', 'Terakreditasi UNGGUL', '0254/SK/LAM Teknik/AS/XII/2022, tanggal 16 Desember 2027', '12/20/2027'),
+(104, 'Profesi', 'Pendidikan Profesi Apoteker', 'Terakreditasi B', '0737/LAM-PTKes/Akr/Pro/XII/2019, Tanggal 28 Desember 2024 ', '12/28/2024'),
+(105, 'Profesi', 'Pendidikan Profesi Guru', 'Terakreditasi B', '1651/SK/BAN-PT/Akred/PP/III/2021, Tangga; 24 Maret 2026', '3/24/2026'),
+(106, 'Profesi', 'Profesi Dokter', 'Terakreditasi BAIK SEKALI', '0639/LAM-PTKes/Akr/Pro/VIII/2023, tanggal 11 Agustus 2027', '8/11/2027'),
+(107, 'Profesi', 'Pendidikan Profesi Ners', 'Terakreditasi BAIK', '0764/LAM-PTKes/Akr/Pro/X/2023, Tanggal 26 Oktober 2028', '10/26/2028'),
+(108, 'Diploma Tiga', 'Statistika', 'Terakreditasi B', '6803/SK/BAN-PT/Ak-PPJ/Dipl-III/X/2020, Tanggal 9 Maret 2025', '9/4/2025'),
+(109, 'Diploma Tiga', 'Teknik Arsitektur', 'Terakreditasi B', '3493/SK/BAN-PT/Ak.S/D3/VIII/2023, Tanggal 8 Januari 2024', '8/1/2024'),
+(110, 'Diploma Tiga', 'Teknik Mesin', 'Terakreditasi BAIK SEKALI', '0264/SK/LAM TEKNIK/VD3/XII/2022, Tanggal 20 Desember 2027', '12/20/2027'),
+(111, 'Diploma Tiga', 'Teknik Elektronika', 'Terakreditasi BAIK SEKALI', '0144/SK/LAM Teknik/vD3/XII/2022, Tanggal 21 Desember 2027', '12/21/2027'),
+(112, 'Diploma Tiga', 'Teknik Sipil', 'Terakreditasi BAIK SEKALI', '0090/SK/LAM Teknik/VD3/IV/2023, Tanggal 20 Maret 2028', '20/04/2028'),
+(133, 'Sarjana', 'Sastra Mesin', 'Unggul Sekali', '6405/SK/BAN-PT/Akred/D/X/2020, Tanggal 13 Oktober 2025', '10/10/2030');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `rekognisi_dosen`
+--
+
+CREATE TABLE `rekognisi_dosen` (
+  `id` int(11) NOT NULL,
+  `nama_dosen` varchar(245) NOT NULL,
+  `bidang_keahlian` varchar(245) NOT NULL,
+  `rekognisi` varchar(245) NOT NULL,
+  `tahun` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `riwayat_akreditasi`
+--
+
+CREATE TABLE `riwayat_akreditasi` (
+  `id` int(11) NOT NULL,
+  `nama_prodi` varchar(245) NOT NULL,
+  `riwayat_tahun` varchar(245) NOT NULL,
+  `riwayat_akrd` varchar(245) NOT NULL,
+  `link_sertifikat` varchar(245) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `riwayat_akreditasi`
+--
+
+INSERT INTO `riwayat_akreditasi` (`id`, `nama_prodi`, `riwayat_tahun`, `riwayat_akrd`, `link_sertifikat`) VALUES
+(1, 'Teknik Elektro', '2023', 'C', ''),
+(2, 'Teknik Elektro', '2022', 'B', ''),
+(3, 'Teknik Elektro', '2022', 'Baik sekali', ''),
+(4, 'Teknik Elektro', '2017', 'B', ''),
+(5, 'Teknik Elektro', '2012', 'Unggul', ''),
+(6, 'Teknik Informatika', '2022', 'C', ''),
+(7, 'Teknik Informatika', '2022', 'B', ''),
+(8, 'Teknik Informatika', '2017', 'B', ''),
+(9, 'Teknik Informatika', '2013', 'Baik sekali', ''),
+(10, 'Teknik Mesin', '2022', 'C', ''),
+(11, 'Teknik Mesin', '2022', 'B', ''),
+(12, 'Teknik Mesin', '2017', 'Baik sekali', ''),
+(13, 'Teknik Mesin', '2012', 'Baik sekali', '');
 
 -- --------------------------------------------------------
 
@@ -958,9 +1379,63 @@ INSERT INTO `sitasi_ilmiah` (`id`, `penulis`, `judul_artikel`, `jumlah_artikel`)
 INSERT INTO `sitasi_ilmiah` (`id`, `penulis`, `judul_artikel`, `jumlah_artikel`) VALUES
 (210, 'Y Nugroho, MA Soendjoto, S Suyanto, J Matatula, S Alam, ...', 'Traditional medicinal plants and their utilization by local communities around Lambung Mangkurat Education Forests, South Kalimantan, Indonesia (Biodiversitas, volume 23,Number 1, January 2022, pages : 306-314)', 11);
 
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tabel_jalur_masuk`
+--
+
+CREATE TABLE `tabel_jalur_masuk` (
+  `id_jalur_masuk` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tabel_periode`
+--
+
+CREATE TABLE `tabel_periode` (
+  `id_periode` int(11) NOT NULL,
+  `tahun_akademik` varchar(245) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tabel_seleksi_maba`
+--
+
+CREATE TABLE `tabel_seleksi_maba` (
+  `id` int(11) NOT NULL,
+  `id_periode` int(11) NOT NULL,
+  `id_jalur_masuk` varchar(11) NOT NULL,
+  `tahun_akademik` varchar(245) NOT NULL,
+  `nama_prodi` varchar(245) NOT NULL,
+  `jalur_masuk` varchar(245) NOT NULL,
+  `peminat` varchar(245) NOT NULL,
+  `daya_tampung` varchar(200) NOT NULL,
+  `lulus_seleksi` varchar(200) NOT NULL,
+  `registrasi_ulang` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tes`
+--
+-- Kesalahan membaca struktur untuk tabel sistem_aps_uho.tes: #1932 - Table &#039;sistem_aps_uho.tes&#039; doesn&#039;t exist in engine
+-- Kesalahan membaca data untuk tabel sistem_aps_uho.tes: #1064 - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near &#039;FROM `sistem_aps_uho`.`tes`&#039; at line 1
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `akreditasi_eksternal`
+--
+ALTER TABLE `akreditasi_eksternal`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `akreditasi_internasional`
@@ -975,9 +1450,51 @@ ALTER TABLE `audit_keuangan_eks`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `auth_login`
+--
+ALTER TABLE `auth_login`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `bebankerja_dosen`
+--
+ALTER TABLE `bebankerja_dosen`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `kecukupan_dosen`
+--
+ALTER TABLE `kecukupan_dosen`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `kerjasama_peneltian`
+--
+ALTER TABLE `kerjasama_peneltian`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `kerjasama_pm`
+--
+ALTER TABLE `kerjasama_pm`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `kerjasama_pt`
+--
+ALTER TABLE `kerjasama_pt`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `mhs_asing`
 --
 ALTER TABLE `mhs_asing`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `pembelajaran_praktikum`
+--
+ALTER TABLE `pembelajaran_praktikum`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -993,10 +1510,40 @@ ALTER TABLE `prestasi_nonakademik`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `produktivitas_penelitian`
+--
+ALTER TABLE `produktivitas_penelitian`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `produktivitas_penelitianpkm`
+--
+ALTER TABLE `produktivitas_penelitianpkm`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `produk_jasa`
+--
+ALTER TABLE `produk_jasa`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `program_studi`
 --
 ALTER TABLE `program_studi`
   ADD PRIMARY KEY (`id_ps`);
+
+--
+-- Indeks untuk tabel `rekognisi_dosen`
+--
+ALTER TABLE `rekognisi_dosen`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `riwayat_akreditasi`
+--
+ALTER TABLE `riwayat_akreditasi`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `sitasi_ilmiah`
@@ -1005,26 +1552,92 @@ ALTER TABLE `sitasi_ilmiah`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `tabel_jalur_masuk`
+--
+ALTER TABLE `tabel_jalur_masuk`
+  ADD PRIMARY KEY (`id_jalur_masuk`);
+
+--
+-- Indeks untuk tabel `tabel_periode`
+--
+ALTER TABLE `tabel_periode`
+  ADD PRIMARY KEY (`id_periode`);
+
+--
+-- Indeks untuk tabel `tabel_seleksi_maba`
+--
+ALTER TABLE `tabel_seleksi_maba`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
+
+--
+-- AUTO_INCREMENT untuk tabel `akreditasi_eksternal`
+--
+ALTER TABLE `akreditasi_eksternal`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT untuk tabel `akreditasi_internasional`
 --
 ALTER TABLE `akreditasi_internasional`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `audit_keuangan_eks`
 --
 ALTER TABLE `audit_keuangan_eks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT untuk tabel `auth_login`
+--
+ALTER TABLE `auth_login`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT untuk tabel `bebankerja_dosen`
+--
+ALTER TABLE `bebankerja_dosen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT untuk tabel `kecukupan_dosen`
+--
+ALTER TABLE `kecukupan_dosen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT untuk tabel `kerjasama_peneltian`
+--
+ALTER TABLE `kerjasama_peneltian`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT untuk tabel `kerjasama_pm`
+--
+ALTER TABLE `kerjasama_pm`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `kerjasama_pt`
+--
+ALTER TABLE `kerjasama_pt`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
 
 --
 -- AUTO_INCREMENT untuk tabel `mhs_asing`
 --
 ALTER TABLE `mhs_asing`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+
+--
+-- AUTO_INCREMENT untuk tabel `pembelajaran_praktikum`
+--
+ALTER TABLE `pembelajaran_praktikum`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `prestasi_akademik`
@@ -1039,16 +1652,64 @@ ALTER TABLE `prestasi_nonakademik`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=214;
 
 --
+-- AUTO_INCREMENT untuk tabel `produktivitas_penelitian`
+--
+ALTER TABLE `produktivitas_penelitian`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT untuk tabel `produktivitas_penelitianpkm`
+--
+ALTER TABLE `produktivitas_penelitianpkm`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT untuk tabel `produk_jasa`
+--
+ALTER TABLE `produk_jasa`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT untuk tabel `program_studi`
 --
 ALTER TABLE `program_studi`
-  MODIFY `id_ps` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
+  MODIFY `id_ps` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+
+--
+-- AUTO_INCREMENT untuk tabel `rekognisi_dosen`
+--
+ALTER TABLE `rekognisi_dosen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `riwayat_akreditasi`
+--
+ALTER TABLE `riwayat_akreditasi`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `sitasi_ilmiah`
 --
 ALTER TABLE `sitasi_ilmiah`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1784;
+
+--
+-- AUTO_INCREMENT untuk tabel `tabel_jalur_masuk`
+--
+ALTER TABLE `tabel_jalur_masuk`
+  MODIFY `id_jalur_masuk` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `tabel_periode`
+--
+ALTER TABLE `tabel_periode`
+  MODIFY `id_periode` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `tabel_seleksi_maba`
+--
+ALTER TABLE `tabel_seleksi_maba`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
