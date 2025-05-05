@@ -509,19 +509,49 @@ class Data extends BaseController
 
         public function kecukupanDosen()
         {
+            if ($this->request->is('post')) {
+                $formData = [
+                    'unit_pengelola' => $this->request->getPost('unit_pengelola'),
+                    'doktor' => $this->request->getPost('doktor'),
+                    'magister' => $this->request->getPost('magister'),
+                    'profesi' => $this->request->getPost('profesi'),
+                ];
+
+                $this->mkecukupandosen->simpan($formData);
+
+                return redirect()->to(base_url('data/kecukupandosen'))->with('status', 'Data berhasil disimpan.');
+            }
+
+    
             $getdata = $this->mkecukupandosen->getdata();
 
-            //    $filter_params = array(
-            //     'fakultas' => $this -> input -> get('fakultas'),
-            //     'program'  => $this -> input -> get('fakultas'),
-            //    );
-            //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
-        
-               $data = array(
-                    'kecukupandosen' => $getdata
-               );
+            $data = array(
+                'kecukupandosen' => $getdata,
+                'paginasi' => $this->mkecukupandosen->paginate(10, 'paginasi'), 
+                'pager' => $this->mkecukupandosen->pager
+            );
 
             echo view('data/kecukupandosen', $data);
+        }
+
+        public function kecukupandosen_update($id)
+            {
+                if ($this->request->is('post')) {
+                    $formData = [
+                        'unit_pengelola' => $this->request->getPost('unit_pengelola'),
+                        'doktor' => $this->request->getPost('doktor'),
+                        'magister' => $this->request->getPost('magister'),
+                        'profesi' => $this->request->getPost('profesi'),
+                    ];
+                }
+                $this->mkecukupandosen->updateData($id, $formData);
+
+                return redirect()->to('data/kecukupandosen')->with('status', 'Data berhasil diupdate');
+            }
+
+        public function kecukupandosen_delete($id) {
+            $this -> mkecukupandosen -> hapus($id);
+            return redirect() -> to('data/kecukupandosen');
         }
 
         public function bebankerjadosen()
@@ -573,22 +603,102 @@ class Data extends BaseController
 
         public function produktivitaspenelitian()
         {
-            $getdata = $this->mproduktivitaspenelitian->getdata();
-            $getdata = $this->mproduktivitaspenelitianpkm->getdata();
+            if ($this->request->is('post')) {
+                $formData = [
+                    'sumber_biaya' => $this->request->getPost('sumber_biaya'),
+                    'ts1' => $this->request->getPost('ts1'),
+                    'ts2' => $this->request->getPost('ts2'),
+                    'ts3' => $this->request->getPost('ts3'),
+                    'jumlah' => $this->request->getPost('jumlah')
+                ];
 
-            //    $filter_params = array(
-            //     'fakultas' => $this -> input -> get('fakultas'),
-            //     'program'  => $this -> input -> get('fakultas'),
-            //    );
-            //    $get_filtered_data = $this -> mprogram_studi -> getFilteredData();
-        
-               $data = array(
-                    'produktivitaspenelitian' => $getdata,
-                    'produktivitaspenelitianpkm' => $getdata
-               );
+                $this->mproduktivitaspenelitian->simpan($formData);
+
+                return redirect()->to(base_url('data/produktivitaspenelitian'))->with('status', 'Data berhasil disimpan.');
+            }
+
+    
+            $getdata = $this->mproduktivitaspenelitian->getdata();
+
+            $data = array(
+                'produktivitaspenelitian' => $getdata,
+                'paginasi' => $this->mproduktivitaspenelitian->paginate(10, 'paginasi'), 
+                'pager' => $this->mproduktivitaspenelitian->pager
+            );
 
             echo view('data/produktivitaspenelitian', $data);
         }
+
+        public function produktivitapenelitian_update($id)
+            {
+                if ($this->request->is('post')) {
+                    $formData = [
+                        'sumber_biaya' => $this->request->getPost('sumber_biaya'),
+                        'ts1' => $this->request->getPost('ts1'),
+                        'ts2' => $this->request->getPost('ts2'),
+                        'ts3' => $this->request->getPost('ts3'),
+                        'jumlah' => $this->request->getPost('jumlah')
+                    ];
+                }
+                $this->mproduktivitaspenelitian->updateData($id, $formData);
+
+                return redirect()->to('data/produktivitaspenelitian')->with('status', 'Data berhasil diupdate');
+            }
+
+        public function produktivitapenelitian_delete($id) {
+            $this -> mproduktivitaspenelitian -> hapus($id);
+            return redirect() -> to('data/produktivitaspenelitian');
+        }
+
+        public function produktivitaspenelitianpkm()
+        {
+            if ($this->request->is('post')) {
+                $formData = [
+                    'sumber_biaya' => $this->request->getPost('sumber_biaya'),
+                    'ts1' => $this->request->getPost('ts1'),
+                    'ts2' => $this->request->getPost('ts2'),
+                    'ts3' => $this->request->getPost('ts3'),
+                    'jumlah' => $this->request->getPost('jumlah')
+                ];
+
+                $this->mproduktivitaspenelitianpkm->simpan($formData);
+
+                return redirect()->to(base_url('data/produktivitaspenelitianpkm'))->with('status', 'Data berhasil disimpan.');
+            }
+
+    
+            $getdata = $this->mproduktivitaspenelitianpkm->getdata();
+
+            $data = array(
+                'produktivitaspenelitianpkm' => $getdata,
+                'paginasi' => $this->mproduktivitaspenelitianpkm->paginate(10, 'paginasi'), 
+                'pager' => $this->mproduktivitaspenelitianpkm->pager
+            );
+
+            echo view('data/produktivitaspenelitianpkm', $data);
+        }
+
+        public function produktivitapenelitianpkm_update($id)
+            {
+                if ($this->request->is('post')) {
+                    $formData = [
+                        'sumber_biaya' => $this->request->getPost('sumber_biaya'),
+                        'ts1' => $this->request->getPost('ts1'),
+                        'ts2' => $this->request->getPost('ts2'),
+                        'ts3' => $this->request->getPost('ts3'),
+                        'jumlah' => $this->request->getPost('jumlah')
+                    ];
+                }
+                $this->mproduktivitaspenelitianpkm->updateData($id, $formData);
+
+                return redirect()->to('data/produktivitaspenelitianpkm')->with('status', 'Data berhasil diupdate');
+            }
+
+        public function produktivitapenelitianpkm_delete($id) {
+            $this -> mproduktivitaspenelitianpkm -> hapus($id);
+            return redirect() -> to('data/produktivitaspenelitianpkm');
+        }
+
         public function rekognisidosen()
         {
             $getdata = $this->mrekognisidosen->getdata();

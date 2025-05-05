@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class BebanKerjaDosenModel extends Model
 {
     protected $table = 'bebankerja_dosen';
+    protected $primaryKey = 'id';
     protected $allowedFields = ['unit_pengelola','jumlah_dosen','jumlah_mahasiswa','jumlah_mahasiswata'];
 
     public function getdata()

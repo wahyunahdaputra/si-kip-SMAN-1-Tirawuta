@@ -11,8 +11,8 @@ const datasets = {
   datasets: [
     {
       data: dataValue,
-      backgroundColor: ["#15803d33", "#22c55e33", "#4ade8033", "#86efac33"],
-      borderColor: ["#059669", "#10b981", "#34d399", "#6ee7b7"],
+      backgroundColor: ["#cceeff", "#99d6e6", "#66cce0", "#33b3d1"], // Warna biru muda dengan transparansi
+      borderColor: ["#0099cc", "#0088b3", "#0077a1", "#006699"], // Warna biru gelap
       borderWidth: 1,
     },
   ],
@@ -44,8 +44,8 @@ const datasets2 = {
     datasets: [
       {
         data: dataValue,
-        backgroundColor: ["#15803d33", "#22c55e33", "#4ade8033", "#86efac33"],
-        borderColor: ["#059669", "#10b981", "#34d399", "#6ee7b7"],
+        backgroundColor: ["#ffcccc", "#ff9999", "#ff6666", "#ff3333"], // Warna merah dengan transparansi
+        borderColor: ["#cc0000", "#b30000", "#990000", "#800000"], // Warna merah gelap
         borderWidth: 1,
       },
     ],

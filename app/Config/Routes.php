@@ -9,6 +9,9 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->setAutoRoute(true);
 
+$routes->get('/', 'Landing::index');
+
+
 // Grup Filter Login
 $routes->group('',['filter' => 'loginfilter'], function ($routes) {
     $routes->get('data/home', 'Data::home');
@@ -28,6 +31,7 @@ $routes->group('',['filter' => 'loginfilter'], function ($routes) {
     $routes->get('data/kecukupandosen', 'Data::kecukupandosen');
     $routes->get('data/bebankerjadosen', 'Data::bebankerjadosen');
     $routes->get('data/produktivitaspenelitian', 'Data::produktivitaspenelitian');
+    $routes->get('data/produktivitaspenelitianpkm', 'Data::produktivitaspenelitianpkm');
     // $routes->get('data/rekognisidosen', 'Data::rekognisidosen');
  });
  $routes->group('',['filter' => 'AlreadyLoginFilter'], function ($routes) {
@@ -38,6 +42,7 @@ $routes->get("/riwayatakreditasi/(:any)", "Data::riwayatAkreditasi/$1");
 $routes->get('logout', 'Auth::logout');
 $routes->get("/riwayatakreditasi/(:any)", "Data::riwayatAkreditasi/$1");
 
+//Tata Pamong Aksi
 $routes -> delete("/akreksternal/(:num)", "Data::akreksternal_delete/$1");
 $routes-> post ("/akreksternal/(:num)", "Data::akreksternal_update/$1");
 
@@ -53,6 +58,20 @@ $routes-> post ("/kerjasamaperguruantinggi/(:num)", "Data::kerjasamaperguruantin
 $routes -> delete("/akrinternasional/(:num)", "Data::akrinternasional_delete/$1");
 $routes-> post ("/akrinternasional/(:num)", "Data::akrinternasional_update/$1");
 
+//Sumber Daya Manusia Aksi
+$routes -> delete("/bebankerjadosen/(:num)", "Data::bebankerjadosen_delete/$1");
+$routes-> post ("/bebankerjadosen/(:num)", "Data::bebankerjadosen_update/$1");
+
+$routes -> delete("/kecukupandosen/(:num)", "Data::kecukupandosen_delete/$1");
+$routes-> post ("/kecukupandosen/(:num)", "Data::kecukupandosen_update/$1");
+
+$routes -> delete("/produktivitaspenelitian/(:num)", "Data::produktivitaspenelitian_delete/$1");
+$routes-> post ("/produktivitaspenelitian/(:num)", "Data::produktivitaspenelitian_update/$1");
+
+$routes -> delete("/produktivitaspenelitianpkm/(:num)", "Data::produktivitaspenelitianpkm_delete/$1");
+$routes-> post ("/produktivitaspenelitianpkm/(:num)", "Data::produktivitaspenelitianpkm_update/$1");
+
+
 // Tambah Data
 // Tata Pamomg dan Tata Kelola
 $routes->post('auditkeuanganeks', 'Data::auditkeuanganeks');
@@ -64,5 +83,11 @@ $routes->post('kerjasamaperguruantinggi', 'Data::kerjasamaperguruantinggi');
 // Mahasiswa
 $routes->post('mhsasing', 'Data::mhsasing');
 $routes->post('pembelajaranpraktikum', 'Data::pembelajaranpraktikum');
+
+//Sumber Daya Manusia
+$routes->post('kecukupandosen', 'Data::kecukupandosen');
+$routes->post('bebankerjadosen', 'Data::bebankerjadosen');
+$routes->post('produktivitaspenelitian', 'Data::produktivitaspenelitian');
+$routes->post('produktivitaspenelitianpkm', 'Data::produktivitaspenelitianpkm');
 
 

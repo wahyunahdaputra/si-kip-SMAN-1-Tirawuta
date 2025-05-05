@@ -9,8 +9,8 @@ const datasets = {
   datasets: [
     {
       data: dataValue,
-      backgroundColor: ["#15803d33", "#22c55e33", "#4ade8033", "#86efac33"],
-      borderColor: ["#059669", "#10b981", "#34d399", "#6ee7b7"],
+      backgroundColor: ["#add8e6", "#90ee90", "#ffcccb"], // Warna biru muda, hijau muda, dan merah
+      borderColor: ["#007bff", "#28a745", "#dc3545"], // Warna border yang lebih gelap untuk kontras
       borderWidth: 1,
     },
   ],

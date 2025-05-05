@@ -21,7 +21,7 @@ class Home extends BaseController
 
        $data = array(
             'dataProgramStudi' => $getdata,
-            'paginasi' => $this->mhome->paginate(30, 'paginasi'), // Mengambil data yang dipaginasi
+            'paginasi' => $this->mhome->paginate(30, 'paginasi'),
             'pager' => $this->mhome->pager
        );
 

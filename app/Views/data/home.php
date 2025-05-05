@@ -12,46 +12,110 @@
                             Dashboard
                         </h2> -->
                 <!-- Charts -->
-                <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-                    Data Program Studi
-                </h2>
-                <div class="grid gap-6 mb-8 md:grid-cols-2">
-                    <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-                        <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                            Program
-                        </h4>
-                        <canvas id="pie"></canvas>
-                        <div class="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
-                            <!-- Chart legend -->
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-blue-500 rounded-full"></span>
-                                <span>Doktor</span>
+                <!-- <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+                    Selamat Datang Admin!
+                </h2> -->
+                <div class="grid gap-6 my-6 mb-8 md:grid-cols-1">
+                    <div class="w-full p-6 bg-white rounded-2xl shadow-md dark:bg-gray-800">
+                        <h2 class="text-xl font-bold text-gray-800 dark:text-white mb-4">
+                            Selamat Datang, Admin!
+                        </h2>
+
+                        <div class="p-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-900 dark:border-gray-700">
+                            <div class="flex items-center mb-3">
+                            <span class="w-24 text-gray-700 dark:text-gray-300 font-semibold text-sm">Nama</span>
+                            <span class="text-gray-900 dark:text-white text-sm">: Pangkalta Sarlison</span>
+                            </div>
+                            <div class="flex items-center mb-3">
+                            <span class="w-24 text-gray-700 dark:text-gray-300 font-semibold text-sm">Tipe</span>
+                            <span class="text-gray-900 dark:text-white text-sm">: Admin</span>
                             </div>
                             <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
-                                <span>Magister</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"></span>
-                                <span>Profesi</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-pink-600 rounded-full"></span>
-                                <span>Sarjana</span>
-                            </div>
-                            <div class="flex items-center">
-                                <span class="inline-block w-3 h-3 mr-1 bg-yellow-400 rounded-full"></span>
-                                <span>Diploma 3</span>
+                            <span class="w-24 text-gray-700 dark:text-gray-300 font-semibold text-sm">NIP</span>
+                            <span class="text-gray-900 dark:text-white text-sm">: 000000000000</span>
                             </div>
                         </div>
                     </div>
-                    <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                    <hr>
+                    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+                        <!-- Kotak 1 -->
+                        <div class="p-4 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                            <h4 class="mb-2 text-sm font-semibold text-gray-800 dark:text-gray-300">Pendaftar</h4>
+                            <canvas id="chartPendaftar"></canvas><br>
+                            <div id="totalPendaftar" class="mt-3 text-center text-sm font-medium font-semibold text-gray-800 dark:text-gray-300"></div>
+                        </div>
+
+                        <!-- Kotak 2 -->
+                        <div class="p-4 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                            <h4 class="mb-2 text-sm font-semibold text-gray-800 dark:text-gray-300">Lolos Seleksi</h4>
+                            <canvas id="chartLolos"></canvas><br>
+                            <div id="totalLolos" class="mt-3 text-center text-sm font-medium font-semibold text-gray-800 dark:text-gray-300"></div>
+                        </div>
+
+                        <!-- Kotak 3 -->
+                        <div class="p-4 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                            <h4 class="mb-2 text-sm font-semibold text-gray-800 dark:text-gray-300">Belum Diverifikasi</h4>
+                            <canvas id="chartBelum"></canvas><br>
+                            <div id="totalBelum" class="mt-3 text-center text-sm font-medium font-semibold text-gray-800 dark:text-gray-300"></div>
+                        </div>
+
+                        <!-- Kotak 4 -->
+                        <div class="p-4 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                            <h4 class="mb-2 text-sm font-semibold text-gray-800 dark:text-gray-300">Dibatalkan</h4>
+                            <canvas id="chartBatal"></canvas><br>
+                            <div id="totalBatal" class="mt-3 text-center text-sm font-medium font-semibold text-gray-800 dark:text-gray-300"></div>
+                        </div>
+                    </div>
+
+
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    <script>
+                        const pieOptions = {
+                            responsive: true,
+                            plugins: {
+                            tooltip: {
+                                callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.parsed;
+                                    return `${label}: ${value}`;
+                                }
+                                }
+                            }
+                            }
+                        };
+
+                        function renderChart(canvasId, totalId, data) {
+                            const total = data.datasets[0].data.reduce((a, b) => a + b, 0);
+                            document.getElementById(totalId).innerText = `Total: ${total}`;
+
+                            new Chart(document.getElementById(canvasId), {
+                            type: 'pie',
+                            data,
+                            options: pieOptions
+                            });
+                        }
+
+                        const dataSample = {
+                            labels: ['Laki-laki', 'Perempuan'],
+                            datasets: [{
+                            data: [55, 45],
+                            backgroundColor: ['#3B82F6', '#F472B6'],
+                            }]
+                        };
+
+                        renderChart('chartPendaftar', 'totalPendaftar', dataSample);
+                        renderChart('chartLolos', 'totalLolos', dataSample);
+                        renderChart('chartBelum', 'totalBelum', dataSample);
+                        renderChart('chartBatal', 'totalBatal', dataSample);
+                    </script>
+
+                    <!-- <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                         <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
                             Program Studi/Fakultas
                         </h4>
                         <canvas id="line"></canvas>
-                        <div class="flex flex-wrap justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
-                            <!-- Chart legend -->
+                        <div class="flex flex-wrap justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">                     
                             <div class="flex items-center">
                                 <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
                                 <span>FPT</span>
@@ -113,7 +177,13 @@
                                 <span>PASCA SARJANA</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <!-- <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                    <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
+                            Fakultas
+                        </h4>
+                        <canvas id="chartData"></canvas>
+                    </div> -->
                     <!-- <div
                                 class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                                 <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
@@ -140,7 +210,7 @@
                 </div>
 
                 <!-- With actions -->
-                <h3 class="mb-4 text-lg font-semibold text-black-600 dark:text-gray-300 text-center justify-center">
+                <!-- <h3 class="mb-4 text-lg font-semibold text-black-600 dark:text-gray-300 text-center justify-center">
                     Daftar Status Akreditasi Program Studi
                 </h3>
                 <div class="w-full overflow-hidden rounded-lg shadow-xs">
@@ -198,11 +268,9 @@
 
                     </div>
                     <div class="flex justify-center px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
-                        <!-- Pagination -->
-                        <?= $pager->links('paginasi', 'ps_pagination'); ?>
                     </div>
-                    </div>
-            </div>
+                    </div> 
+                </div> 
         </main>
         
         <link rel="stylesheet" href="<?= base_url('assets/css/util/table/style.css') ?>">
@@ -210,5 +278,6 @@
         <script src="<?= base_url('assets/js/util/table/filter-data.js') ?>"></script>
         <script src="<?= base_url('assets/js/util/table/datalist-autocomplete.js') ?>"></script>
         <script src="<?= base_url('assets/js/util/table/table-sort.js') ?>"></script>
+        <script src="<?= base_url('assets/js/home/charts-bars.js') ?>" defer="defer"></script>
 
         <?= $this->endSection(); ?>

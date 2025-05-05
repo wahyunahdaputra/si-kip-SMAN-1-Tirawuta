@@ -7,11 +7,123 @@
         <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
             Beban Kerja Dosen
         </h2>
-
         <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
             <canvas id="chartData"></canvas>
         </div>
+        <h3
+            class="my-6 mb-4 text-lg font-semibold text-black-600 dark:text-gray-300 text-center justify-center">
+            Data Beban Kerja Dosen
+        </h3>
+        <div class="my-6 mb-4">
+            <button
+                @click="openModal"
+                class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">Tambah Data
+            </button>
+        </div>
+        <div
+            x-show="isModalOpen"
+            x-transition:enter="transition ease-out duration-150"
+            x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+            class="fixed inset-0 z-30 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center"
+            style="display: none;">
+            <!-- Modal -->
+            <div
+                x-show="isModalOpen"
+                x-transition:enter="transition ease-out duration-150"
+                x-transition:enter-start="opacity-0 transform translate-y-1/2"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="transition ease-in duration-150"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0  transform translate-y-1/2"
+                @click.away="closeModal"
+                @keydown.escape="closeModal"
+                class="w-full px-6 py-4 overflow-hidden bg-white rounded-t-lg dark:bg-gray-800 sm:rounded-lg sm:m-4 sm:max-w-xl"
+                role="dialog"
+                id="modal">
+                <!-- Remove header if you don't want a close icon. Use modal body to place modal
+                tile. -->
+                <header class="flex justify-end">
+                    <button
+                        class="inline-flex items-center justify-center w-6 h-6 text-gray-400 transition-colors duration-150 rounded dark:hover:text-gray-200 hover: hover:text-gray-700"
+                        aria-label="close"
+                        @click="closeModal">
+                        <svg
+                            class="w-4 h-4"
+                            fill="currentColor"
+                            viewbox="0 0 20 20"
+                            role="img"
+                            aria-hidden="true">
+                            <path
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </header>
+                <!-- Modal body -->
+                <div class="mt-4 mb-6">
+                    <!-- Modal title -->
+                    <p class="mb-4 text-lg font-semibold text-gray-700 dark:text-gray-300">
+                        Form Input Beban Kerja Dosen
+                    </p>
+                    <!-- Modal description -->
+                    <form action="<?= base_url('bebankerjadosen') ?>" method="POST">
+                    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                        <label class="block text-sm">
+                            <span class="text-gray-700 dark:text-gray-400">Unit Pengelola</span>
+                            <input
+                                class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="unit_pengelola"
+                                placeholder="Nama Unit Pengelola..."/>
+                        </label>
+                        <label class="block text-sm mt-4">
+                            <span class="text-gray-700 dark:text-gray-400">Jumlah Dosen</span>
+                            <input
+                                class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="jumlah_dosen"
+                                placeholder="Jumlah Dosen..."/>
+                        </label>
+                        <label class="block text-sm mt-4">
+                            <span class="text-gray-700 dark:text-gray-400">Jumlah Mahasiswa</span>
+                            <input
+                                class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="jumlah_mahasiswa"
+                                placeholder="Jumlah Mahasiswa..."/>
+                        </label>
+                        <label class="block text-sm mt-4">
+                            <span class="text-gray-700 dark:text-gray-400">Jumlah Mahasiswa TA</span>
+                            <input
+                                class="block w-full mt-2 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                                name="jumlah_mahasiswata"
+                                placeholder="Jumlah Mahasiswa TA..."/>
+                        </label>
+                        <div class="flex mt-6 text-sm justify-end">
+                            <button
+                                class="px-4 py-2 justify-end text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" name="simpan">
+                                Simpan
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    $(function(){
 
+                        <?php if(session()->has("status")) { ?>
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Berhasil',
+                                text: '<?= session("status") ?>'
+                            })
+                        <?php } ?>
+                    });
+                </script>
+                </div>
+            </div>
+        </div>
         <div class="w-full mb-8 overflow-hidden rounded-lg shadow-xs">
             <div class="w-full overflow-x-auto">
                 <table class="w-full">
@@ -34,7 +146,7 @@
                             <td class="px-4 py-3"><?= $bkd->jumlah_dosen; ?></td>
                             <td class="px-4 py-3"><?= $bkd->jumlah_mahasiswa; ?></td>
                             <td class="px-4 py-3"><?= $bkd->jumlah_mahasiswata; ?></td>
-                            <td class="px-4 py-3"><td class="px-4 py-3"><?= "1 : ". number_format((filter_var($bkd->jumlah_mahasiswa, FILTER_SANITIZE_NUMBER_FLOAT) + filter_var($bkd->jumlah_mahasiswata, FILTER_SANITIZE_NUMBER_FLOAT)) / filter_var($bkd->jumlah_dosen, FILTER_SANITIZE_NUMBER_FLOAT), 0);?></td>
+                            <td class="px-4 py-3"><?= "1 : ". number_format((filter_var($bkd->jumlah_mahasiswa, FILTER_SANITIZE_NUMBER_FLOAT) + filter_var($bkd->jumlah_mahasiswata, FILTER_SANITIZE_NUMBER_FLOAT)) / filter_var($bkd->jumlah_dosen, FILTER_SANITIZE_NUMBER_FLOAT), 0);?></td>
                             <td class="px-4 py-3">
                             <div class="flex items-center space-x-3">
                                         <button
@@ -60,26 +172,22 @@
                                             editButtons.forEach(button => {
                                                 button.addEventListener('click', () => {
                                                     const id = button.getAttribute('data-id');
-                                                    const lembaga_mitra = button.getAttribute('data-lembaga_mitra');
-                                                    const internasional = button.getAttribute('data-internasional');
-                                                    const nasional = button.getAttribute('data-nasional');
-                                                    const lokal = button.getAttribute('data-lokal');
-                                                    const bentuk_kegiatan = button.getAttribute('data-bentuk_kegiatan');
-                                                    const bukti_kerjasama = button.getAttribute('data-bukti_kerjasama');
+                                                    const unit_pengelola = button.getAttribute('data-unit_pengelola');
+                                                    const jumlah_dosen = button.getAttribute('data-jumlah_dosen');
+                                                    const jumlah_mahasiswa = button.getAttribute('data-jumlah_mahasiswa');
+                                                    const jumlah_mahasiswata = button.getAttribute('data-jumlah_mahasiswata');
 
                                                     // Populate the form with the fetched data
-                                                    form.querySelector('input[name="lembaga_mitra"]').value = lembaga_mitra;
-                                                    form.querySelector('input[name="internasional"]').value = internasional;
-                                                    form.querySelector('input[name="nasional"]').value = nasional;
-                                                    form.querySelector('input[name="lokal"]').value = lokal;
-                                                    form.querySelector('textarea[name="bentuk_kegiatan"]').value = bentuk_kegiatan;
-                                                    form.querySelector('input[name="bukti_kerjasama"]').value = bukti_kerjasama;
+                                                    form.querySelector('input[name="unit_pengelola"]').value = unit_pengelola;
+                                                    form.querySelector('input[name="jumlah_dosen"]').value = jumlah_dosen;
+                                                    form.querySelector('input[name="jumlah_mahasiswa"]').value = jumlah_mahasiswa;
+                                                    form.querySelector('input[name="jumlah_mahasiswata"]').value = jumlah_mahasiswata;
 
                                                     // Change form action to the update route
                                                     form.action = `<?= base_url('bebankerjadosen') ?>/${id}`;
 
                                                     // Change modal title
-                                                    modalTitle.innerText = 'Edit Data Sertifikasi/Akreditasi Eksternal';
+                                                    modalTitle.innerText = 'Edit Data Beban Kerja Dosen';
                                                 });
                                             });
                                         });

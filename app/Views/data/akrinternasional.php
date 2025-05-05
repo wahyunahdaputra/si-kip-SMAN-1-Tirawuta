@@ -2,9 +2,6 @@
 <?= $this->section('content'); ?>
 <main class="h-full overflow-y-auto">
     <div class="container px-6 mx-auto grid">
-        <!-- <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-        Dashboard </h2> -->
-        <!-- Charts -->
         <div></div>
         <h3
             class="my-6 mb-4 text-lg font-semibold text-black-600 dark:text-gray-300 text-center justify-center">
@@ -24,7 +21,8 @@
             x-transition:leave="transition ease-in duration-150"
             x-transition:leave-start="opacity-100"
             x-transition:leave-end="opacity-0"
-            class="fixed inset-0 z-30 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center">
+            class="fixed inset-0 z-30 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center"
+            style="display: none;">
             <!-- Modal -->
             <div
                 x-show="isModalOpen"

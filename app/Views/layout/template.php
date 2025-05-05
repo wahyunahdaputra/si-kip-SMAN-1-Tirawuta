@@ -20,7 +20,7 @@
 
 <body>
     <div class="spinner-wrapper flex flex-col h-screen justify-center items-center" role="status">
-        <img class="" src="<?= base_url('assets/img/logo loader.png'); ?>" alt="loaderlogo">
+        <img class="" src="<?= base_url('assets/img/loader.png'); ?>" alt="loaderlogo">
         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <style>
                 .spinner_S1WN {
@@ -60,24 +60,62 @@
         <!-- Desktop sidebar -->
         <aside class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0">
             <div class="py-4 text-gray-500 dark:text-gray-400">
-            <img class="" src="<?= base_url('assets/img/logouho.png'); ?>" alt="loaderlogo">
+            <img class="" src="<?= base_url('assets/img/logo-sikip.png'); ?>" alt="loaderlogo">
                 <ul class="mt-4">
-                    <li class="relative px-6 py-3">
-                        <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
-                        <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="home">
-                            <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" stroke="currentColor">
-                                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-                            </svg>
-                            <span class="ml-6 text-left">Dashboard</span>
-                        </a>
-                    </li>
-                    <li id="tataPamong" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.tataPamong }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-6 h-6" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <!-- HOME - Aktif -->
+                        <li class="relative px-6 py-3 bg-purple-100 text-purple-700 rounded-lg">
+                            <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
+                            <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150" href="home">
+                                <!-- Home Icon -->
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 9.75L12 3l9 6.75V21a.75.75 0 01-.75.75h-5.25a.75.75 0 01-.75-.75v-5.25H9.75V21a.75.75 0 01-.75.75H3.75A.75.75 0 013 21V9.75z" />
+                                </svg>
+                                <span class="ml-6">Home</span>
+                            </a>
+                        </li>
+
+                        <!-- DATASET -->
+                        <li class="relative px-6 py-3">
+                            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-purple-600" href="dataset">
+                                <!-- Database Icon -->
+                                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                     <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                                 </svg>
-                                <span class="ml-6 text-left">Tata Pamong, Tata Kelola & Kerjasama</span>
+                                <span class="ml-6">Dataset</span>
+                            </a>
+                        </li>
+
+                        <!-- PENDAFTAR -->
+                        <li class="relative px-6 py-3">
+                            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-purple-600" href="pendaftar">
+                                <!-- Users Icon -->
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a4 4 0 00-5-4m-6 6v-2a4 4 0 00-4-4H4a4 4 0 00-4 4v2h5m6 0a4 4 0 014-4h.01M9 12a4 4 0 100-8 4 4 0 000 8zm6 0a4 4 0 100-8 4 4 0 000 8z" />
+                                </svg>
+                                <span class="ml-6">Pendaftar</span>
+                            </a>
+                        </li>
+
+                        <!-- HASIL KLASIFIKASI -->
+                        <li class="relative px-6 py-3">
+                            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-purple-600" href="hasil-klasifikasi">
+                                <!-- Chart Bar Icon -->
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 17v-4a1 1 0 00-2 0v4a1 1 0 002 0zm4 0v-6a1 1 0 00-2 0v6a1 1 0 002 0zm4 0v-8a1 1 0 00-2 0v8a1 1 0 002 0z" />
+                                </svg>
+                                <span class="ml-6">Hasil Klasifikasi</span>
+                            </a>
+                        </li>
+                    <!-- <li id="tataPamong" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.tataPamong }">
+                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
+                            <span class="inline-flex items-center">
+                                <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                                </svg>
+                                <span class="ml-6 text-left">Pendaftar</span>
                             </span>
                             <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                                 <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -116,7 +154,7 @@
                                 <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                     <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                                 </svg>
-                                <span class="ml-6 text-left">Mahasiswa</span>
+                                <span class="ml-6 text-left">Hasil Klasifikasi</span>
                             </span>
                             <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                                 <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -137,14 +175,14 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
-                    <li id="sumberDayaManusia" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.sumberDayaManusia }">
+                    </li> -->
+                    <!-- <li id="sumberDayaManusia" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.sumberDayaManusia }">
                         <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
                             <span class="inline-flex items-center">
                                 <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                     <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                                 </svg>
-                                <span class="ml-6 text-left">Sumber Daya Manusia</span>
+                                <span class="ml-6 text-left">User Management</span>
                             </span>
                             <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                                 <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -170,14 +208,14 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
-                    <li id="keuanganSaranaPrasarana" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.keuanganSaranaPrasarana }">
+                    </li> -->
+                    <!-- <li id="keuanganSaranaPrasarana" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.keuanganSaranaPrasarana }">
                         <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
                             <span class="inline-flex items-center">
                                 <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                     <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                                 </svg>
-                                <span class="ml-6 text-left">Keuangan, Sarana & Prasarana</span>
+                                <span class="ml-6 text-left">Setting Aplikasi</span>
                             </span>
                             <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                                 <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -195,8 +233,8 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
-                    <li id="luaranCapaianTridharma" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.luaranCapaianTridharma }">
+                    </li> -->
+                    <!-- <li id="luaranCapaianTridharma" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.luaranCapaianTridharma }">
                         <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
                             <span class="inline-flex items-center">
                                 <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -251,14 +289,14 @@
                                 <a class="w-full" href="#">
                                     Luaran Lainnya
                                 </a>
-                            </li>
+                            </li> --> 
                             <!-- <li
                                         class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                                         <a class="w-full" href="/data/login">
                                             Halaman Login
                                         </a>
                                     </li> -->
-                        </ul>
+                        <!-- </ul>
                     </li>
                     <li id="programStudi" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.programStudi }">
                         <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
@@ -275,17 +313,17 @@
                         <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
                             <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                                 <a class="w-full" href="formAps1">LKPS</a>
-                            </li>
+                            </li> -->
                             <!-- <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                                 <a class="w-full" href="pages/create-account.html">
                                     LED
                                 </a>
                             </li> -->
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                            <!-- <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                                 <a class="w-full" href="riwayatakreditasiprodi">
                                     Riwayat Akreditasi
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                 </ul>
@@ -662,7 +700,7 @@
                         <!-- Profile menu -->
                         <li class="relative">
                             <button class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none" @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
-                                <img class="object-cover w-8 h-8 rounded-full" src="data:image/png;base64,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" alt="" aria-hidden="true" />
+                                <img class="object-cover w-8 h-8 rounded-full" src="/assets/img/logo-trw.png" alt="" aria-hidden="true" />
                             </button>
                             <template x-if="isProfileMenuOpen">
                                 <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click.away="closeProfileMenu" @keydown.escape="closeProfileMenu" class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:border-gray-700 dark:text-gray-300 dark:bg-gray-700" aria-label="submenu">

@@ -2,7 +2,36 @@
 <?= $this->section('content'); ?>
 <main class="h-full overflow-y-auto">
     <div class="container px-6 mx-auto grid">
-        <div></div>
+        <div>
+        <div class="grid gap-6 mb-8 md:grid-cols-2">
+                    <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                        <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
+                            Program
+                        </h4>
+                        <canvas id="pie"></canvas>
+                        <div class="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
+                            <!-- Chart legend -->
+                            <div class="flex items-center">
+                                <span class="inline-block w-3 h-3 mr-1 bg-blue-500 rounded-full"></span>
+                                <span>Teknik Informatika</span>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+                        <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
+                            Program Studi
+                        </h4>
+                        <canvas id="teknikInformatika"></canvas>
+                        <div class="flex flex-wrap justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400">
+                            <!-- Chart legend -->
+                            <div class="flex items-center">
+                                <span class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"></span>
+                                <span>Teknik Informatika</span>
+                            </div>                            
+                        </div>
+                    </div>
+        </div>
         <h3 class="my-6 mb-4 text-lg font-semibold text-black-600 dark:text-gray-300 text-center justify-center">
             Data Riwayat Akreditasi | <?= $identifier ?>
         </h3>
@@ -37,3 +66,4 @@
     </div>
 </main>
 <?= $this->endSection(); ?>
+

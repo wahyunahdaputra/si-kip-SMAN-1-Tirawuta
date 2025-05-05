@@ -66,26 +66,24 @@
                                             editButtons.forEach(button => {
                                                 button.addEventListener('click', () => {
                                                     const id = button.getAttribute('data-id');
-                                                    const lembaga_mitra = button.getAttribute('data-lembaga_mitra');
-                                                    const internasional = button.getAttribute('data-internasional');
-                                                    const nasional = button.getAttribute('data-nasional');
-                                                    const lokal = button.getAttribute('data-lokal');
-                                                    const bentuk_kegiatan = button.getAttribute('data-bentuk_kegiatan');
-                                                    const bukti_kerjasama = button.getAttribute('data-bukti_kerjasama');
+                                                    const sumber_biaya = button.getAttribute('data-sumber_biaya');
+                                                    const ts1 = button.getAttribute('data-ts1');
+                                                    const ts2 = button.getAttribute('data-ts2');
+                                                    const ts3 = button.getAttribute('data-ts3');
+                                                    const jumlah = button.getAttribute('data-jumlah');                                          
 
                                                     // Populate the form with the fetched data
-                                                    form.querySelector('input[name="lembaga_mitra"]').value = lembaga_mitra;
-                                                    form.querySelector('input[name="internasional"]').value = internasional;
-                                                    form.querySelector('input[name="nasional"]').value = nasional;
-                                                    form.querySelector('input[name="lokal"]').value = lokal;
-                                                    form.querySelector('textarea[name="bentuk_kegiatan"]').value = bentuk_kegiatan;
-                                                    form.querySelector('input[name="bukti_kerjasama"]').value = bukti_kerjasama;
+                                                    form.querySelector('input[name="sumber_biaya"]').value = sumber_biaya;
+                                                    form.querySelector('input[name="ts1"]').value = ts1;
+                                                    form.querySelector('input[name="ts2"]').value = ts2;
+                                                    form.querySelector('input[name="ts3"]').value = ts3;
+                                                    form.querySelector('input[name="jumlah"]').value = jumlah;
 
                                                     // Change form action to the update route
-                                                    form.action = `<?= base_url('bebankerjadosen') ?>/${id}`;
+                                                    form.action = `<?= base_url('produktivitaspenelitian') ?>/${id}`;
 
                                                     // Change modal title
-                                                    modalTitle.innerText = 'Edit Data Sertifikasi/Akreditasi Eksternal';
+                                                    modalTitle.innerText = 'Edit Data Produktivitas Penelitian';
                                                 });
                                             });
                                         });
@@ -159,7 +157,7 @@
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
-                    <?php foreach ($produktivitaspenelitianpkm as $pm) : ?>
+                    <?php foreach ($produktivitaspenelitian as $pm) : ?>
                         <tr class="text-gray-700 dark:text-gray-400">
                             <td class="px-4 py-3 text-center"><?= $pm->id; ?></td>
                             <td class="px-4 py-3 text-center"><?= $pm->sumber_biaya; ?></td>
@@ -172,12 +170,12 @@
                                         <button
                                             type="button"
                                             class="edit-button flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-green-400 border border-transparent rounded-lg active:bg-green-400 hover:bg-green-400 focus:outline-none focus:shadow-outline-green"
-                                            data-id="<?= $pp->id; ?>"
-                                            data-sumber_biaya="<?= $pp->sumber_biaya; ?>"
-                                            data-ts1="<?= $pp->ts1; ?>"
-                                            data-ts2="<?= $pp->ts2; ?>"
-                                            data-ts3="<?= $pp->ts3; ?>"
-                                            data-jumlah="<?= $pp->jumlah; ?>"
+                                            data-id="<?= $pm->id; ?>"
+                                            data-sumber_biaya="<?= $pm->sumber_biaya; ?>"
+                                            data-ts1="<?= $pm->ts1; ?>"
+                                            data-ts2="<?= $pm->ts2; ?>"
+                                            data-ts3="<?= $pm->ts3; ?>"
+                                            data-jumlah="<?= $pm->jumlah; ?>"
                                             @click="isModalOpen = true">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 512 512">
                                                 <path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z" />
