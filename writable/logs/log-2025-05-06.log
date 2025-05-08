@@ -1,0 +1,17 @@
+CRITICAL - 2025-05-06 19:01:03 --> Error: Class "App\Models\DatasetModel" not found
+in APPPATH\Controllers\Data.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Data->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\si-kip\\public\\index.php')
+CRITICAL - 2025-05-06 19:01:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "data/akreksternal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('data/akreksternal.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/akreksternal', [], true)
+ 3 APPPATH\Controllers\Data.php(288): view('data/akreksternal', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->dataset()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\si-kip\\public\\index.php')

@@ -1,0 +1,28 @@
+CRITICAL - 2025-05-07 15:57:53 --> Error: Class "App\Controllers\HomeModel" not found
+in APPPATH\Controllers\Data.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Data->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\si-kip\\public\\index.php')
+CRITICAL - 2025-05-07 15:58:22 --> Error: Class "App\Models\PerhitunganModel" not found
+in APPPATH\Controllers\Data.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Data->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\si-kip\\public\\index.php')
+CRITICAL - 2025-05-07 15:59:45 --> Error: Class "App\Models\PerhitunganModel" not found
+in APPPATH\Controllers\Data.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Data->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\si-kip\\public\\index.php')
+CRITICAL - 2025-05-07 16:01:59 --> Error: Class "App\Models\PerhitunganModel" not found
+in APPPATH\Controllers\Data.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Data->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\si-kip\\public\\index.php')

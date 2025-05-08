@@ -1,0 +1,1841 @@
+ERROR - 2024-03-07 01:29:46 --> mysqli_sql_exception: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-07 01:29:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:29:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:29:46 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 5 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 01:35:30 --> mysqli_sql_exception: Table 'sistem_aps_uho.tabel_jalur_masuk' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-07 01:35:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.tabel_jalur_masuk' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:35:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.tabel_jalur_masuk' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:35:30 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.tabel_jalur_masuk' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 5 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 01:36:31 --> mysqli_sql_exception: Table 'sistem_aps_uho.tabel_jalur_masuk' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-07 01:36:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.tabel_jalur_masuk' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:36:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.tabel_jalur_masuk' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:36:31 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.tabel_jalur_masuk' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 5 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 01:40:07 --> mysqli_sql_exception: Unknown column 'tabel_periode.tahun_akademik' in 'field list' in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-07 01:40:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tabel_periode.tahun_akademik' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:40:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tabel_periode.tahun_akademik' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:40:07 --> [Caused by] mysqli_sql_exception: Unknown column 'tabel_periode.tahun_akademik' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 5 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 01:40:39 --> mysqli_sql_exception: Unknown column 'tabel_seleksi_maba.id_jalur_masuk' in 'field list' in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-07 01:40:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tabel_seleksi_maba.id_jalur_masuk' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:40:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tabel_seleksi_maba.id_jalur_masuk' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:40:39 --> [Caused by] mysqli_sql_exception: Unknown column 'tabel_seleksi_maba.id_jalur_masuk' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 5 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 01:41:15 --> mysqli_sql_exception: Unknown column 'tabel_seleksi_maba.id_periode' in 'where clause' in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-07 01:41:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tabel_seleksi_maba.id_periode' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:41:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tabel_seleksi_maba.id_periode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 01:41:15 --> [Caused by] mysqli_sql_exception: Unknown column 'tabel_seleksi_maba.id_periode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 5 APPPATH\Controllers\Data.php(315): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksimahasiswabaru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:35:00 --> BadMethodCallException: Call to undefined method App\Models\MhsAsingModel::inserts
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Models\MhsAsingModel.php(20): CodeIgniter\Model->__call('inserts', [...])
+ 2 APPPATH\Controllers\Data.php(149): App\Models\MhsAsingModel->simpan([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->mhsasing()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:36:08 --> BadMethodCallException: Call to undefined method App\Models\MhsAsingModel::inserts
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Models\MhsAsingModel.php(21): CodeIgniter\Model->__call('inserts', [...])
+ 2 APPPATH\Controllers\Data.php(149): App\Models\MhsAsingModel->simpan([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->mhsasing()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 02:36:16 --> mysqli_sql_exception: Column 'negara' cannot be null in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mh...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mh...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mh...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mh...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Models\MhsAsingModel.php(21): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(149): App\Models\MhsAsingModel->simpan(Array)
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->mhsasing()
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#11 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-03-07 02:36:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'negara' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (:batch:, :tahun_ajaran:, :nama_lengkap:, :gender:, :asal_universitas:, :negara:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\MhsAsingModel.php(21): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Data.php(149): App\Models\MhsAsingModel->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->mhsasing()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:36:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'negara' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (\'2\', \'2023\', \'Siupatai\', \'Laki-laki\', \'Bangkok\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (\'2\', \'2023\', \'Siupatai\', \'Laki-laki\', \'Bangkok\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (:batch:, :tahun_ajaran:, :nama_lengkap:, :gender:, :asal_universitas:, :negara:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\MhsAsingModel.php(21): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Data.php(149): App\Models\MhsAsingModel->simpan([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->mhsasing()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:36:16 --> [Caused by] mysqli_sql_exception: Column 'negara' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (\'2\', \'2023\', \'Siupatai\', \'Laki-laki\', \'Bangkok\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (\'2\', \'2023\', \'Siupatai\', \'Laki-laki\', \'Bangkok\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (\'2\', \'2023\', \'Siupatai\', \'Laki-laki\', \'Bangkok\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (:batch:, :tahun_ajaran:, :nama_lengkap:, :gender:, :asal_universitas:, :negara:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\MhsAsingModel.php(21): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Data.php(149): App\Models\MhsAsingModel->simpan([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->mhsasing()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 02:36:51 --> mysqli_sql_exception: Column 'negara' cannot be null in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mh...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mh...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mh...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mh...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Models\MhsAsingModel.php(21): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(149): App\Models\MhsAsingModel->simpan(Array)
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->mhsasing()
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#11 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-03-07 02:36:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'negara' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (:batch:, :tahun_ajaran:, :nama_lengkap:, :gender:, :asal_universitas:, :negara:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\MhsAsingModel.php(21): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Data.php(149): App\Models\MhsAsingModel->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->mhsasing()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:36:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'negara' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (\'2\', \'2023\', \'Siupatai\', \'Laki-laki\', \'Bangkok\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (\'2\', \'2023\', \'Siupatai\', \'Laki-laki\', \'Bangkok\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (:batch:, :tahun_ajaran:, :nama_lengkap:, :gender:, :asal_universitas:, :negara:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\MhsAsingModel.php(21): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Data.php(149): App\Models\MhsAsingModel->simpan([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->mhsasing()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:36:51 --> [Caused by] mysqli_sql_exception: Column 'negara' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (\'2\', \'2023\', \'Siupatai\', \'Laki-laki\', \'Bangkok\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (\'2\', \'2023\', \'Siupatai\', \'Laki-laki\', \'Bangkok\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (\'2\', \'2023\', \'Siupatai\', \'Laki-laki\', \'Bangkok\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mhs_asing` (`batch`, `tahun_ajaran`, `nama_lengkap`, `gender`, `asal_universitas`, `negara`) VALUES (:batch:, :tahun_ajaran:, :nama_lengkap:, :gender:, :asal_universitas:, :negara:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\MhsAsingModel.php(21): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Data.php(149): App\Models\MhsAsingModel->simpan([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->mhsasing()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:47:16 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Models\PembelajaranPraktikumModel.php(20): CodeIgniter\Model->insert([...])
+ 4 APPPATH\Controllers\Data.php(308): App\Models\PembelajaranPraktikumModel->simpan([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->pembelajaranpraktikum()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:48:52 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 788.
+ 1 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Models\PembelajaranPraktikumModel.php(20): CodeIgniter\Model->insert([...])
+ 4 APPPATH\Controllers\Data.php(308): App\Models\PembelajaranPraktikumModel->simpan([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->pembelajaranpraktikum()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 02:50:09 --> mysqli_sql_exception: Column 'prodi' cannot be null in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pe...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Models\PembelajaranPraktikumModel.php(20): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(307): App\Models\PembelajaranPraktikumModel->simpan(Array)
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->pembelajaranpraktikum()
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#11 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-03-07 02:50:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'prodi' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pembelajaran_praktikum` (`prodi`, `teori`, `praktikum`, `praktik`, `praktik_lapangan`) VALUES (:prodi:, :teori:, :praktikum:, :praktik:, :praktik_lapangan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\PembelajaranPraktikumModel.php(20): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Data.php(307): App\Models\PembelajaranPraktikumModel->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->pembelajaranpraktikum()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:50:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'prodi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pembelajaran_praktikum` (`prodi`, `teori`, `praktikum`, `praktik`, `praktik_lapangan`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pembelajaran_praktikum` (`prodi`, `teori`, `praktikum`, `praktik`, `praktik_lapangan`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pembelajaran_praktikum` (`prodi`, `teori`, `praktikum`, `praktik`, `praktik_lapangan`) VALUES (:prodi:, :teori:, :praktikum:, :praktik:, :praktik_lapangan:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\PembelajaranPraktikumModel.php(20): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Data.php(307): App\Models\PembelajaranPraktikumModel->simpan([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->pembelajaranpraktikum()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:50:09 --> [Caused by] mysqli_sql_exception: Column 'prodi' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pembelajaran_praktikum` (`prodi`, `teori`, `praktikum`, `praktik`, `praktik_lapangan`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pembelajaran_praktikum` (`prodi`, `teori`, `praktikum`, `praktik`, `praktik_lapangan`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pembelajaran_praktikum` (`prodi`, `teori`, `praktikum`, `praktik`, `praktik_lapangan`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pembelajaran_praktikum` (`prodi`, `teori`, `praktikum`, `praktik`, `praktik_lapangan`) VALUES (:prodi:, :teori:, :praktikum:, :praktik:, :praktik_lapangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\PembelajaranPraktikumModel.php(20): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Data.php(307): App\Models\PembelajaranPraktikumModel->simpan([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->pembelajaranpraktikum()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 02:50:28 --> ErrorException: Undefined property: stdClass::$teoi
+in APPPATH\Views\data\pembelajaranpraktikum.php on line 166.
+ 1 APPPATH\Views\data\pembelajaranpraktikum.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$teoi', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\pembelajaranpraktikum.php', 166)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\pembelajaranpraktikum.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/pembelajaranpraktikum', [], true)
+ 5 APPPATH\Controllers\Data.php(321): view('data/pembelajaranpraktikum', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->pembelajaranpraktikum()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:02:26 --> ParseError: syntax error, unexpected token "public"
+in APPPATH\Controllers\Data.php on line 118.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Data')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Data')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Data', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 05:07:28 --> mysqli_sql_exception: Table 'sistem_aps_uho.auditkeuanganeks' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('22', 'tahun', Array, NULL, 'tahun')
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('tahun', 'tahun', '22', Array, Array)
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(93): CodeIgniter\Controller->validate(Array)
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#11 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-03-07 05:07:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.auditkeuanganeks' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `auditkeuanganeks`
+WHERE `tahun` = :tahun:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('22', 'tahun', [...], null, 'tahun')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('tahun', 'tahun', '22', [...], [...])
+ 5 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\Data.php(93): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:07:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.auditkeuanganeks' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `auditkeuanganeks`
+WHERE `tahun` = \'22\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `auditkeuanganeks`
+WHERE `tahun` = \'22\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `auditkeuanganeks`
+WHERE `tahun` = :tahun:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('22', 'tahun', [...], null, 'tahun')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('tahun', 'tahun', '22', [...], [...])
+ 7 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\Data.php(93): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:07:28 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.auditkeuanganeks' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `auditkeuanganeks`
+WHERE `tahun` = \'22\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `auditkeuanganeks`
+WHERE `tahun` = \'22\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `auditkeuanganeks`
+WHERE `tahun` = \'22\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `auditkeuanganeks`
+WHERE `tahun` = :tahun:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('22', 'tahun', [...], null, 'tahun')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('tahun', 'tahun', '22', [...], [...])
+ 8 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Data.php(93): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:14:32 --> ParseError: syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Views\data\auditkeuanganeks.php on line 70.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/auditkeuanganeks', [], true)
+ 3 APPPATH\Controllers\Data.php(117): view('data/auditkeuanganeks', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:14:45 --> ParseError: syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Views\data\auditkeuanganeks.php on line 70.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/auditkeuanganeks', [], true)
+ 3 APPPATH\Controllers\Data.php(117): view('data/auditkeuanganeks', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:14:56 --> ErrorException: Undefined variable $errors
+in APPPATH\Views\data\auditkeuanganeks.php on line 77.
+ 1 APPPATH\Views\data\auditkeuanganeks.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\auditkeuanganeks.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\auditkeuanganeks.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/auditkeuanganeks', [], true)
+ 5 APPPATH\Controllers\Data.php(117): view('data/auditkeuanganeks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:14:57 --> ErrorException: Undefined variable $errors
+in APPPATH\Views\data\auditkeuanganeks.php on line 77.
+ 1 APPPATH\Views\data\auditkeuanganeks.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\auditkeuanganeks.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\auditkeuanganeks.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/auditkeuanganeks', [], true)
+ 5 APPPATH\Controllers\Data.php(117): view('data/auditkeuanganeks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:15:09 --> ErrorException: Undefined variable $errors
+in APPPATH\Views\data\auditkeuanganeks.php on line 77.
+ 1 APPPATH\Views\data\auditkeuanganeks.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\auditkeuanganeks.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\auditkeuanganeks.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/auditkeuanganeks', [], true)
+ 5 APPPATH\Controllers\Data.php(117): view('data/auditkeuanganeks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:16:00 --> Error: Cannot use object of type CodeIgniter\Validation\Validation as array
+in APPPATH\Views\data\auditkeuanganeks.php on line 77.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/auditkeuanganeks', [], true)
+ 4 APPPATH\Controllers\Data.php(117): view('data/auditkeuanganeks', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:16:18 --> Error: Cannot use object of type CodeIgniter\Validation\Validation as array
+in APPPATH\Views\data\auditkeuanganeks.php on line 77.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/auditkeuanganeks', [], true)
+ 4 APPPATH\Controllers\Data.php(117): view('data/auditkeuanganeks', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:16:33 --> ErrorException: Array to string conversion
+in APPPATH\Views\data\auditkeuanganeks.php on line 70.
+ 1 APPPATH\Views\data\auditkeuanganeks.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\auditkeuanganeks.php', 70)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\auditkeuanganeks.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/auditkeuanganeks', [], true)
+ 5 APPPATH\Controllers\Data.php(117): view('data/auditkeuanganeks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:16:41 --> ErrorException: Array to string conversion
+in APPPATH\Views\data\auditkeuanganeks.php on line 70.
+ 1 APPPATH\Views\data\auditkeuanganeks.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\auditkeuanganeks.php', 70)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\auditkeuanganeks.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/auditkeuanganeks', [], true)
+ 5 APPPATH\Controllers\Data.php(117): view('data/auditkeuanganeks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:24:59 --> ParseError: syntax error, unexpected identifier "lembaga_audit", expecting "," or ";"
+in APPPATH\Controllers\Data.php on line 88.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Data')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Data')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Data', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:25:24 --> ParseError: syntax error, unexpected identifier "validation", expecting "," or ";"
+in APPPATH\Controllers\Data.php on line 95.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Data')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Data')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Data', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:38:34 --> ParseError: syntax error, unexpected variable "$validation", expecting "]"
+in APPPATH\Controllers\Data.php on line 90.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Data')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Data')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Data', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:44:20 --> ParseError: syntax error, unexpected identifier "var_dump", expecting "]"
+in APPPATH\Controllers\Data.php on line 90.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Data')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Data')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Data', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 05:44:35 --> ParseError: syntax error, unexpected identifier "var_dump", expecting "]"
+in APPPATH\Controllers\Data.php on line 90.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Data')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Data')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Data', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 06:52:22 --> ErrorException: Undefined property: App\Controllers\Data::$validation
+in APPPATH\Controllers\Data.php on line 129.
+ 1 APPPATH\Controllers\Data.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Data::$validation', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 06:53:32 --> ErrorException: Undefined variable $validation
+in APPPATH\Controllers\Data.php on line 129.
+ 1 APPPATH\Controllers\Data.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 06:55:44 --> ErrorException: Undefined property: App\Controllers\Data::$validation
+in APPPATH\Controllers\Data.php on line 110.
+ 1 APPPATH\Controllers\Data.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Data::$validation', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php', 110)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 07:01:06 --> mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('UHO', 'column_name', Array, NULL, 'lembaga_audit')
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'UHO', Array, Array)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-07 07:01:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('UHO', 'column_name', [...], null, 'lembaga_audit')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'UHO', [...], [...])
+ 5 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:01:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'UHO\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'UHO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('UHO', 'column_name', [...], null, 'lembaga_audit')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'UHO', [...], [...])
+ 7 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:01:06 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'UHO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'UHO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'UHO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('UHO', 'column_name', [...], null, 'lembaga_audit')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'UHO', [...], [...])
+ 8 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 07:03:09 --> mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokt...', 'column_name', Array, NULL, 'lembaga_audit')
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokt...', Array, Array)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-07 07:03:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 5 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 7 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:09 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 8 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 07:03:09 --> mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokt...', 'column_name', Array, NULL, 'lembaga_audit')
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokt...', Array, Array)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-07 07:03:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 5 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 7 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:09 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 8 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 07:03:09 --> mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokt...', 'column_name', Array, NULL, 'lembaga_audit')
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokt...', Array, Array)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-07 07:03:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 5 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 7 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:09 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 8 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 07:03:09 --> mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokt...', 'column_name', Array, NULL, 'lembaga_audit')
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokt...', Array, Array)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-07 07:03:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 5 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 7 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:09 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 8 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 07:03:09 --> mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokt...', 'column_name', Array, NULL, 'lembaga_audit')
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokt...', Array, Array)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-07 07:03:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 5 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 7 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:09 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 8 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 07:03:10 --> mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokt...', 'column_name', Array, NULL, 'lembaga_audit')
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokt...', Array, Array)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-07 07:03:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 5 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 7 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:10 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 8 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 07:03:14 --> mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokt...', 'column_name', Array, NULL, 'lembaga_audit')
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokt...', Array, Array)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-07 07:03:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 5 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 7 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:14 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 8 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-07 07:03:29 --> mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokt...', 'column_name', Array, NULL, 'lembaga_audit')
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokt...', Array, Array)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-07 07:03:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 5 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 7 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-07 07:03:29 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.table_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `table_name`
+WHERE `column_name` = \'Fakultas Kedokteran\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `table_name`
+WHERE `column_name` = :column_name:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('Fakultas Kedokteran', 'column_name', [...], null, 'lembaga_audit')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('lembaga_audit', 'lembaga_audit', 'Fakultas Kedokteran', [...], [...])
+ 8 APPPATH\Controllers\Data.php(115): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->auditkeuanganeks()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')

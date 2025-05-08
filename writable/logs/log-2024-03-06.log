@@ -1,0 +1,610 @@
+ERROR - 2024-03-06 01:43:41 --> mysqli_sql_exception: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(278): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-06 01:43:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 APPPATH\Controllers\Data.php(278): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 01:43:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Controllers\Data.php(278): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 01:43:41 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 5 APPPATH\Controllers\Data.php(278): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-06 01:49:44 --> mysqli_sql_exception: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT\r\n       ...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n       ...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(278): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-03-06 01:49:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 APPPATH\Controllers\Data.php(278): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 01:49:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Controllers\Data.php(278): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 01:49:44 --> [Caused by] mysqli_sql_exception: Table 'sistem_aps_uho.tabel_seleksi_maba' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 4 APPPATH\Models\SeleksiMahasiswaBaruModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT
+        tabel_periode.tahun_akademik, tabel_seleksi_maba.id_jalur_masuk, peminat, daya_tampung, lulus_seleksi, registrasi_ulang
+        
+        FROM tabel_seleksi_maba, tabel_jalur_masuk, tabel_periode
+        
+        WHERE
+        tabel_seleksi_maba.id_jalur_masuk = tabel_jalur_masuk.id_jalur_masuk
+        AND tabel_seleksi_maba.id_periode = tabel_periode.id_periode')
+ 5 APPPATH\Controllers\Data.php(278): App\Models\SeleksiMahasiswaBaruModel->getAllDataChart()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->seleksiMahasiswaBaru()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 05:50:26 --> ErrorException: Undefined variable $data
+in APPPATH\Models\AkrInternasionalModel.php on line 20.
+ 1 APPPATH\Models\AkrInternasionalModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Models\\AkrInternasionalModel.php', 20)
+ 2 APPPATH\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-06 05:50:53 --> mysqli_sql_exception: Column 'masa_berlaku' cannot be null in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ak...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ak...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ak...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ak...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan(Array)
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#11 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-03-06 05:50:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'masa_berlaku' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (:lembaga_akrint:, :program_studi:, :status:, :masa_berlaku:, :keterangan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 05:50:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'masa_berlaku' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'wddddw\', \'wdqqq\', \'tidakAktif\', NULL, \'ccscc\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'wddddw\', \'wdqqq\', \'tidakAktif\', NULL, \'ccscc\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (:lembaga_akrint:, :program_studi:, :status:, :masa_berlaku:, :keterangan:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 05:50:53 --> [Caused by] mysqli_sql_exception: Column 'masa_berlaku' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'wddddw\', \'wdqqq\', \'tidakAktif\', NULL, \'ccscc\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'wddddw\', \'wdqqq\', \'tidakAktif\', NULL, \'ccscc\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'wddddw\', \'wdqqq\', \'tidakAktif\', NULL, \'ccscc\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (:lembaga_akrint:, :program_studi:, :status:, :masa_berlaku:, :keterangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-06 05:52:03 --> mysqli_sql_exception: Column 'masa_berlaku' cannot be null in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ak...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ak...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ak...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ak...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan(Array)
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#11 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-03-06 05:52:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'masa_berlaku' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (:lembaga_akrint:, :program_studi:, :status:, :masa_berlaku:, :keterangan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 05:52:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'masa_berlaku' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'wddddw\', \'wdqqq\', \'tidakAktif\', NULL, \'ccscc\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'wddddw\', \'wdqqq\', \'tidakAktif\', NULL, \'ccscc\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (:lembaga_akrint:, :program_studi:, :status:, :masa_berlaku:, :keterangan:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 05:52:03 --> [Caused by] mysqli_sql_exception: Column 'masa_berlaku' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'wddddw\', \'wdqqq\', \'tidakAktif\', NULL, \'ccscc\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'wddddw\', \'wdqqq\', \'tidakAktif\', NULL, \'ccscc\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'wddddw\', \'wdqqq\', \'tidakAktif\', NULL, \'ccscc\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (:lembaga_akrint:, :program_studi:, :status:, :masa_berlaku:, :keterangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-06 05:53:36 --> mysqli_sql_exception: Column 'status' cannot be null in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ak...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ak...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ak...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ak...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan(Array)
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#11 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-03-06 05:53:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (:lembaga_akrint:, :program_studi:, :status:, :masa_berlaku:, :keterangan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 05:53:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'\', \'\', NULL, \'\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'\', \'\', NULL, \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (:lembaga_akrint:, :program_studi:, :status:, :masa_berlaku:, :keterangan:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 05:53:37 --> [Caused by] mysqli_sql_exception: Column 'status' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'\', \'\', NULL, \'\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'\', \'\', NULL, \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (\'\', \'\', NULL, \'\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `akreditasi_internasional` (`lembaga_akrint`, `program_studi`, `status`, `masa_berlaku`, `keterangan`) VALUES (:lembaga_akrint:, :program_studi:, :status:, :masa_berlaku:, :keterangan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\AkrInternasionalModel.php(21): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Data.php(116): App\Models\AkrInternasionalModel->simpan([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrinternasional()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:08:10 --> ErrorException: Undefined property: App\Controllers\Data::$m
+in APPPATH\Controllers\Data.php on line 246.
+ 1 APPPATH\Controllers\Data.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Data::$m', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php', 246)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:09:07 --> ErrorException: Undefined property: App\Controllers\Data::$makrprodi
+in APPPATH\Controllers\Data.php on line 241.
+ 1 APPPATH\Controllers\Data.php(241): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Data::$makrprodi', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php', 241)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-06 06:10:08 --> mysqli_sql_exception: Column 'program' cannot be null in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Models\ProgramStudiModel.php(21): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(241): App\Models\ProgramStudiModel->simpan(Array)
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#11 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-03-06 06:10:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'program' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`) VALUES (:program:, :program_studi:, :pr_akreditasi:, :no_sk:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ProgramStudiModel.php(21): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Data.php(241): App\Models\ProgramStudiModel->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:10:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'program' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`) VALUES (NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`) VALUES (NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`) VALUES (:program:, :program_studi:, :pr_akreditasi:, :no_sk:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\ProgramStudiModel.php(21): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Data.php(241): App\Models\ProgramStudiModel->simpan([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:10:08 --> [Caused by] mysqli_sql_exception: Column 'program' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`) VALUES (NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`) VALUES (NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`) VALUES (NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`) VALUES (:program:, :program_studi:, :pr_akreditasi:, :no_sk:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ProgramStudiModel.php(21): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Data.php(241): App\Models\ProgramStudiModel->simpan([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-03-06 06:11:09 --> mysqli_sql_exception: Column 'program' cannot be null in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\sistem-aps-uho\app\Models\ProgramStudiModel.php(21): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(242): App\Models\ProgramStudiModel->simpan(Array)
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+#10 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#11 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-03-06 06:11:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'program' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`, `tgl_kadaluarsa`) VALUES (:program:, :program_studi:, :pr_akreditasi:, :no_sk:, :tgl_kadaluarsa:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ProgramStudiModel.php(21): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Data.php(242): App\Models\ProgramStudiModel->simpan([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:11:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'program' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`, `tgl_kadaluarsa`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`, `tgl_kadaluarsa`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`, `tgl_kadaluarsa`) VALUES (:program:, :program_studi:, :pr_akreditasi:, :no_sk:, :tgl_kadaluarsa:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\ProgramStudiModel.php(21): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Data.php(242): App\Models\ProgramStudiModel->simpan([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:11:09 --> [Caused by] mysqli_sql_exception: Column 'program' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`, `tgl_kadaluarsa`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`, `tgl_kadaluarsa`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`, `tgl_kadaluarsa`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `program_studi` (`program`, `program_studi`, `pr_akreditasi`, `no_sk`, `tgl_kadaluarsa`) VALUES (:program:, :program_studi:, :pr_akreditasi:, :no_sk:, :tgl_kadaluarsa:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ProgramStudiModel.php(21): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Data.php(242): App\Models\ProgramStudiModel->simpan([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:42:12 --> Error: Class "App\Models\AkrProdiModel" not found
+in APPPATH\Controllers\Data.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Data->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:42:36 --> ErrorException: Cannot use App\Models\AkrProdiModel as AkrProdiModel because the name is already in use
+in APPPATH\Controllers\Data.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-06 06:42:47 --> ErrorException: Cannot use App\Models\AkrProdiModel as AkrProdiModel because the name is already in use
+in APPPATH\Controllers\Data.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-06 06:42:50 --> Error: Class "App\Models\AkrProdiModel" not found
+in APPPATH\Controllers\Data.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Data->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:50:42 --> ErrorException: Undefined variable $paginasi
+in APPPATH\Views\data\akrprodi.php on line 196.
+ 1 APPPATH\Views\data\akrprodi.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginasi', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\akrprodi.php', 196)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\akrprodi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/akrprodi', [], true)
+ 5 APPPATH\Controllers\Data.php(259): view('data/akrprodi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:51:29 --> ErrorException: Undefined variable $paginasi
+in APPPATH\Views\data\akrprodi.php on line 196.
+ 1 APPPATH\Views\data\akrprodi.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginasi', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\akrprodi.php', 196)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\akrprodi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/akrprodi', [], true)
+ 5 APPPATH\Controllers\Data.php(259): view('data/akrprodi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:51:31 --> ErrorException: Undefined variable $paginasi
+in APPPATH\Views\data\akrprodi.php on line 196.
+ 1 APPPATH\Views\data\akrprodi.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginasi', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\akrprodi.php', 196)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\akrprodi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/akrprodi', [], true)
+ 5 APPPATH\Controllers\Data.php(259): view('data/akrprodi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:51:32 --> ErrorException: Undefined variable $paginasi
+in APPPATH\Views\data\akrprodi.php on line 196.
+ 1 APPPATH\Views\data\akrprodi.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paginasi', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\akrprodi.php', 196)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\akrprodi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/akrprodi', [], true)
+ 5 APPPATH\Controllers\Data.php(259): view('data/akrprodi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->akrprodi()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-06 06:52:32 --> ParseError: syntax error, unexpected token "->"
+in APPPATH\Controllers\Data.php on line 254.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Data')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Data')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Data', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')

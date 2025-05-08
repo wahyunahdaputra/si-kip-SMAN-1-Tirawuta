@@ -1,0 +1,146 @@
+CRITICAL - 2024-02-23 01:05:56 --> ArgumentCountError: Too few arguments to function App\Controllers\Data::riwayatAkreditasi(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Data.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->riwayatAkreditasi()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-02-23 01:06:10 --> ArgumentCountError: Too few arguments to function App\Controllers\Data::riwayatAkreditasi(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Data.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->riwayatAkreditasi()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-02-23 01:06:39 --> ArgumentCountError: Too few arguments to function App\Controllers\Data::riwayatAkreditasi(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Data.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->riwayatAkreditasi()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-02-23 01:08:18 --> ArgumentCountError: Too few arguments to function App\Controllers\Data::riwayatakreditasi(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Data.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->riwayatakreditasi()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-02-23 01:08:21 --> ArgumentCountError: Too few arguments to function App\Controllers\Data::riwayatakreditasi(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Data.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->riwayatakreditasi()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-02-23 15:13:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistem_aps_uho', 3306, '', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\HomeModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Home.php(20): App\Models\HomeModel->getdata()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp\htdocs\sistem-aps-uho\app\Models\HomeModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Home.php(20): App\Models\HomeModel->getdata()
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2024-02-23 15:13:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\HomeModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM program_studi')
+ 3 APPPATH\Controllers\Home.php(20): App\Models\HomeModel->getdata()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-02-23 15:13:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistem_aps_uho', 3306, '', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\HomeModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Home.php(20): App\Models\HomeModel->getdata()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp\htdocs\sistem-aps-uho\app\Models\HomeModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Home.php(20): App\Models\HomeModel->getdata()
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Home->index()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2024-02-23 15:13:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\HomeModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM program_studi')
+ 3 APPPATH\Controllers\Home.php(20): App\Models\HomeModel->getdata()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+ERROR - 2024-02-23 15:15:25 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistem_aps_uho', 3306, '', 0)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Models\HomeModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(50): App\Models\HomeModel->getdata()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->home()
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp\htdocs\sistem-aps-uho\app\Models\HomeModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#3 E:\xampp\htdocs\sistem-aps-uho\app\Controllers\Data.php(50): App\Models\HomeModel->getdata()
+#4 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Data->home()
+#5 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#6 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\xampp\htdocs\sistem-aps-uho\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 E:\xampp\htdocs\sistem-aps-uho\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2024-02-23 15:15:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\HomeModel.php(14): CodeIgniter\Database\BaseConnection->query('SELECT * FROM program_studi')
+ 3 APPPATH\Controllers\Data.php(50): App\Models\HomeModel->getdata()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->home()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')

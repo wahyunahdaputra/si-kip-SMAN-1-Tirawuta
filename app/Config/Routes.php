@@ -15,10 +15,10 @@ $routes->get('/', 'Landing::index');
 // Grup Filter Login
 $routes->group('',['filter' => 'loginfilter'], function ($routes) {
     $routes->get('data/home', 'Data::home');
-    $routes->get('data/akreksternal', 'Data::akreksternal');
-    $routes->get('data/auditkeuanganeks', 'Data::auditkeuanganeks');
-    $routes->get('data/akrinternasional', 'Data::akrinternasional');
-    $routes->get('data/mhsasing', 'Data::mhsasing');
+    $routes->get('data/dataset', 'Data::dataset');
+    $routes->get('data/perhitungan', 'Data::perhitungan');
+    $routes->get('data/pendaftar', 'Data::pendaftar');
+    $routes->get('data/klasifikasi', 'Data::klasifikasi');
     $routes->get('data/sitasiilmiah', 'Data::sitasiilmiah');
     $routes->get('data/prestasimahasiswa', 'Data::prestasimahasiswa');
     $routes->get('data/riwayatakreditasiprodi', 'Data::riwayatakreditasiprodi');
@@ -43,33 +43,17 @@ $routes->get('logout', 'Auth::logout');
 $routes->get("/riwayatakreditasi/(:any)", "Data::riwayatAkreditasi/$1");
 
 //Tata Pamong Aksi
-$routes -> delete("/akreksternal/(:num)", "Data::akreksternal_delete/$1");
-$routes-> post ("/akreksternal/(:num)", "Data::akreksternal_update/$1");
+$routes -> delete("/dataset/(:num)", "Data::dataset_delete/$1");
+$routes-> post ("/dataset/(:num)", "Data::dataset_update/$1");
 
-$routes -> delete("/auditkeuanganeks/(:num)", "Data::auditkeuanganeks_delete/$1");
-$routes-> post ("/auditkeuanganeks/(:num)", "Data::auditkeuanganeks_update/$1");
+$routes -> delete("/perhitungan/(:num)", "Data::perhitungan_delete/$1");
+$routes-> post ("/perhitungan/(:num)", "Data::perhitungan_update/$1");
 
-$routes -> delete("/akrprodi/(:num)", "Data::akrprodi_delete/$1");
-$routes-> post ("/akrprodi/(:num)", "Data::akrprodi_update/$1");
+$routes -> delete("/pendaftar/(:num)", "Data::pendaftar_delete/$1");
+$routes-> post ("/pendaftar/(:num)", "Data::pendaftar_update/$1");
 
-$routes -> delete("/kerjasamaperguruantinggi/(:num)", "Data::kerjasamaperguruantinggi_delete/$1");
-$routes-> post ("/kerjasamaperguruantinggi/(:num)", "Data::kerjasamaperguruantinggi_update/$1");
-
-$routes -> delete("/akrinternasional/(:num)", "Data::akrinternasional_delete/$1");
-$routes-> post ("/akrinternasional/(:num)", "Data::akrinternasional_update/$1");
-
-//Sumber Daya Manusia Aksi
-$routes -> delete("/bebankerjadosen/(:num)", "Data::bebankerjadosen_delete/$1");
-$routes-> post ("/bebankerjadosen/(:num)", "Data::bebankerjadosen_update/$1");
-
-$routes -> delete("/kecukupandosen/(:num)", "Data::kecukupandosen_delete/$1");
-$routes-> post ("/kecukupandosen/(:num)", "Data::kecukupandosen_update/$1");
-
-$routes -> delete("/produktivitaspenelitian/(:num)", "Data::produktivitaspenelitian_delete/$1");
-$routes-> post ("/produktivitaspenelitian/(:num)", "Data::produktivitaspenelitian_update/$1");
-
-$routes -> delete("/produktivitaspenelitianpkm/(:num)", "Data::produktivitaspenelitianpkm_delete/$1");
-$routes-> post ("/produktivitaspenelitianpkm/(:num)", "Data::produktivitaspenelitianpkm_update/$1");
+$routes -> delete("/klasifikasi/(:num)", "Data::klasifikasi_delete/$1");
+$routes-> post ("/klasifikasi/(:num)", "Data::klasifikasi_update/$1");
 
 
 // Tambah Data

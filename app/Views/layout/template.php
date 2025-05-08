@@ -63,9 +63,8 @@
             <img class="" src="<?= base_url('assets/img/logo-sikip.png'); ?>" alt="loaderlogo">
                 <ul class="mt-4">
                     <!-- HOME - Aktif -->
-                        <li class="relative px-6 py-3 bg-purple-100 text-purple-700 rounded-lg">
-                            <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
-                            <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150" href="home">
+                        <li class="relative px-6 py-3" data-page="home">
+                        <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 dark:text-white transition-colors duration-150 hover:text-purple-600" href="home">
                                 <!-- Home Icon -->
                                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -76,8 +75,8 @@
                         </li>
 
                         <!-- DATASET -->
-                        <li class="relative px-6 py-3">
-                            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-purple-600" href="dataset">
+                        <li class="relative px-6 py-3" data-page="dataset">
+                        <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 dark:text-white transition-colors duration-150 hover:text-purple-600" href="dataset">
                                 <!-- Database Icon -->
                                 <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                     <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
@@ -86,9 +85,21 @@
                             </a>
                         </li>
 
+                        <!-- PERHITUNGAN -->
+                        <li class="relative px-6 py-3" data-page="perhitungan">
+                        <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 dark:text-white transition-colors duration-150 hover:text-purple-600" href="perhitungan">
+                                <!-- Calculator Icon -->
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 3H5a2 2 0 00-2 2v14a2 2 0 002 2h4m6-18h4a2 2 0 012 2v14a2 2 0 01-2 2h-4m0-18v18m-6-10h.01M9 16h.01M13 16h.01M17 16h.01M13 12h4" />
+                                </svg>
+                                <span class="ml-6">Perhitungan</span>
+                            </a>
+                        </li>
+
                         <!-- PENDAFTAR -->
-                        <li class="relative px-6 py-3">
-                            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-purple-600" href="pendaftar">
+                        <li class="relative px-6 py-3" data-page="pendaftar">
+                        <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 dark:text-white transition-colors duration-150 hover:text-purple-600" href="pendaftar">
                                 <!-- Users Icon -->
                                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -99,8 +110,8 @@
                         </li>
 
                         <!-- HASIL KLASIFIKASI -->
-                        <li class="relative px-6 py-3">
-                            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-purple-600" href="hasil-klasifikasi">
+                        <li class="relative px-6 py-3" data-page="klasifikasi">
+                        <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 dark:text-white transition-colors duration-150 hover:text-purple-600" href="klasifikasi">
                                 <!-- Chart Bar Icon -->
                                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -109,224 +120,37 @@
                                 <span class="ml-6">Hasil Klasifikasi</span>
                             </a>
                         </li>
-                    <!-- <li id="tataPamong" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.tataPamong }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                                </svg>
-                                <span class="ml-6 text-left">Pendaftar</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="akreksternal">Akreditasi Eksternal</a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="akrinternasional">
-                                    Akreditasi Internasional Program Studi
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="auditkeuanganeks">
-                                    Audit Eksternal Keuangan
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="akrprodi">
-                                    Akreditasi Program Studi
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="kerjasamaperguruantinggi">
-                                    Kerjasama Perguruan Tinggi
-                                </a>
                         </ul>
                     </li>
                 </ul>
-                <ul>
-                    <li id="mahasiswa" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.mahasiswa }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                                </svg>
-                                <span class="ml-6 text-left">Hasil Klasifikasi</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="/data/seleksimahasiswabaru">Seleksi Mahasiswa Baru</a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="/data/mhsasing">
-                                    Mahasiswa Asing
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pembelajaranpraktikum">
-                                    Pembelajaran Praktikum
-                                </a>
-                            </li>
-                        </ul>
-                    </li> -->
-                    <!-- <li id="sumberDayaManusia" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.sumberDayaManusia }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                                </svg>
-                                <span class="ml-6 text-left">User Management</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="kecukupandosen">Kecukupan Dosen</a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="bebankerjadosen">
-                                    Beban Kerja Dosen
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="produktivitaspenelitian">
-                                    Produktivitas Penelitian & PKM
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="rekognisidosen">
-                                    Rekognisi Dosen
-                                </a>
-                            </li>
-                        </ul>
-                    </li> -->
-                    <!-- <li id="keuanganSaranaPrasarana" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.keuanganSaranaPrasarana }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                                </svg>
-                                <span class="ml-6 text-left">Setting Aplikasi</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="/data/perolehandana">
-                                    Perolehan Dana
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="/data/penggunaandana">
-                                    Penggunaan Dana
-                                </a>
-                            </li>
-                        </ul>
-                    </li> -->
-                    <!-- <li id="luaranCapaianTridharma" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.luaranCapaianTridharma }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                                </svg>
-                                <span class="ml-6 text-left">Luaran & Capaian Tridharma</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">Capaian Pembelajaran</a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="prestasimahasiswa">
-                                    Prestasi Akademik & Non-akademik Mahasiswa
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Efektivitas & Produktivitas Pendidikan
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Daya Saing Lulusan
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Kinerja Lulusan
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Publikasi Ilmiah
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="sitasiilmiah">
-                                    Sitasi Ilmiah
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="produkjasa">
-                                    Produk/jasa yang diadopsi oleh industri/masyarakat
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Luaran Lainnya
-                                </a>
-                            </li> --> 
-                            <!-- <li
-                                        class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                        <a class="w-full" href="/data/login">
-                                            Halaman Login
-                                        </a>
-                                    </li> -->
-                        <!-- </ul>
-                    </li>
-                    <li id="programStudi" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.programStudi }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                                </svg>
-                                <span class="ml-6 text-left">Program Studi</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="formAps1">LKPS</a>
-                            </li> -->
-                            <!-- <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    LED
-                                </a>
-                            </li> -->
-                            <!-- <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="riwayatakreditasiprodi">
-                                    Riwayat Akreditasi
-                                </a>
-                            </li> -->
-                        </ul>
-                    </li>
-                </ul>
+                <script>
+                    const currentPage = window.location.pathname.split("/").pop(); // contoh: 'home'
+                    const menuItems = document.querySelectorAll("li[data-page]");
+
+                    menuItems.forEach(item => {
+                        const link = item.querySelector("a");
+
+                        if (item.getAttribute("data-page") === currentPage) {
+                            item.classList.add("bg-purple-100", "text-purple-700", "rounded-lg");
+
+                            const span = document.createElement("span");
+                            span.setAttribute("aria-hidden", "true");
+                            span.className = "absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg";
+                            item.prepend(span);
+
+                            if (link) {
+                                link.classList.remove("text-gray-800", "dark:text-white");
+                                link.classList.add("text-purple-700");
+                            }
+                        } else {
+                            // Non aktif: tetap putih di dark mode
+                            if (link) {
+                                link.classList.add("dark:text-white");
+                            }
+                        }
+                    });
+                </script>
+
                 <script>
                     // Objek yang menyimpan status untuk setiap tombol dropdown
                     var dropdownStatus = {
@@ -367,232 +191,64 @@
                     Sistem Akreditasi - UHO
                 </a>
                 <ul class="mt-6">
-                    <li class="relative px-6 py-3">
-                        <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
-                        <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="#">
-                            <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" stroke="currentColor">
-                                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-                            </svg>
-                            <span class="ml-4">Dashboard</span>
-                        </a>
-                    </li>
-                    <li id="tataPamong" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.tataPamong }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
+                    <!-- HOME - Aktif -->
+                    <li class="relative px-6 py-3" data-page="home">
+                            <a class="inline-flex items-center w-full text-sm font-semibold text-white transition-colors duration-150 hover:text-purple-600" href="home">
+                                <!-- Home Icon -->
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 9.75L12 3l9 6.75V21a.75.75 0 01-.75.75h-5.25a.75.75 0 01-.75-.75v-5.25H9.75V21a.75.75 0 01-.75.75H3.75A.75.75 0 013 21V9.75z" />
+                                </svg>
+                                <span class="ml-6">Home</span>
+                            </a>
+                        </li>
+
+                        <!-- DATASET -->
+                        <li class="relative px-6 py-3" data-page="dataset">
+                            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-purple-600" href="dataset">
+                                <!-- Database Icon -->
                                 <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                     <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                                 </svg>
-                                <span class="ml-4">Tata Pamong, Tata Kelola & Kerjasama</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/login.html">Akreditasi Eksternal</a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Akreditasi Internasional Program Studi
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Audit Eksternal Keuangan
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Akreditasi Program Studi
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Kerjasama Perguruan Tinggi
-                                </a>
-                        </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li id="mahasiswa" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.mahasiswa }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                                <span class="ml-6">Dataset</span>
+                            </a>
+                        </li>
+
+                        <!-- PERHITUNGAN -->
+                        <li class="relative px-6 py-3" data-page="perhitungan">
+                            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-purple-600" href="perhitungan">
+                                <!-- Calculator Icon -->
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 3H5a2 2 0 00-2 2v14a2 2 0 002 2h4m6-18h4a2 2 0 012 2v14a2 2 0 01-2 2h-4m0-18v18m-6-10h.01M9 16h.01M13 16h.01M17 16h.01M13 12h4" />
                                 </svg>
-                                <span class="ml-4">Mahasiswa</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="selesksimahasiswabaru">Seleksi Mahasiswa Baru</a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Mahasiswa Asing
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Pembelajaran Praktikum
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="sumberDayaManusia" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.sumberDayaManusia }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                <span class="ml-6">Perhitungan</span>
+                            </a>
+                        </li>
+
+                        <!-- PENDAFTAR -->
+                        <li class="relative px-6 py-3" data-page="pendaftar">
+                            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-purple-600" href="pendaftar">
+                                <!-- Users Icon -->
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a4 4 0 00-5-4m-6 6v-2a4 4 0 00-4-4H4a4 4 0 00-4 4v2h5m6 0a4 4 0 014-4h.01M9 12a4 4 0 100-8 4 4 0 000 8zm6 0a4 4 0 100-8 4 4 0 000 8z" />
                                 </svg>
-                                <span class="ml-4">Sumber Daya Manusia</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/login.html">Kecukupan Dosen</a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Beban Kerja Dosen
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Produktivitas Penelitian & PKM
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Rekognisi Dosen
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="keuanganSaranaPrasarana" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.keuanganSaranaPrasarana }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                                <span class="ml-6">Pendaftar</span>
+                            </a>
+                        </li>
+
+                        <!-- HASIL KLASIFIKASI -->
+                        <li class="relative px-6 py-3" data-page="klasifikasi">
+                            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-purple-600" href="klasifikasi">
+                                <!-- Chart Bar Icon -->
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 17v-4a1 1 0 00-2 0v4a1 1 0 002 0zm4 0v-6a1 1 0 00-2 0v6a1 1 0 002 0zm4 0v-8a1 1 0 00-2 0v8a1 1 0 002 0z" />
                                 </svg>
-                                <span class="ml-4">Keuangan, Sarana & Prasarana</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Perolehan Dana
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Penggunaan Dana
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="luaranCapaianTridharma" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.luaranCapaianTridharma }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                                </svg>
-                                <span class="ml-4">Luaran & Capaian Tridharma</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">Capaian Pembelajaran</a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Prestasi Akademik & Non-akademik Mahasiswa
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Efektivitas & Produktivitas Pendidikan
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Daya Saing Lulusan
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Kinerja Lulusan
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Publikasi Ilmiah
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Sitasi Ilmiah
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Produk/jasa yang diadopsi oleh industri/masyarakat
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="#">
-                                    Luaran Lainnya
-                                </a>
-                            </li>
-                            <!-- <li
-                                        class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                        <a class="w-full" href="/data/login">
-                                            Halaman Login
-                                        </a>
-                                    </li> -->
-                        </ul>
-                    </li>
-                    <li id="programStudi" class="relative px-6 py-3" x-data="{ isOpen: dropdownStatus.programStudi }">
-                        <button @click="isOpen = !isOpen" class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" aria-haspopup="true">
-                            <span class="inline-flex items-center">
-                                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                                </svg>
-                                <span class="ml-4">Program Studi</span>
-                            </span>
-                            <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                <path x-show="isOpen" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <ul x-show="isOpen" @click.away="isOpen = false" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-400 dark:bg-gray-900" aria-label="submenu">
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="data/seleksimahasiswabaru">Seleksi Mahasiswa Baru</a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Mahasiswa Asing
-                                </a>
-                            </li>
-                            <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                                <a class="w-full" href="pages/create-account.html">
-                                    Pembelajaran Praktikum
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                                <span class="ml-6">Hasil Klasifikasi</span>
+                            </a>
+                        </li>
                 </ul>
                 <script>
                     // Objek yang menyimpan status untuk setiap tombol dropdown

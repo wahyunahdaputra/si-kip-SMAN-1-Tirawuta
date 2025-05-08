@@ -1,0 +1,270 @@
+CRITICAL - 2024-03-01 02:32:08 --> ErrorException: Uninitialized string offset 0
+in SYSTEMPATH\CodeIgniter.php on line 899.
+ 1 SYSTEMPATH\CodeIgniter.php(899): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 0', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\CodeIgniter.php', 899)
+ 2 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 02:32:16 --> ErrorException: Uninitialized string offset 0
+in SYSTEMPATH\CodeIgniter.php on line 899.
+ 1 SYSTEMPATH\CodeIgniter.php(899): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 0', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\CodeIgniter.php', 899)
+ 2 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 02:53:26 --> ErrorException: Undefined variable $reservedRoutes
+in APPPATH\Config\Routes.php on line 12.
+ 1 APPPATH\Config\Routes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $reservedRoutes', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php', 12)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 02:54:22 --> ErrorException: Undefined variable $config
+in APPPATH\Config\Routes.php on line 9.
+ 1 APPPATH\Config\Routes.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php', 9)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 02:54:47 --> ErrorException: Undefined variable $app
+in APPPATH\Config\Routes.php on line 9.
+ 1 APPPATH\Config\Routes.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $app', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php', 9)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 02:57:48 --> ErrorException: Attempt to read property "reservedRoutes" on null
+in APPPATH\Config\Routes.php on line 12.
+ 1 APPPATH\Config\Routes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "reservedRoutes" on null', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php', 12)
+ 2 SYSTEMPATH\Router\RouteCollection.php(778): CodeIgniter\Router\RouteCollection::{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(9): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(344): require('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 06:54:59 --> ErrorException: include(E:\xampp\htdocs\sistem-aps-uho\vendor\composer/../myth/auth/src/Config/Auth.php): Failed to open stream: No such file or directory
+in VENDORPATH\composer\ClassLoader.php on line 576.
+ 1 VENDORPATH\composer\ClassLoader.php(576): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Config/Auth.php): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer\\ClassLoader.php', 576)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include()
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Config/Auth.php')
+ 4 [internal function]: Composer\Autoload\ClassLoader->loadClass('Myth\\Auth\\Config\\Auth')
+ 5 SYSTEMPATH\Config\Factories.php(280): class_exists('Myth\\Auth\\Config\\Auth')
+ 6 SYSTEMPATH\Config\Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'Myth\\Auth\\Config\\Auth')
+ 7 SYSTEMPATH\Config\Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'Myth\\Auth\\Config\\Auth', [])
+ 8 SYSTEMPATH\Common.php(215): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 9 APPPATH\Config\Routes.php(17): config('Myth\\Auth\\Config\\Auth')
+10 SYSTEMPATH\Router\RouteCollection.php(778): CodeIgniter\Router\RouteCollection::App\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+11 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+12 SYSTEMPATH\Router\RouteCollection.php(344): require('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php')
+13 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+14 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+15 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 06:55:36 --> ErrorException: include(E:\xampp\htdocs\sistem-aps-uho\vendor\composer/../myth/auth/src/Config/Auth.php): Failed to open stream: No such file or directory
+in VENDORPATH\composer\ClassLoader.php on line 576.
+ 1 VENDORPATH\composer\ClassLoader.php(576): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Config/Auth.php): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer\\ClassLoader.php', 576)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include()
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Config/Auth.php')
+ 4 [internal function]: Composer\Autoload\ClassLoader->loadClass('Myth\\Auth\\Config\\Auth')
+ 5 SYSTEMPATH\Config\Factories.php(280): class_exists('Myth\\Auth\\Config\\Auth')
+ 6 SYSTEMPATH\Config\Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'Myth\\Auth\\Config\\Auth')
+ 7 SYSTEMPATH\Config\Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'Myth\\Auth\\Config\\Auth', [])
+ 8 SYSTEMPATH\Common.php(215): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 9 APPPATH\Config\Routes.php(17): config('Myth\\Auth\\Config\\Auth')
+10 SYSTEMPATH\Router\RouteCollection.php(778): CodeIgniter\Router\RouteCollection::App\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+11 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+12 SYSTEMPATH\Router\RouteCollection.php(344): require('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php')
+13 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+14 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+15 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 06:55:38 --> ErrorException: include(E:\xampp\htdocs\sistem-aps-uho\vendor\composer/../myth/auth/src/Config/Auth.php): Failed to open stream: No such file or directory
+in VENDORPATH\composer\ClassLoader.php on line 576.
+ 1 VENDORPATH\composer\ClassLoader.php(576): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Config/Auth.php): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer\\ClassLoader.php', 576)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include()
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Config/Auth.php')
+ 4 [internal function]: Composer\Autoload\ClassLoader->loadClass('Myth\\Auth\\Config\\Auth')
+ 5 SYSTEMPATH\Config\Factories.php(280): class_exists('Myth\\Auth\\Config\\Auth')
+ 6 SYSTEMPATH\Config\Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'Myth\\Auth\\Config\\Auth')
+ 7 SYSTEMPATH\Config\Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'Myth\\Auth\\Config\\Auth', [])
+ 8 SYSTEMPATH\Common.php(215): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 9 APPPATH\Config\Routes.php(17): config('Myth\\Auth\\Config\\Auth')
+10 SYSTEMPATH\Router\RouteCollection.php(778): CodeIgniter\Router\RouteCollection::App\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+11 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+12 SYSTEMPATH\Router\RouteCollection.php(344): require('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php')
+13 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+14 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+15 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 06:55:38 --> ErrorException: include(E:\xampp\htdocs\sistem-aps-uho\vendor\composer/../myth/auth/src/Config/Auth.php): Failed to open stream: No such file or directory
+in VENDORPATH\composer\ClassLoader.php on line 576.
+ 1 VENDORPATH\composer\ClassLoader.php(576): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Config/Auth.php): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer\\ClassLoader.php', 576)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include()
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Config/Auth.php')
+ 4 [internal function]: Composer\Autoload\ClassLoader->loadClass('Myth\\Auth\\Config\\Auth')
+ 5 SYSTEMPATH\Config\Factories.php(280): class_exists('Myth\\Auth\\Config\\Auth')
+ 6 SYSTEMPATH\Config\Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'Myth\\Auth\\Config\\Auth')
+ 7 SYSTEMPATH\Config\Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'Myth\\Auth\\Config\\Auth', [])
+ 8 SYSTEMPATH\Common.php(215): CodeIgniter\Config\Factories::__callStatic('config', [])
+ 9 APPPATH\Config\Routes.php(17): config('Myth\\Auth\\Config\\Auth')
+10 SYSTEMPATH\Router\RouteCollection.php(778): CodeIgniter\Router\RouteCollection::App\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+11 APPPATH\Config\Routes.php(15): CodeIgniter\Router\RouteCollection->group('', [...], Object(Closure))
+12 SYSTEMPATH\Router\RouteCollection.php(344): require('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php')
+13 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+14 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+15 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 06:55:49 --> ErrorException: include(E:\xampp\htdocs\sistem-aps-uho\vendor\composer/../myth/auth/src/Filters/LoginFilter.php): Failed to open stream: No such file or directory
+in VENDORPATH\composer\ClassLoader.php on line 576.
+ 1 VENDORPATH\composer\ClassLoader.php(576): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Filters/LoginFilter.php): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer\\ClassLoader.php', 576)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include()
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Filters/LoginFilter.php')
+ 4 SYSTEMPATH\Filters\Filters.php(175): Composer\Autoload\ClassLoader->loadClass('Myth\\Auth\\Filters\\LoginFilter')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 06:55:52 --> ErrorException: include(E:\xampp\htdocs\sistem-aps-uho\vendor\composer/../myth/auth/src/Filters/LoginFilter.php): Failed to open stream: No such file or directory
+in VENDORPATH\composer\ClassLoader.php on line 576.
+ 1 VENDORPATH\composer\ClassLoader.php(576): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Filters/LoginFilter.php): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer\\ClassLoader.php', 576)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include()
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Filters/LoginFilter.php')
+ 4 SYSTEMPATH\Filters\Filters.php(175): Composer\Autoload\ClassLoader->loadClass('Myth\\Auth\\Filters\\LoginFilter')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 06:56:34 --> Error: Class "App\Models\LoginModel" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 06:56:36 --> Error: Class "App\Models\LoginModel" not found
+in APPPATH\Controllers\Login.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 06:57:39 --> ErrorException: include(E:\xampp\htdocs\sistem-aps-uho\vendor\composer/../myth/auth/src/Authentication/Passwords/ValidationRules.php): Failed to open stream: No such file or directory
+in VENDORPATH\composer\ClassLoader.php on line 576.
+ 1 VENDORPATH\composer\ClassLoader.php(576): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Authentication/Passwords/ValidationRules.php): Failed to open stream: No such file or directory', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer\\ClassLoader.php', 576)
+ 2 VENDORPATH\composer\ClassLoader.php(576): include()
+ 3 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\composer/../myth/auth/src/Authentication/Passwords/ValidationRules.php')
+ 4 SYSTEMPATH\Validation\Validation.php(715): Composer\Autoload\ClassLoader->loadClass('Myth\\Auth\\Authentication\\Passwords\\ValidationRules')
+ 5 SYSTEMPATH\Validation\Validation.php(121): CodeIgniter\Validation\Validation->loadRuleSets()
+ 6 SYSTEMPATH\Config\Services.php(818): CodeIgniter\Validation\Validation->__construct(Object(Config\Validation), Object(CodeIgniter\View\View))
+ 7 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::validation(Object(Config\Validation), false)
+ 8 SYSTEMPATH\BaseModel.php(341): CodeIgniter\Config\BaseService::__callStatic('validation', [...])
+ 9 SYSTEMPATH\Model.php(157): CodeIgniter\BaseModel->__construct(null)
+10 APPPATH\Controllers\Login.php(13): CodeIgniter\Model->__construct()
+11 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Login->__construct()
+12 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 07:55:23 --> ArgumentCountError: var_dump() expects at least 1 argument, 0 given
+in APPPATH\Controllers\Login.php on line 47.
+ 1 APPPATH\Controllers\Login.php(47): var_dump()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 07:56:26 --> ErrorException: Undefined variable $password
+in APPPATH\Controllers\Login.php on line 47.
+ 1 APPPATH\Controllers\Login.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Login.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 07:56:54 --> ErrorException: Undefined variable $dataAuth_login
+in APPPATH\Controllers\Login.php on line 47.
+ 1 APPPATH\Controllers\Login.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataAuth_login', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Login.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 08:18:08 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 08:18:22 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 08:18:25 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 08:19:29 --> CodeIgniter\Filters\Exceptions\FilterException: "Login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('Login')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('Login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 08:22:29 --> CodeIgniter\Filters\Exceptions\FilterException: "Login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('Login')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('Login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 08:22:55 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 08:25:32 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 08:25:38 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 08:26:23 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-01 08:26:34 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')

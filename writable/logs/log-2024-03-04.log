@@ -1,0 +1,1094 @@
+CRITICAL - 2024-03-04 00:46:53 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 00:47:53 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 00:47:55 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 01:01:34 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 01:03:54 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 01:04:09 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 01:04:29 --> CodeIgniter\Filters\Exceptions\FilterException: "login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('login', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:43:54 --> CodeIgniter\Filters\Exceptions\FilterException: "loginfilter" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('loginfilter')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('loginfilter', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:47:35 --> CodeIgniter\Filters\Exceptions\FilterException: "loginfilter," filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 577.
+ 1 SYSTEMPATH\Filters\Filters.php(577): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('loginfilter,')
+ 2 SYSTEMPATH\Filters\Filters.php(261): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/home')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:47:37 --> CodeIgniter\Filters\Exceptions\FilterException: "loginfilter," filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 577.
+ 1 SYSTEMPATH\Filters\Filters.php(577): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('loginfilter,')
+ 2 SYSTEMPATH\Filters\Filters.php(261): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/home')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:47:52 --> CodeIgniter\Filters\Exceptions\FilterException: "loginfilter," filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 577.
+ 1 SYSTEMPATH\Filters\Filters.php(577): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('loginfilter,')
+ 2 SYSTEMPATH\Filters\Filters.php(261): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/home')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:48:03 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:48:37 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:49:37 --> Error: Class "CodeIgniter\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:50:09 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:50:16 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:50:17 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:50:18 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:50:46 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:32 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:33 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:33 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:34 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:34 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:34 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:34 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:34 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:35 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:35 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:35 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:35 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:36 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:36 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:36 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:36 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:36 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:37 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:37 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:51:38 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:52:46 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:53:36 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:53:36 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:53:36 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:53:36 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:54:30 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:55:11 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:41 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:43 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:43 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:43 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:43 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:44 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:44 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:44 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:44 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:44 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:44 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:44 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:45 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:45 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:45 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:45 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:45 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 02:59:45 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:05:40 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:05:44 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:06:46 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:06:47 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:06:47 --> Error: Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/home', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:09:31 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:10:21 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:10:43 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:13:41 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::setFilter()
+in APPPATH\Config\Routes.php on line 15.
+ 1 SYSTEMPATH\Router\RouteCollection.php(778): CodeIgniter\Router\RouteCollection->App\Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 2 APPPATH\Config\Routes.php(14): CodeIgniter\Router\RouteCollection->group('login', Object(Closure))
+ 3 SYSTEMPATH\Router\RouteCollection.php(344): require('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Routes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:14:59 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:16:32 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:28:10 --> Error: Call to undefined function Config\app()
+in APPPATH\Config\Services.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:29:17 --> Error: Call to undefined function Config\app()
+in APPPATH\Config\Services.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:29:18 --> Error: Call to undefined function Config\app()
+in APPPATH\Config\Services.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:31:13 --> Error: Using $this when not in object context
+in APPPATH\Config\Services.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:32:00 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #1 ($locator) must be of type CodeIgniter\Autoloader\FileLocator, null given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 21
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(21): CodeIgniter\Router\RouteCollection->__construct(null)
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:33:06 --> Error: Call to undefined method Config\App::shouldCacheRoutes()
+in APPPATH\Config\Services.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:33:42 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::__construct(), 1 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 28 and exactly 3 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(28): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator))
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:30 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:31 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:31 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:31 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:31 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:31 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:31 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:32 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:32 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:32 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:32 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:32 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:32 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:35:32 --> ArgumentCountError: Too few arguments to function CodeIgniter\Autoloader\FileLocator::__construct(), 0 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23 and exactly 1 expected
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:36:03 --> TypeError: CodeIgniter\Autoloader\FileLocator::__construct(): Argument #1 ($autoloader) must be of type CodeIgniter\Autoloader\Autoloader, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 23
+in SYSTEMPATH\Autoloader\FileLocator.php on line 29.
+ 1 APPPATH\Config\Services.php(23): CodeIgniter\Autoloader\FileLocator->__construct('E:\\xampp\\htdocs\\sistem-aps-uho\\app')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:36:34 --> Error: Class "Config\FileLocator" not found
+in APPPATH\Config\Services.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:37:01 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #2 ($moduleConfig) must be of type Config\Modules, array given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 31
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(31): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), [], '')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:38:02 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:38:03 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:38:38 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:45:38 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:45:56 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:45:57 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:46:34 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:46:35 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:46:46 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:46:47 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 03:46:48 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 05:33:38 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 05:35:50 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), 'data/login')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 05:35:51 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), 'data/login')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 05:35:52 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), 'data/login')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 05:35:52 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), 'data/login')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 05:35:52 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), 'data/login')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 05:36:40 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '/data/login')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 05:36:41 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '/data/login')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 05:36:41 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '/data/login')
+ 2 SYSTEMPATH\CodeIgniter.php(810): Config\Services::routes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 05:36:58 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '/data/login')
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 05:38:12 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '')
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 05:39:15 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '')
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 05:39:43 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '')
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 05:46:16 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::__construct(), 2 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32 and exactly 3 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules))
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 05:53:50 --> ErrorException: Undefined variable $routes
+in APPPATH\Config\Services.php on line 32.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Services.php', 32)
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 05:58:47 --> ErrorException: Undefined variable $routes
+in APPPATH\Config\Services.php on line 32.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Services.php', 32)
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 05:59:00 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::__construct(), 2 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32 and exactly 3 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules))
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 05:59:27 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '')
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:00:08 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #1 ($locator) must be of type CodeIgniter\Autoloader\FileLocator, Config\Modules given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(Config\Modules), Object(CodeIgniter\Autoloader\FileLocator), '')
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:00:44 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #2 ($moduleConfig) must be of type Config\Modules, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), '', Object(Config\Modules))
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:02:42 --> Error: Using $this when not in object context
+in APPPATH\Config\Services.php on line 32.
+ 1 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 2 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:03:00 --> ErrorException: Undefined variable $routes
+in APPPATH\Config\Services.php on line 32.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Services.php', 32)
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:05:11 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), 'data/login')
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:05:50 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '')
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:08:23 --> ErrorException: Undefined variable $routes
+in APPPATH\Config\Services.php on line 32.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Config\\Services.php', 32)
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:16:43 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::__construct(), 2 passed in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32 and exactly 3 expected
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules))
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:16:53 --> TypeError: CodeIgniter\Router\RouteCollection::__construct(): Argument #3 ($routing) must be of type Config\Routing, string given, called in E:\xampp\htdocs\sistem-aps-uho\app\Config\Services.php on line 32
+in SYSTEMPATH\Router\RouteCollection.php on line 285.
+ 1 APPPATH\Config\Services.php(32): CodeIgniter\Router\RouteCollection->__construct(Object(CodeIgniter\Autoloader\FileLocator), Object(Config\Modules), '')
+ 2 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 3 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:20:12 --> Error: Class "Config\Config\Routing" not found
+in APPPATH\Config\Services.php on line 32.
+ 1 SYSTEMPATH\CLI\Console.php(39): Config\Services::routes()
+ 2 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-03-04 06:30:36 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:32:33 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:32:34 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:32:35 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:32:36 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:32:36 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:32:36 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:32:46 --> CodeIgniter\Filters\Exceptions\FilterException: "loginfilter" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 577.
+ 1 SYSTEMPATH\Filters\Filters.php(577): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('loginfilter')
+ 2 SYSTEMPATH\Filters\Filters.php(261): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:33:32 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:38:23 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:39:46 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:39:49 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:39:49 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:39:49 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-04 06:39:49 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')

@@ -1,0 +1,85 @@
+CRITICAL - 2024-03-13 02:50:57 --> ErrorException: Undefined array key "internasional"
+in APPPATH\Views\data\kerjasamaperguruantinggi.php on line 32.
+ 1 APPPATH\Views\data\kerjasamaperguruantinggi.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "internasional"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\kerjasamaperguruantinggi.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\kerjasamaperguruantinggi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/kerjasamaperguruantinggi', [], true)
+ 5 APPPATH\Controllers\Data.php(375): view('data/kerjasamaperguruantinggi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->kerjasamaperguruantinggi()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-13 03:10:19 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\data\kecukupandosen.php on line 34.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/kecukupandosen', [], true)
+ 4 APPPATH\Controllers\Data.php(394): view('data/kecukupandosen', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->kecukupanDosen()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-13 05:41:49 --> ErrorException: Undefined variable $bebankerjadosen
+in APPPATH\Views\data\bebankerjadosen.php on line 28.
+ 1 APPPATH\Views\data\bebankerjadosen.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bebankerjadosen', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\bebankerjadosen.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\bebankerjadosen.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/bebankerjadosen', [], true)
+ 5 APPPATH\Controllers\Data.php(413): view('data/bebankerjadosen')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->bebanKerjaDosen()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-13 05:46:08 --> Error: Class "App\Models\ProduktivitasPenelitianModel" not found
+in APPPATH\Controllers\Data.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Data->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-13 05:50:15 --> Error: Class "App\Models\ProduktivitasPenelitianModel" not found
+in APPPATH\Controllers\Data.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Data->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-13 05:59:21 --> ErrorException: Undefined variable $produktivitaspenelitianpkm
+in APPPATH\Views\data\produktivitaspenelitian.php on line 64.
+ 1 APPPATH\Views\data\produktivitaspenelitian.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produktivitaspenelitianpkm', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\produktivitaspenelitian.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\produktivitaspenelitian.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/produktivitasPenelitian', [], true)
+ 5 APPPATH\Controllers\Data.php(435): view('data/produktivitasPenelitian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->produktivitaspenelitian()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-13 06:00:09 --> ErrorException: Undefined variable $produktivitaspenelitianpkm
+in APPPATH\Views\data\produktivitaspenelitian.php on line 64.
+ 1 APPPATH\Views\data\produktivitaspenelitian.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produktivitaspenelitianpkm', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\produktivitaspenelitian.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\produktivitaspenelitian.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/produktivitasPenelitian', [], true)
+ 5 APPPATH\Controllers\Data.php(435): view('data/produktivitasPenelitian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->produktivitaspenelitian()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-13 06:00:30 --> ErrorException: Undefined variable $produktivitaspenelitianpkm
+in APPPATH\Views\data\produktivitaspenelitian.php on line 64.
+ 1 APPPATH\Views\data\produktivitaspenelitian.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produktivitaspenelitianpkm', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\produktivitaspenelitian.php', 64)
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Views\\data\\produktivitaspenelitian.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('data/produktivitasPenelitian', [], true)
+ 5 APPPATH\Controllers\Data.php(435): view('data/produktivitasPenelitian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Data->produktivitaspenelitian()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')

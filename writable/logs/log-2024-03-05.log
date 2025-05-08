@@ -1,0 +1,150 @@
+CRITICAL - 2024-03-05 01:35:19 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 01:41:06 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 01:42:12 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 01:42:14 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 01:43:22 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 01:45:51 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 01:45:52 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 01:45:53 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 01:46:00 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 01:46:01 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 01:52:54 --> ErrorException: Undefined array key "login"
+in SYSTEMPATH\Filters\Filters.php on line 555.
+ 1 SYSTEMPATH\Filters\Filters.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "login"', 'E:\\xampp\\htdocs\\sistem-aps-uho\\vendor\\codeigniter4\\framework\\system\\Filters\\Filters.php', 555)
+ 2 SYSTEMPATH\Filters\Filters.php(516): CodeIgniter\Filters\Filters->registerArguments('login', [])
+ 3 SYSTEMPATH\Filters\Filters.php(250): CodeIgniter\Filters\Filters->processFilters('data/login')
+ 4 SYSTEMPATH\Filters\Filters.php(172): CodeIgniter\Filters\Filters->initialize('data/login')
+ 5 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 05:49:32 --> Error: Class "App\Filters\AlreadyLoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 175.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('data/login', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 06:09:21 --> ParseError: Unclosed '{' on line 8
+in APPPATH\Controllers\Login.php on line 63.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('login', 'post')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('login')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('login')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 06:40:18 --> ParseError: syntax error, unexpected token "<<", expecting "function" or "const"
+in APPPATH\Controllers\Data.php on line 285.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Data.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Data')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Data')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Data', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 07:08:28 --> Error: Class "App\Controllers\LoginModel" not found
+in APPPATH\Controllers\Auth.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Auth->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
+CRITICAL - 2024-03-05 07:10:06 --> ErrorException: Undefined property: App\Controllers\Auth::$mloginmodel
+in APPPATH\Controllers\Auth.php on line 25.
+ 1 APPPATH\Controllers\Auth.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Auth::$mloginmodel', 'E:\\xampp\\htdocs\\sistem-aps-uho\\app\\Controllers\\Auth.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\sistem-aps-uho\\public\\index.php')
